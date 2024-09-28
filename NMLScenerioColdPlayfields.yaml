@@ -1,0 +1,346 @@
+
+#******************************************** Playfield Edits *******************************************************
+
+ ***************************************************************************************************************** EdenspaceD_Orbit
+
+# ================================================================================================================================================================================= Kriel
+
+    - Type: BA_Alien
+      GroupName: BAOKriel
+      Faction: Kriel
+      FactionTerritory: [Eden_KrielTerritory]
+      Mode: Survival
+      CountMinMax: [ 4, 5 ]
+      Probability: 0.8
+      InitPower: True
+      Properties:
+        - Key: Music
+          Value: NebularClouds
+        - Key: Discovery
+          Value: False
+        - Key: StationInterface
+          Value: "Fuel:1,O2:1,Repair:3,Shield:8,IfNeutral:0.05,IfFriendly:-0.08,IfHonored:-0.16"
+        - Key: RegenAfter
+          Value: 720
+
+
+#************************ Below FreeDrones
+# ------------------------------------------------------------------------------------------------- Faction Kriel
+# Asteroid Patrols
+          - Name: [SpaceDroneKrielLaser]
+            Faction: Kriel
+            CanNotBeControlledByMasterAI: False
+            # POINameAsPositionRef: [BAO_GhystDefence1,BAO_GhystDefence2]
+            Count: [4, 8]
+            Radius: [1000, 10000]
+            Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              # - Key: AIManPatrolFactions
+                # Value: "Main"
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+# POI patrols
+          - Name: [SpaceDroneKrielLaser]
+            Faction: Kriel
+            CanNotBeControlledByMasterAI: False
+            # POINameAsPositionRef: [BAO_GhystDefence1,BAO_GhystDefence2]
+            Count: [2, 6]
+            Radius: [500, 10000]
+            Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              - Key: AIManPatrolFactions
+                Value: "Main"
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+
+#************ Under SpaceVessels
+
+# ------------------------------------------------------------------------------------------------- Faction Main
+# Patrol Vessels
+          - Name: [R2OPV_PirateT1]
+            Faction: Main
+            CountMinMax: [2, 3]
+            Probability: 1
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [40, 60]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [1000, 10000]
+              Position:
+                PosXZMinMax: [1000, 5000]
+                PosYMax: 3500
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 5000
+
+# ------------------------------------------------------------------------------------------------- Faction Trader
+#************************ Below - Name: [R2OPVPolarisT3]
+# Patrol Vessels
+          - Name: [NML_OPVTraderTSO]
+            Faction: Trader
+            CountMinMax: [1, 2]
+            Probability: 0.2
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [10, 30]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [1000, 5000]
+              # POINameAsPositionRef: [RBAO_XenuShipyard, RBAO_GhystShipyard]
+              Position:
+                PosXZMinMax: [1000, 2500]
+                PosYMax: 500
+            StockDescription:
+              Name: [SpaceDroneTraderLaser] 
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 5000
+
+# ------------------------------------------------------------------------------------------------- Faction Kriel
+# Patrol Vessels
+          - Name: [OPVNMLKrielRG]
+            Faction: Kriel
+            CountMinMax: [4, 6]
+            Probability: 1
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [10, 35]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [2500, 10000]
+              # POINameAsPositionRef: [RBAO_XenuShipyard, RBAO_GhystShipyard]
+              Position:
+                PosXZMinMax: [1000, 5000]
+                PosYMax: 1000
+            StockDescription:
+              Name: [SpaceDroneKrielLaser] 
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 25000
+          - Name: [OPVNMLKrielT2]
+            Faction: Kriel
+            CountMinMax: [1, 2]
+            Probability: 0.4
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [10, 35]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [2500, 10000]
+              # POINameAsPositionRef: [RBAO_XenuShipyard, RBAO_GhystShipyard]
+              Position:
+                PosXZMinMax: [1000, 5000]
+                PosYMax: 1000
+            StockDescription:
+              Name: [SpaceDroneKrielLaser] 
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 25000
+
+
+
+# ------------------------------------------------------------------------------------------------- Faction Alien
+
+# Roving Azure Fleet
+          - Name: [Eden_NMLAzureT1]
+            Faction: Alien
+            CountMinMax: [1, 1]
+            Probability: 0.2
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [65, 65]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [5000, 10000]
+              # POINameAsPositionRef: [Eden_GasCloudOrangeL]
+              Position:
+                PosXZMinMax: [2500, 5000]
+                PosYMax: 2500
+            StockDescription:
+              Name: [SpaceDroneLegacyLaser]
+              AmountMinMax: [12, 20]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+#              - Key: MapDistance
+#                Value: 1500
+#              - Key: HudDistance
+#                Value: 1500
+              - Key: AIManPatrolFactions
+                Value: "Alien, Colonists, Warlord, Pirates, Zirax"
+              - Key: AIManMaxPursuitRange
+                Value: 7500
+
+# Roving Azure Fleet
+          - Name: [Eden_NMLAzureT2]
+            Faction: Alien
+            CountMinMax: [1, 1]
+            Probability: 0.03
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [30, 35]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [5000, 10000]
+              # POINameAsPositionRef: [Eden_GasCloudOrangeL]
+              Position:
+                PosXZMinMax: [2500, 5000]
+                PosYMax: 2500
+            StockDescription:
+              Name: [SpaceDroneLegacyLaser]
+              AmountMinMax: [12, 20]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+#              - Key: MapDistance
+#                Value: 1500
+#              - Key: HudDistance
+#                Value: 1500
+              - Key: AIManPatrolFactions
+                Value: "Alien, Colonists, Warlord, Pirates, Zirax"
+              - Key: AIManMaxPursuitRange
+                Value: 7500
+
+
+# ------------------------------------------------------------------------------------------------- Faction Civilian
+# Civilian Cargo Shuttles
+          - Name: [Eden_OPVTraderTSO]
+              #- Key: MapDistance
+              #  Value: 0
+              #- Key: HudDistance
+              #  Value: 3000
+
+
+
+
+
+
+
+
+21 ***************************************************************************************************************** EdenspaceD_AsteroidT1
+#******************************************** Playfields\EdenspaceD_AsteroidT1\spacedynamic    
+
+#************ Under FreeDrones
+# ------------------------------------------------------------------------------------------------- Faction Kriel
+# Asteroid Patrols
+          - Name: [SpaceDroneKrielLaser]
+            Faction: Kriel
+            CanNotBeControlledByMasterAI: False
+            Count: [4, 8]
+            Radius: [1000, 10000]
+            Properties:
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+# POI patrols
+          - Name: [SpaceDroneKrielLaser]
+            Faction: Kriel
+            CanNotBeControlledByMasterAI: False
+            Count: [3, 6]
+            Radius: [500, 10000]
+            Properties:
+              - Key: AIManPatrolFactions
+                Value: "Main"
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+          - Name: [SpaceDroneLegacyLaser]
+            Faction: Alien
+            CanNotBeControlledByMasterAI: False
+            Count: [6, 12]
+            Radius: [1000, 10000]
+            Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              # - Key: AIManPatrolFactions
+                # Value: "Main"
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+          - Name: [SpaceDroneLegacyLaser]
+            Faction: Alien
+            CanNotBeControlledByMasterAI: False
+            Count: [6, 12]
+            Radius: [1000, 10000]
+            Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              - Key: AIManPatrolFactions
+                Value: "Zirax, Colonists, Polaris, Pirates, Warlord, Alien"
+              - Key: AIManMaxPursuitRange
+                Value: 10000
+
+#************ Under SpaceVessels
+# ------------------------------------------------------------------------------------------------- Faction Kriel
+# Patrol Vessels
+          - Name: [OPVNMLKrielRG]
+            Faction: Kriel
+            CountMinMax: [1, 3]
+            Probability: 1
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [10, 35]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: True
+              RadiusMinMax: [2500, 10000]
+              # POINameAsPositionRef: [RBAO_XenuShipyard, RBAO_GhystShipyard]
+              Position:
+                PosXZMinMax: [1000, 5000]
+                PosYMax: 1000
+            StockDescription:
+              Name: [SpaceDroneKrielLaser] 
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 25000
+
+
+
+
+
+

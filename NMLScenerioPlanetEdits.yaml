@@ -1,0 +1,646 @@
+
+#******************************************** Playfield Edits *******************************************************
+
+***************************************************************************************************************** Alien
+#************ above Secondary Definitions
+# =============================================== Faction Kriel
+# Kriel
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** Barren
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielMain 
+          Faction: Kriel
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 4320
+
+        - GroupName: R2KrielDefenseT1 
+          Faction: Kriel
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+***************************************************************************************************************** BarrenMetal
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielMain 
+          Faction: Kriel
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1 
+          Faction: Kriel
+          FactionTerritory: [Eden_KrielTerritory]
+          NoShieldReload: True
+          CountMinMax: [ 1, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** Desert
+#******************************************** Playfields\Desert\playfieldstatic
+#******************************************** under R2PirateMain
+
+# Kriel
+        - GroupName: NMLBA_PiratesAuxDesertRG
+          Faction: Pirates
+          CountMinMax: [ 1, 2 ]
+          DroneProb: 0.5
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [R2PirateMain]
+          SpawnPOINearRange: [100, 400]
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+
+***************************************************************************************************************** EdenAlienFungal
+#************ above Faction Other
+# =============================================== Faction Kriel
+# Kriel
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** EdenBarrenElder
+#******************************************** Kriel
+
+# Kriel
+   -  GroupName: R2KrielMain
+      Faction: Kriel
+      FactionTerritory: [Eden_KrielTerritory]
+      CountMinMax: [2, 3]
+      IsImportant: True
+      TroopTransport: True
+      Properties:
+      -  Key: Music
+         Value: lava
+      -  Key: RegenAfter
+         Value: 720
+
+   -  GroupName: R2KrielDefenseT1
+      Faction: Kriel
+      FactionTerritory: [Eden_KrielTerritory]
+      CountMinMax: [4, 6]
+      IsScalingCount: True
+      TroopTransport: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 720
+
+***************************************************************************************************************** EdenBarrenMercury_V2
+#******************************************** Kriel
+
+# Kriel
+        - GroupName: R2KrielMain 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 4320
+
+        - GroupName: R2KrielDefenseT1 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 4 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** EdenDesertRock_2
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielMain 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: True
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 4 ]
+          IsScalingCount: True
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+#******************************************** under FactoryZiraxRG
+
+# Black Pyramid POI
+        - GroupName: NML_BlackPyramid
+          Faction: Alien
+          NoShieldReload: True  
+          IsImportant: True
+          LevelMod: +6
+          Biome: [ Saltflats ]
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 0
+          TroopTransport: False
+          # SpawnPOIAvoid: [TS_PlanetRG]
+          # SpawnPOIAvoidDistance: 1000
+          SpawnResource: ["NeodymiumResource:1-2","PromethiumResource:1-2"]
+          SpawnResourceRange: [110,175]
+          Properties:
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** EdenDesertStorm
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielMain 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: True
+          Properties: 
+            - Key: MapDistance
+              Value: 1200
+            - Key: HudDistance
+              Value: 1200
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1 
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 4 ]
+          IsScalingCount: True
+          Properties: 
+            - Key: MapDistance
+              Value: 1200
+            - Key: HudDistance
+              Value: 1200
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+
+***************************************************************************************************************** EdenPlasma3
+#******************************************** under POIs
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielDroneBase
+          Faction: Kriel
+          IsCommandCenter: True
+          DroneBaseSetup: DroneBaseSetup
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 1 ]
+          IsImportant: True
+          DroneProb: 1.0
+          DronesMinMax: [ 8, 8 ] 
+          ReserveCount: 30
+          SpawnResource: ["PromethiumResource:1-1","ZascosiumResource:1-1"]
+          SpawnResourceRange: [175,300]
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 720 
+
+              # Auxiliary POIs for Drone Base
+        - GroupName: R2KrielMain
+          Faction: Kriel
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          # IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 12
+          SpawnPOINear: [R2KrielDroneBase]
+          SpawnPOINearRange: [250, 400]
+          TroopTransport: True
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+              # Defense POIs for Drone Base
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          # IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 5, 8 ]
+          ReserveCount: 12
+          SpawnPOINear: [R2KrielDroneBase]
+          SpawnPOINearRange: [500, 650]
+          TroopTransport: True
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+
+***************************************************************************************************************** EdenPlasma4
+#******************************************** under POIs
+#******************************************** Kriel
+# Kriel
+        - GroupName: R2KrielDroneBase
+          Faction: Kriel
+          IsCommandCenter: True
+          DroneBaseSetup: DroneBaseSetup
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 1 ]
+          IsImportant: True
+          DroneProb: 1.0
+          DronesMinMax: [ 8, 8 ] 
+          ReserveCount: 30
+          SpawnResource: ["PromethiumResource:1-1","ZascosiumResource:1-1"]
+          SpawnResourceRange: [175,300]
+          Properties: 
+            - Key: SI
+              Value: Off
+            - Key: Music
+              Value: moonstone
+            - Key: RegenAfter
+              Value: 720 
+
+              # Auxiliary POIs for Drone Base
+        - GroupName: R2KrielMain
+          Faction: Kriel
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          # IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 3, 5 ]
+          ReserveCount: 12
+          SpawnPOINear: [R2KrielDroneBase]
+          SpawnPOINearRange: [250, 400]
+          TroopTransport: True
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+              # Defense POIs for Drone Base
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel
+          # Biome: [ Plains, Dunes, CrystallizedRocks, Flats ]
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          # IsImportant: True
+          DroneProb: 1
+          DronesMinMax: [ 5, 8 ]
+          ReserveCount: 12
+          SpawnPOINear: [R2KrielDroneBase]
+          SpawnPOINearRange: [500, 650]
+          TroopTransport: True
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+***************************************************************************************************************** EdenSwampMire
+#************ above Faction Alien
+# =============================================== Faction Kriel
+# Kriel
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          CountMinMax: [ 1, 3 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          CountMinMax: [ 1, 2 ]
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+***************************************************************************************************************** EdenTemporateBrooding
+#************ above Faction Other
+# =============================================== Faction Kriel
+# Kriel
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 1 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+***************************************************************************************************************** Snow_V2
+#******************************************** Playfields\Snow\playfieldstatic
+#******************************************** under R2PirateMain
+
+        - GroupName: NMLBA_PiratesAuxSnowRG
+          Faction: Pirates
+          CountMinMax: [ 1, 3 ]
+          DroneProb: 0.5
+          DronesMinMax: [ 1, 2 ]
+          ReserveCount: 1
+          TroopTransport: False
+          SpawnPOINear: [R2PirateMain]
+          SpawnPOINearRange: [100, 400]
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+
+***************************************************************************************************************** TemporateSwamp
+#************ above Faction Other
+# =============================================== Faction Kriel
+# Kriel
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 2, 3 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [Eden_KrielTerritory]
+          CountMinMax: [ 1, 4 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielMain
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+        - GroupName: R2KrielDefenseT1
+          Faction: Kriel    
+          NoShieldReload: True
+          FactionTerritory: [None]
+          CountMinMax: [ 1, 2 ]
+          IsScalingCount: true                                  # true/false: will scale the CountMinMax with the PlayfieldSize (2,3,4,5)
+          Properties: 
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 720 
+
+***************************************************************************************************************** Starter_Akua_V2
+          # Spawn: EscapePod
+          # Pos: [ -350, 0 ]      # fixed x,z position of escape pod start (Equator)
+          # RotY: 160
+          Spawn: EscapePod
+          Pos: [0, 70, 0]
+          #Spawn: EscapePodLandAtPos      #Escape Pod cannot be controlled in that mode
+          #Pos: [0, 70, 0]                  # Equator at mid-day.
+          # Pos: [4100, 70, 0]             # Closer to the evening (CLASS 3 PLANET)
+          RotY: 160
+
+***************************************************************************************************************** Starter_Tallodar_V2
+          # Spawn: EscapePod
+          # Pos: [ -350, 0 ]      # fixed x,z position of escape pod start (Equator)
+          # RotY: 160
+          # Spawn: EscapePodLandAtPos      #Escape Pod cannot be controlled in that mode
+          Spawn: EscapePod      #Escape Pod cannot be controlled in that mode
+          Pos: [0, 70, 0]                  # Equator at mid-day.
+          # Pos: [4100, 70, 0]             # Closer to the evening (CLASS 3 PLANET)
+          RotY: 160
+
+***************************************************************************************************************** Starter_Masperon
+          Spawn: EscapePod
+          Pos: [0, 70, 0]
+          RotY: 160
+
+***************************************************************************************************************** Starter_Pandora_V2
+          Spawn: EscapePod
+          Pos: [0, 70, 0]
+          RotY: 160
+

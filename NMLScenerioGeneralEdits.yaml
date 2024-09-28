@@ -1,0 +1,467 @@
+
+***************************************************************************************************************** BlocksGroupsConfig
+#************************************  under Crew
+
+ { BlockGroup Name: Crew2
+   MaxCount: 30
+   Blocks: "ZiraxCommander, SecurityGuardZirax, CommandingOfficerAlien, SecurityGuardAlien, ControlStationNPC, ReceptionTableNPC, ScifiTableV2NPC, ScifiSofaNPC, ScifiTableNPC, ConsoleSmallNPC, SofaNPC, StandingNPC, StandingNPC2, ScifiLargeSofaNPC, ScifiTableNPC2, ScifiTableNPC3, DancingAlien1, DancingAlien2, GamblingTableTwoPerson, GamblingTableMultiplePeople, ConsoleSmallHuman, StandingHuman, StandingHuman2, ControlStationHuman, ControlStationHuman2, ReceptionTableHuman, ScifiTableHuman, ScifiLargeSofaHuman, TacticalOfficer, CommandingOfficer, CommandingOfficer2, CommandingOfficerMale, SecurityGuard, SecurityGuard2, OperatorPilot, EngineerMainStation, DancingHuman1, DancingHuman2, DancingHuman3"
+ }
+
+
+***************************************************************************************************************** BlocksConfig
+#************************************  Alien Crew
+{ +Block Id: 328, Name: NPCAlienTemplate
+  IndexName: Crew
+  SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
+  MaxCount: 30, type: int, display: true
+  CPUIn: -2500, type: int, display: true
+
+#************************************  Human Crew
+
+{ +Block Id: 329, Name: NPCHumanTemplate
+  IndexName: Crew
+  SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
+  MaxCount: 30, type: int, display: true
+  CPUIn: -2500, type: int, display: true
+
+#************************************  Place under { +Block Id: 1132, Name: Furnace
+{ Block Name: FurnaceCV, Ref: Furnace
+  CustomIcon: Furnace
+  AllowPlacingAt: MS, display: true
+  EnergyIn: 6000, type: int, display: true, formatter: Watt
+  CPUIn: 40000, type: int, display: true
+  EnergyInIdle: 100, type: int, display: true, formatter: Watt
+  EnergyDynamicGroup: Constructor
+  HitPoints: 8500, type: int, display: true  
+  
+  BlastParticleIndex: 1
+  BlastRadius: 10
+  BlastDamage: 4000
+  
+  UnlockCost: 15, display: true
+  UnlockLevel: 12, display: true
+  TechTreeParent: ConstructorT2
+  TechTreeNames: Capital Vessel
+  
+  Temperature: 450, display: true
+}
+
+***************************************************************************************************************** Templates
+#************************************  Place under { +Template Name: Furnace
+{ +Template Name: FurnaceCV
+  CraftTime: 10
+  Target: "AdvC"
+  { Child Inputs
+    CapacitorComponent: 16
+    EnergyMatrix: 12
+    TitanPlates: 80
+    Motor: 12
+    FluxCoil: 10
+    CobaltAlloy: 40
+  }
+}
+
+***************************************************************************************************************** ItemsConfig
+
+#************************************  Shield penetration searches
+ShieldDamagePenFac
+ShieldDamagePenFac: (\d).(\d)(\d)(\d)
+
+
+***************************************************************************************************************** Galaxy
+    Faction: Kriel
+    Other_2: Eden_KrielTerritory, param1: "1, 1"
+    Other_3: Civilian, param1: "0.2, 0.6"
+    Other_4: Trader, param1: "0.5, 0.8"
+
+  { Child Territory_5
+    Faction: Pirates
+    Other_6: Civilian, param1: "0.05, 0.8"
+    Other_7: Trader, param1: "0.4, 0.4"
+
+  { Child Territory_7
+    Faction: Zirax
+    Other_9: Civilian, param1: "0.08, 0.8"
+
+  { Child Territory_11 # Outlaw Space
+    Faction: Wastelanders
+    Other_6: Civilian, param1: "1, 1"
+
+  { Child Territory_None  # area outside all faction territories
+    Other_5: Trader, param1: "0.7"
+    Other_11: Civilian, param1: "1"
+
+
+
+***************************************************************************************************************** SolarSystemConfigDefines
+#***************** under the Casino
+
+
+# -------------------------------------------------------------------------- PirateBattlestation
+      - Name: PirateBattlestation
+        Faction: [Pirates, None]
+        Color: [1, 1, 0]
+        Icon: Station
+        Placement:
+            - InnerSystem
+            - HabitableHot
+            - HabitableTemperate
+            - HabitableCold
+            - OuterSystem
+        MoonProb: '0:1'
+        MoonType: [DefaultMoon]
+        HasOrbit: false
+        HasTerrain: false
+        PlayfieldLevel: [5,8]
+        Playfields:
+            - SDG_PirateBattlestation
+
+
+
+#************************************** under POICombatT4
+            - EdenSpace_POI_CombatT3_2, 0.5
+            - SDG_POI_CombatAzureT6, 0.1
+
+
+
+
+
+***************************************************************************************************************** SolarSystemConfig_MainHabitableT1
+
+    - 'ZiraxStationT3:0.5, SyndicateCasino:0.5
+    - 'ZiraxStationT3:0.5, SyndicateCasino:0.5, PirateBattlestation:0.4'                                                                   # 1 Random Events
+	
+
+
+***************************************************************************************************************** SolarSystemConfig_MainHabitableT2
+ 
+	- 'ZiraxStationT3:0.5, SyndicateCasino:0.5
+    - 'ZiraxStationT3:0.5, SyndicateCasino:0.5, PirateBattlestation:0.3'                                                                   # 1 Random Events
+
+
+
+***************************************************************************************************************** SolarSystemConfig_MainHoT1
+
+	- 'SpaceEmpty:1.0
+    - 'SpaceEmpty:0.8, PirateBattlestation:0.2'                                                                                            # 1 Random Events
+	
+	
+
+
+***************************************************************************************************************** Sectors
+#************************ under solarsystems
+
+
+#########--------- Start SDG ------------#############
+  - Name: NML
+    Coordinates: [190, 15, 20]
+    StarClass: G
+    Sectors:
+      - Coordinates: [0, 0, 0]
+        SectorMapType: None
+        Playfields:
+          - ['0,0,0', NML, SunRandom, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+      - Coordinates: [2, 0, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Right]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+      - Coordinates: [-2, 0, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Left]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+      - Coordinates: [0, 2, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Top]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+      - Coordinates: [0, -2, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Bottom]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+      - Coordinates: [0, 0, 2]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Front]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+      - Coordinates: [0, 0, -2]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML [Sun Back]', SpaceWarpTargetFixed, '']
+        Allow: []
+        Deny:
+          - 'Bellam Sector'
+
+
+####------------- Telgis PVE -----------------------####
+      - Coordinates: [0, 0, 10]
+        Color: '0.04,0.8,0.4 : 0.1,0.7,0.1 : 0.5,0.5,0.5'
+        Playfields:
+         - ['0, 0, 0', Aurora, SDG_Aurora_V1,'', '', '', '']
+         - ['2403, 9037, -11729', Aurora Moon, SDG_Moon_Jungle_V1]
+         - ['0,0,0', Aurora Sector, SDG_Orbit_Aurora_V1, '']
+        Allow:
+         - 'NML [Sun Right]'
+         - 'NML [Sun Left]'
+         - 'NML [Sun Top]'
+         - 'NML [Sun Bottom]'
+         - 'NML [Sun Front]'
+         - 'NML [Sun Back]'
+         - 'NML'
+        Deny:
+         - 'Bellam Sector'
+
+####------------- Bellam PVP -----------------------####
+      - Coordinates: [0, 0, -50]
+        Color: '0.8,0.0,0.0 : 0.8,0.0,0.0 : 0.5,0.5,0.5'
+        Playfields:
+         - ['0, 0, 0', Bellam, SDG_Bellam_V1,'', '', '', '']
+         - ['2403, 9037, -11729', Bellam Moon, Moon_V2]
+         - ['0,0,0', Bellam Sector, SDG_Orbit_Bellam_V1, '']
+        Allow:
+         - 'Roscoes Roost'
+        Deny:
+         - 'Telgis Sector'
+         - 'NML [Sun Right]'
+         - 'NML [Sun Left]'
+         - 'NML [Sun Top]'
+         - 'NML [Sun Bottom]'
+         - 'NML [Sun Front]'
+         - 'NML [Sun Back]'
+         - 'NML'
+
+####------------- Trade Station -----------------------####
+      - Coordinates: [25, 0, 0]
+        Color: '0.7,0.5,0'
+        SectorMapType: Station
+        Playfields:
+         - ['0,0,0', Roscoes Roost, SDG_TradeOrbit,'', '', '', '']
+#########--------- END SDG ------------#############
+
+
+
+*****************************************************************************************************************
+#*************************** under Alpha \           - ['0, 0, 0', Trade Station Alpha, Start_TradeHub,'', '', '', '']
+
+      - Coordinates: [0, 8, 2]
+        Color: '0.11,0.69,0.15'
+        SectorMapType: Station
+        Playfields:
+          - ['0,0,0', NML Trade System, SDG_TradeOrbit, '']
+
+
+***************************************************************************************************************** Factions
+#******************************************** Faction Edits
+#******************************************** Content\Configuration\Factions
+{ Faction Id: 2, Name: "Zirax"       #Zirax Empire head faction; split into houses: Xenu, Rados, Epsilon, Ghyst, Serdu,..
+  ForceAttack: "Warlord,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Pirates,Wastelanders,Talon"
+
+{ Faction Id: 6, Name: "Talon"       #Main Story Faction
+#***** add under discovery
+  ForceAttack: "Zirax,Trader"
+
+{ Faction Id: 16, Name: "Pirates"
+  ForceAttack: "Eden_Defender,Zirax,Polaris,Trader,Colonists,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Wastelanders"
+
+{ Faction Id: 17, Name: "Kriel"
+  # Unfriendly: true
+  ClaimTerritory: true
+  Reputation: true
+  ForceAttack: "Eden_Defender,Zirax,Polaris,Colonists,Warlord,Alien,TheLegacy,Eden_Drone,Eden_DroneHome,Wastelanders,Pirates"
+
+{ Faction Id: 18, Name: "Trader"
+  ForceAttack: "Warlord,Alien,TheLegacy,Eden_Drone,Eden_DroneHome,Pirates,Talon"
+
+{ Faction Id: 19, Name: "Colonists"
+  ForceAttack: "Warlord,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Eden_Resource,Prey,Pirates"
+
+{ Faction Id: 79, Name: "Eden_KrielTerritory"
+  Abbrev: Kriel Territory
+  Color: "0.5, 0, 0.8"
+  Friendly: true
+  HideAbbrev: true
+  OmitMapLegend: true
+}
+
+ ***************************************************************************************************************** DefReputation
+
+  Pirates: 9000
+  Kriel: 5000   #SDG Added Kriel
+  Trader: 15000
+
+  #***** Replace the Matrix
+Order:                   "Zirax,  Talon,  Polaris,  Pirates,  Kriel, Trader,  Colonists,   Xenu,   Rados, Epsilon,  Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC,  Eden_Defender"
+  AttackedMember:          " -0.2,  -0.15,     -0.2,     -0.1,   -0.2,  -0.15,       -0.1,   -0.1,    -0.2,    -0.2,   -0.2,    -0.3,    -0.1,   -0.2,  -0.15,         -0.12,  -0.12,              0" # value is multiplied with damage points || Drops to NeutralMin
+  KilledMember:            "-1000,  -1000,    -1000,    -1000,   -300,  -1000,      -1000,  -1000,   -1000,   -1000,  -1000,   -1000,   -1000,  -1000,  -1000,         -1000,  -1000,              0" # NOT multiplied with damage points || Drops to UnfriendlyMax
+  DestroyBlock:            " -300,   -300,     -300,     -300,    -30,   -300,       -300,   -300,    -300,    -300,   -300,    -300,    -300,   -300,   -300,          -300,   -300,              0"
+  ShieldAttacked:          "  -30,    -30,      -30,      -30,    -30,    -30,        -30,    -30,     -30,     -30,    -30,     -30,     -30,    -30,    -30,           -30,    -30,              0"
+  OpenContainer:           "-6000,  -6000,    -6000,    -6000,  -6000,  -6000,      -6000,  -6000,   -6000,   -6000,  -6000,   -6000,   -6000,  -6000,  -6000,         -6000,  -6000,              0"
+  AttackedPrey:            "    0,  -0.05,        0,        0,   -0.1,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0" # multiplied with damage points
+  AttackedPredator:        "    0,   0.03,     0.02,        0,      0,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0" # multiplied with damage points
+  StructSpawnedInTerritory:"-500,    -500,     -500,     -500,  -1000,      0,       -100,   -500,    -500,    -500,   -500,    -500,   -1000,   -500,   -500,          -500,   -500,              0"
+  StructStayInTerritory:   "  -25,    -50,        0,      -50,    -75,      0,        -25,    -25,     -25,     -25,    -25,     -25,     -25,    -25,    -25,           -30,    -30,              0" # every 5min realtime and only WITH pilot 
+  OreMined:                "  -15,     -5,      -50,      -15,    -30,    -20,        -40,    -20,     -50,     -20,    -20,     -20,     -20,    -20,    -35,           -30,    -30,              0" # about every 10 ores
+  PlantHarvest:            "    0,    -10,        0,        0,     -5,      0,         -5,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0"
+  PlantDestroy:            "    0,    -30,        0,        0,    -10,      0,         -5,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0"
+  OutsideHostileTerritory: "    0,      0,        0,        0,      0,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0"
+
+
+
+
+{ Reputation Name: "Zirax.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0, -0.01, -0.01,  -0.01, -0.01, -0.01,   -0.01,     0,     0,              0,       0,                0"
+  KilledMember:            "    0,     5,     5,         8,      5,      0,         0,   -5,    -5,      -5,    -5,    -5,     -10,     0,     5,              0,       0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,  -50,   -50,     -50,   -50,   -50,     -50,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Talon.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  KilledMember:            "    5,     0,    -5,         0,      0,      5,        -1,    5,     0,       5,     0,     5,     5,     0,     0,              0,         0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,    -3,       0,     0,     0,     0,     0,   -10,              0,         0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+}                                                                                                                                                                 
+{ Reputation Name: "Polaris.Rivalry"                                                                                                                              
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  KilledMember:            "    5,    -5,     0,        20,      0,     -5,       -15,    0,    15,       5,     5,    10,     5,     0,   -20,              0,         0,                0"
+  DestroyBlock:            "    0,    -1,     0,         0,      0,      0,        -1,    0,     0,       0,     0,     0,     0,     0,    -1,              0,         0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,    -20,       -10,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+}                                                                                                                                                                 
+{ Reputation Name: "Pirates.Rivalry"                                                                                                                              
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  KilledMember:            "    8,     0,     5,         0,     -1,     10,        15,    5,    10,      10,    15,    10,     5,     0,    20,              0,         0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+}                                                                                                                                                                 
+{ Reputation Name: "Kriel.Rivalry"                                                                                                                                
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr, Wastelanders,      ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  KilledMember:            "    5,     0,    10,         5,      0,     10,        10,    5,    10,       5,    15,    15,    10,     0,     5,              0,         0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+}                                                                                                                                                                 
+{ Reputation Name: "Trader.Rivalry"                                                                                                                               
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  KilledMember:            "   -5,     5,    -5,        10,      0,      0,       -20,    0,    -1,       0,     5,     0,     0,     0,    -5,              0,         0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,        -2,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  OpenContainer:           "    0,     0,   -10,         0,      0,      0,         0,    0,   -10,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,     0,     0,     0,              0,         0,                0"
+}
+{ Reputation Name: "Xenu.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  KilledMember:            "  -5,      5,     0,         3,      0,      0,         0,    0,   -15,     -10,     6,    15,       5,     0,     0,              0,       0,                0"
+  DestroyBlock:            " -0.1,     0,     0,         0,      0,      0,         0,    0,  -0.1,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,    0,    -5,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:" -250,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Rados.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.03,    0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  KilledMember:            "   -5,     0,    20,        10,      0,      0,         0,  -10,     0,     -10,    -3,    -7,       1,     0,     5,              0,       0,                0"
+  DestroyBlock:            "   -1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,   -5,     0,       0,    -5,     0,      -5,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:" -250,     0,  -100,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Epsilon.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.05,    0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  KilledMember:            "   -5,     0,     5,        20,      0,      0,         0,  -15,   -15,       0,    -2,     0,       6,     0,     0,              0,       0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,    0,    -3,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:" -250,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Ghyst.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.05,    0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,    0,     0,              0,        0,                0"
+  KilledMember:            "   -5,     3,     5,         7,      0,      5,         5,   -5,   -15,      -5,     0,   -15,    -17,     0,     5,              0,        0,                0"
+  DestroyBlock:            "   -1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,              0,        0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,    0,    -3,       0,     0,    -5,     -5,     0,     0,              0,        0,                0"
+  StructSpawnedInTerritory:" -250,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,              0,        0,                0"
+}
+{ Reputation Name: "Serdu.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.08,    0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  KilledMember:            "   -5,     7,     0,         0,      0,      0,         5,    3,   -15,       0,   -12,     0,     -20,     0,     0,              0,       0,                0"
+  DestroyBlock:            "   -1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:" -250,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,              0,        0,                0"
+}
+{ Reputation Name: "Abyssal.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          " -0.05,    0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  KilledMember:            "  -10,     4,     0,         0,      0,      5,         0,    4,   -15,     -10,   -14,   -20,       0,     0,     0,              0,       0,                0"
+  DestroyBlock:            "   -1,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,              0,       0,                0"
+  OpenContainer:           "   -1,     0,     0,         0,      0,      0,         0,    0,    -1,       0,     0,   -10,       0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:" -250,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,     0,      0,     0,     0,              0,        0,                0"
+}
+{ Reputation Name: "Colonists.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  KilledMember:            "    0,    -1,   -10,        10,      0,    -10,         0,    0,    -5,      -1,     0,       5,     0,     0,    -5,              0,       0,                0"
+  DestroyBlock:            "    0,     0,    -1,         0,      0,     -2,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,    -5,         0,      0,    -20,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Tesch.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,   Farr,  Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  KilledMember:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Farr.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr,  Wastelanders,      ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  KilledMember:            "    5,     0,   -10,        15,      0,     -3,        -5,    0,     5,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  DestroyBlock:            "    0,     0,    -2,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,   -10,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "Wastelanders.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr,   Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  KilledMember:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+}
+{ Reputation Name: "ARC.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates,  Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr,   Wastelanders,     ARC,    Eden_Defender"
+  AttackedMember:          "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  KilledMember:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+
+
