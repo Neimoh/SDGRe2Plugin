@@ -1,0 +1,162 @@
+SDG Plugin V1.1 B22 Manifest:
+Folder Structure:
+Vx.xreadme.txt
+\Content\configuration ------------- 7 Files
+    BlockGroupsConfig.ecf
+    BlocksConfig.ecf
+    DefReputation.ecf
+    Factions.ecf
+    GalaxyConfig.ecf
+    ItemsConfig.ecf
+    Templates.ecf
+\Playfields ------------------------ 44 Folders
+    Alien
+    Barren
+    BarrenMetal
+    Desert
+    EdenAlienFungal_V2
+    EdenBarrenElder
+    EdenBarrenMercury_V2
+    EdenDesertRock_V2
+    EdenDeesrtStorm
+    EdenPlasma3
+    EdenPlasma4
+    EdenSpace_TradingStation
+    EdenSpaceD_AsteroidT1
+    EdenSpaceD_Orbit
+    EdenSpace_AsteroidCol
+    EdenSpaceG_AsteroidT1
+    EdenspaceG_Orbit
+    EdenSpaceG_OrbitGas
+    EdenSpaceG_PolTradeStation
+    EdenSpaceGasDwarf_Orbit
+    EdenSpaceK_AsteroidT1
+    EdenSpaceK_Orbit
+    EdenSwampMire
+    EdenTemperateBrooding
+    SDG_Aurora_Moon_V1
+    SDG_Aurora_V1
+    SDG_Bellam_V1
+    SDG_Moon_Jungle_V1
+    SDG_Orbit_Aurora_V1
+    SDG_Orbit_Bellam_V1
+    SDG_PirateBattlestation
+    SDG_POI_CombatAzureT6
+    SDG_POI_CombatTianLongT6
+    SDG_TradeOrbit
+    Snow_V2
+    Start_OrbitEasy
+    Start_TradeHub
+    Starter_Akua_Orbit
+    Starter_Akua_V2
+    Starter_Masperon
+    Starter_Pandora_V2
+    Starter_Tallodar_Orbit
+    Starter_Tallodar_V2
+    TemperateSwamp
+\Prefabs --------------------------- 97 Files
+    NMLBA_Abandoned Bunker
+    NMLBA_Abandoned Depot
+    NMLBA_Abandoned Factory
+    NMLBA_Abandoned Mine old
+    NMLBA_Abandoned Mine
+    NMLBA_Abandoned Missile
+    NMLBA_Abandoned Outpost
+    NMLBA_Abandoned Reactor
+    NMLBA_AbandonedArciaMine
+    NMLBA_AbandonedAsemblyYa
+    NMLBA_AbandonedAssemblyO
+    NMLBA_AbandonedAtlasMine
+    NMLBA_AbandonedThetaLabs
+    NMLBA_AbandonedVesselYar
+    NMLBA_BAO_KrielBeacon1
+    NMLBA_Black Pyramid
+    NMLBA_ColonistFedRes
+    NMLBA_KrielAerie
+    NMLBA_KrielArcanum
+    NMLBA_KrielBeholder
+    NMLBA_KrielBrooder
+    NMLBA_KrielCentrum
+    NMLBA_KrielCentrumV2
+    NMLBA_KrielFidus
+    NMLBA_KrielImperium
+    NMLBA_KrielInsula
+    NMLBA_KrielNexusArcanum
+    NMLBA_KrielPavor
+    NMLBA_KrielPylon
+    NMLBA_KrielTelaRepono
+    NMLBA_KrielTurrimAlveo
+    NMLBA_KrielVectum
+    NMLBA_KrielDefenseT1
+    NMLBA_PirateFarm
+    NMLBA_PirateOutpost1
+    NMLBA_PiratesBar
+    NMLBA_PiratesCachSnow1
+    NMLBA_PiratesHideout1Des
+    NMLBA_PiratesHideout1Sno
+    NMLBA_PiratesPromAmbushS
+    NMLBA_PiratesSolarPlant
+    NMLBA_PiratesWayStation
+    NMLBA_PiratesWreckage1
+    NMLBA_Rogue Nursery old
+    NMLBA2_PirateMain1
+    NMLCV Accipiter
+    NMLCV Beholder
+    NMLCV Kriel Bahamut
+    NMLCV Kriel Drone
+    NMLCV Overseer
+    NMLCV Scutellum
+    NMLCV Shade
+    NMLCV Subjugator
+    NMLCV_AzureTemptress.decals
+    NMLCV_AzureTemptress
+    NMLCV_AzureVyrishni
+    NMLCV_Bounty
+    NMLCV_Calypsov3
+    NMLCV_Currency
+    NMLCV_Depreciator
+    NMLCV_HorizonsEdge
+    NMLCV_Mobius
+    NMLCV_Mogul
+    NMLCV_Poseidon
+    NMLVC_RogueHealerT2
+    NMLCV_Titan
+    NMLCV_WarlordAtlas
+    NMLCV_WarlordCerebus
+    NMLCV_WarlordDamocles
+    NMLCV_WarlordHoplite
+    NMLCV_WarlordKasasagi
+    NMLCV_WarlordMacha
+    NMLCV_WarlordMagpie
+    NMLCV_WarlordMakar
+    NMLCV_WarlordMorrigan
+    NMLCV_WarlordNemesis
+    NMLCV_WarlordOutrunner
+    NMLCV_WarlordPerun
+    NMLCV_WarlordRaider
+    NMLCV_WarlordRutile
+    NMLCV_WarlordTianlong
+    NMLCV_Warlord Valient
+    NMLCV_WarlordWarlock
+    NMLCV_WorkBoat
+    NMLCV2_WarlordTianlong
+    NMLCV_Assault_Frigate
+    NMLCV_Battlecarrier_P
+    NMLCV_Corvus_Corvette
+    NMLCV_DreadMaw_Frigate
+    NMLCV_Gunbad_Corvette
+    NMLCV_Privateer_Corvette
+    NMLCV_QuinMerac
+    NMLCV_QuinMerac-1
+    NMLCV_QuinMerac-2
+    NMLCV_Rum_Runner
+    NMLCV_ValRuun Corsair-1
+    NMLCV_ValRuun Corsair-2
+    NMLCV_ValRuun Corsair-3
+\RandomPresets --------------------- 4 Files
+    SolarSystemConfig_Defines
+    SolarSystemConfig_MainHabitableT1
+    SolarSystemConfig_MainHabitableT2
+    SolarSystemConfig_MainHotT1
+\Sectors --------------------------- 1 file
+    Sectors

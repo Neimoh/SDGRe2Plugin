@@ -1,0 +1,91 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v2.43.0.6231, Playfield Version: 1.9 [4016] (V1.9)
+# Last Saved: 2024-07-01 15:15:34
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Description: >
+   [c][FFFFFF]PVP Orbit[-][/c]
+TemperatureDay: [-100, -100]
+Radiation: [1, 5]
+PlayfieldLevelOverride: [1, 2]
+UseFixed: True
+PvPProb: 1
+Gravity: 0
+AtmosphereEnabled: False
+Music: [Voyage, space, moonstone]
+PlayfieldType: Space
+PlanetType: Orbit
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+LandClaimZone: Device
+BaseAttackCount: 0
+Resources:
+-  Name: [AsteroidVoxel03Iron]
+   DisplayName: Iron Asteroid
+   CountMinMax: [3, 3]
+   Probability: 1
+-  Name: [AsteroidVoxel03Copper]
+   DisplayName: Copper Asteroid
+   CountMinMax: [3, 3]
+   Probability: 1
+-  Name: [AsteroidVoxel03Cobalt]
+   DisplayName: Cobalt Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Carbon]
+   DisplayName: Carbon Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Neodymium]
+   DisplayName: Neodymium Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Aluminium]
+   DisplayName: Aluminum Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+POIs:
+    - Type: BA_Alien
+      Name: [CompoundEdenAsteroidRichT4]
+      GroupName: Eden_AsteroidRichT4
+      Faction: Prey
+      FactionTerritory: [All]
+      Mode: Survival
+      CountMinMax: [ 2, 3 ]
+      Probability: 1
+      InitPower: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      Properties:
+        - Key: RegenAfter
+          Value: 4320
+        - Key: MapMarker
+          Value: Neutral
+
+    - Type: BA_Alien
+      Name: [CompoundEdenAsteroidRichT4]
+      GroupName: Eden_AsteroidRichT4
+      Faction: Prey
+      FactionTerritory: [All]
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.8
+      InitPower: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      IsCompoundSubDesc: True
+      Properties:
+        - Key: MapDistance
+          Value: 3000
+        - Key: HudDistance
+          Value: 3000
+        - Key: RegenAfter
+          Value: 4320
+        - Key: MapMarker
+          Value: Neutral

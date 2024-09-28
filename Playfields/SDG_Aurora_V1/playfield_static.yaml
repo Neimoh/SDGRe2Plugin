@@ -1,0 +1,483 @@
+Seed: 1
+# 
+# ====================
+# GENERAL SETUP 
+# ====================
+#
+Description: "Difficulty: [c][ffff00]Easy[-][/c]\n\r\nNo Man's Land Community Planet\r\n\nA very beautiful planet intended to lure NML players off of starter worlds.  "
+PlanetType: Temperate
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 1
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: DandelionsFew
+   Biome: [Grassland, ColdPlains]
+   Time: Day
+   MaxHeight: 10
+-  Name: ButterfliesFew
+   Biome: [Grassland, Oasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Pollen
+   Biome: [Savanna, SavannaEdge, DustBowl]
+   Time: Day
+   MaxHeight: 10
+-  Name: Mosquitos
+   Biome: [Savanna, SavannaEdge, DustBowl, Marsh, Swamp, WaterSwamp, Water]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Forest, Marsh]
+   Time: Day
+   MaxHeight: 15
+-  Name: Dragonflies
+   Biome: [Marsh, Swamp, WaterSwamp, Water, ShallowWater]
+   Time: Day
+   MaxHeight: 15
+-  Name: FireFliesOrange
+   Biome: [Forest, DeepForest, Peaks, Marsh, Swamp, WaterSwamp, Oasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: Moths
+   Biome: [DeepForest, Savanna, SavannaEdge, Grassland]
+   Time: Night
+   MaxHeight: 15
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1200
+-  Name: CloudsLight
+   Type: Weather
+   Delay: 2
+   Lifetime: 1200
+-  Name: Clouds
+   Type: Weather
+   InitialDelay: 10
+   Delay: 5
+   Lifetime: 1000
+-  Name: Wind
+   Type: Weather
+   InitialDelay: 24
+   Delay: 12
+   Lifetime: 600
+-  Name: BirdFlocksCrows
+   Biome: [Any]
+   Time: Day
+   InitialDelay: 1
+   Delay: 4
+   PlyDist: 100
+   Struct: True
+   Lifetime: 600
+   SpawnY: 30
+AtmosphereColor: 0.674, 0.824, 1.000
+SkyColor: 1, 0.96, 0.96
+SkyHorizonColor: 1, 0.43, 0.1
+AtmosphereParams: [1, 1.6]
+LightZenithColor: 1,0.95,0.97
+LightHorizonColor: 0.91, 0.53, 0
+DayLightIntensity: 1.375
+NightLightIntensity: 0.55
+NightLightColor: 0.78, 0.78, 1
+SunFlare: EnvironmentalEffects/SunFlareBlue
+FogColor: 1.0, 1.0, 1.0
+FogCloudIntensity: 0.8
+CloudsDensity: 0.3
+CloudsSharpness: 0.35
+CloudsBrightness: 0.7
+CloudsOpacity: 0.7
+CloudsZenithColor: 0.93, 0.98, 1.1
+CloudsHorizonColor: 1, 0.3, 0.1
+CloudsNightZenithColor: 0.04, 0.041, 0.065
+CloudsNightHorizonColor: 0.04, 0.041, 0.065
+WindSpeed: 3
+PvP: False
+BaseAttackCount: 0
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+# 
+# ====================
+# RANDOM RESOURCES
+# ====================
+#
+RandomResources:
+-  Name: IronResource
+   IsScalingCount: True
+   IsImportant: True
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   MaxDroneCount: 1
+-  Name: CopperResource
+   IsScalingCount: True
+   IsImportant: True
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [5, 10]
+-  Name: SiliconResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [5, 10]
+-  Name: CobaltResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 9]
+-  Name: PromethiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+-  Name: CarbonResource
+   IsScalingCount: True
+   IsImportant: True
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.1
+-  Name: PentaxidResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.1
+   MaxDroneCount: 1
+# 
+# ====================
+# ASTEROID RESOURCES
+# ====================
+#
+AsteroidResources:
+-  Name: IronResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: CopperResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: SiliconResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: CobaltResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: PromethiumResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: CarbonResource
+   Threshold: 0.2
+   Amount: 0.1
+# 
+# ====================
+# POIS 
+# ====================
+#
+POIs:
+   Random:
+   -  GroupName: R2AbandonedPOI
+      Faction: Eden_Abandoned
+      AvoidFactionTerritory: True
+      CountMinMax: [10, 20]
+      IsScalingCount: True
+      DronesMinMax: [1, 2]
+      TroopTransport: False
+      SpawnPOIAvoidDistance: 750
+      Properties:
+      -  Key: Music
+         Value: lava
+      -  Key: RegenAfter
+         Value: 4320
+   -  GroupName: CrashedShip
+      Faction: None
+      CountMinMax: [10, 20]
+      IsScalingCount: True
+      DroneProb: 0.3
+      DronesMinMax: [1, 1]
+      TroopTransport: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: RegenAfter
+         Value: 720
+   -  GroupName: Eden_HarvestTungsten
+      Faction: None
+      CountMinMax: [5, 10]
+      IsScalingCount: True
+      DroneProb: 0.3
+      DronesMinMax: [1, 2]
+      TroopTransport: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 4320
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [-596, 104, -1063]
+      RotY: 125
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorLight
+# 
+# ====================
+# DRONEBASE SETUP 
+# ====================
+#
+DroneBaseSetup: {}
+# 
+# ====================
+# DRONEBASE SPAWNING 
+# ====================
+#
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [5, 10]
+      CenterX: -5000
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [5, 10]
+      CenterX: -5000
+      POINameAsPositionRef: ''
+      Radius: 3000
+# 
+# ====================
+# SPAWN ZONES 
+# ====================
+#
+SpawnZones:
+-  SpawnAt: [CrashedShip, PromethiumResource]
+   BiomesExcluded: [LowMountains, Mountains]
+   Radius: 500
+   RadiusRandom: 50
+   RateMultiplyerCenter: 1
+   RateMultiplyerEdge: 0.5
+   Color: 1.0, 1.0, 1.0, 1.0
+   SpawnOnlyIfPoiIsAlien: True
+   Entities:
+   -  Names: [AlienBugs03, Spiders01]
+      Biomes: [Any]
+      Amount: 200
+      Period: Always
+      DelayMinMax: [-1, -1]
+-  SpawnAt: [R2AbandonedPOI]
+   BiomesExcluded: [LowMountains, Mountains]
+   Radius: 300
+   RadiusRandom: 50
+   RateMultiplyerCenter: 0.1
+   RateMultiplyerEdge: 1
+   Color: 1.0, 0.0, 1.0, 1.0
+   SpawnOnlyIfPoiIsAlien: True
+   Entities:
+   -  Names: [HexapodsInfected, AlienAssassinGreysInfected]
+      Biomes: [Any]
+      Amount: 50
+      Period: Always
+      DelayMinMax: [-1, -1]
+   -  Names: [HexapodsInfectedHerd, AlienAssassinsInfectedHerd]
+      Biomes: [Any]
+      Amount: 25
+      Period: Always
+      DelayMinMax: [-1, -1]
+   -  Names: [TalonGuardiansCrossbowInfected, TalonGuardiansGreenInfected, TalonGuardiansBlueInfected, TalonGuardiansRedInfected]
+      Biomes: [Any]
+      Amount: 25
+      Period: Always
+      DelayMinMax: [-1, -1]
+   -  Names: [ZiraxInfectedHerd]
+      Biomes: [Any]
+      Amount: 25
+      Period: Always
+      DelayMinMax: [-1, -1]
+# 
+# ====================
+# CREATURE SPAWNING 
+# ====================
+#
+CreatureSpawning:
+-  Biomes: [Grassland]
+   Entities:
+   -  Name: Megalonopses
+      Period: Day
+      Amount: 15
+      DelayMinMax: [10, 12]
+      Color: "0, 0, 1.0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+-  Biomes: [Grassland]
+   Entities:
+   -  Name: Spiders01
+      Period: Night
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Forest, DeepForest, Marsh]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Always
+      Amount: 2
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Spiders01
+      Period: Day
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 0.5, 1.0"
+   -  Name: AlienBugs03
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+   -  Name: Hexapods
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+-  Biomes: [Savanna, SavannaEdge]
+   Entities:
+   -  Name: RaptorHerd
+      Period: Day
+      Amount: 12
+      DelayMinMax: [10, 12]
+   -  Name: RaptorsNight
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 0.5, 1.0"
+-  Biomes: [ShallowWater, WaterSwamp]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]
+      AllowInWater: True
+-  Biomes: [Swamp, WaterSwamp, Beach]
+   Entities:
+   -  Name: Slimes
+      Period: Day
+      Amount: 10
+      DelayMinMax: [10, 12]
+   -  Name: Creepys
+      Period: Night
+      Amount: 12
+      DelayMinMax: [20, 24]
+   -  Name: CaveWormGreenHerd
+      Period: Day
+      Amount: 8
+      DelayMinMax: [20, 24]
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+-  Biomes: [DustBowl]
+   Entities:
+   -  Name: Spiders01
+      Period: Always
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+-  Biomes: [LowMountains]
+   Entities:
+   -  Name: Spiders01
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+-  Biomes: [Tundra, ColdPlains]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+   -  Name: RaptorsNight
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+-  Biomes: [PolarSnow]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+   -  Name: SlimesWhite
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 0"
+   -  Name: CaveWormWhiteHerd
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: GolemsIce
+      Period: Day
+      Amount: 3
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Radiated]
+   Entities:
+   -  Name: AlienAssassinGreys
+      Period: Night
+      Amount: 10
+      DelayMinMax: [20, 24]
+      Color: "0, 0, 0"
+   -  Name: AlienBugs03
+      Period: Day
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0, 0, 0"
+-  Biomes: [Sand]
+   Entities:
+   -  Name: Otyughs
+      Period: Night
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]

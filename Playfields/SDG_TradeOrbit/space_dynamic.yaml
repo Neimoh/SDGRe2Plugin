@@ -1,0 +1,280 @@
+# Playfield Characteristics
+Description: "Difficulty: [c][00ff00]Easy[-][/c]
+
+
+An orbit around a gas giant.
+
+
+[c][ffffff][i]Mining asteroids claimed by a faction is considered an act of war. Presence of POIs affected by galaxy faction territory.[/i][-][/c]"
+
+Gravity: 0                         
+AtmosphereEnabled: False          
+PvPProb: 0 #Normal
+UseFixed: True
+
+# Standard Star
+Radiation: [5,10]
+TemperatureDay: [-200,-100]
+Music: [moonstone, space, DistantWorlds, Migration, Artefact, ColdDivide] # Orbit
+# Music: [Sanctuary, Vanguard, Helios, ColdDivide, AlteredPhase] # POI
+
+PlayfieldType: Space  
+PlanetType: Orbit
+PlayfieldLevelOverride: [1,2]
+
+    # # # ---------------------------------------------------------------------
+# ===========================================================================================================================================================================================
+# ===========================================================================================================================================================================================
+# ===========================================================================================================================================================================================
+
+### Resource Asteroid
+Resources:                     
+    - Name: [ AsteroidVoxel01Iron, AsteroidVoxel02Iron, AsteroidVoxel03Iron]
+      DisplayName: Iron Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.5    
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+ 
+    - Name: [ AsteroidVoxel01Copper, AsteroidVoxel02Copper, AsteroidVoxel03Copper]
+      DisplayName: Copper Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.4 
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+ 
+    - Name: [ AsteroidVoxel01Silicon, AsteroidVoxel02Silicon, AsteroidVoxel03Silicon]
+      DisplayName: Silicon Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.4   
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+
+    - Name: [ AsteroidVoxel01Cobalt, AsteroidVoxel02Cobalt, AsteroidVoxel03Cobalt]
+      DisplayName: Cobalt Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.2 
+      Properties:     
+        - Key: RegenAfter
+          Value: 180            
+
+    - Name: [ AsteroidVoxel01Promethium, AsteroidVoxel02Promethium, AsteroidVoxel03Promethium]
+      DisplayName: Promethium Asteroid
+      CountMinMax: [ 1, 2 ]
+      Probability: 0.8 
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+
+    - Name: [ AsteroidVoxel01Titan, AsteroidVoxel02Titan, AsteroidVoxel03Titan]
+      DisplayName: Titan Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.2
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+
+    - Name: [ AsteroidVoxel01Sathium, AsteroidVoxel02Sathium, AsteroidVoxel03Sathium]
+      DisplayName: Sathium Asteroid
+      CountMinMax: [ 1, 1 ]
+      Probability: 0.2
+      Properties:     
+        - Key: RegenAfter
+          Value: 180         
+
+
+### POIs
+POIs:
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Asteroid Fields
+# ======================================================================================================================================================================================================
+
+
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Project Eden POIs
+# ======================================================================================================================================================================================================
+
+#Polaris Trade Station ----------------------------------------------------------
+    - Type: BA_Alien
+      GroupName: R2PolarisSpaceTrade
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]
+      Probability: 1
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      InitPower: True
+      Position:
+         RadialInfo: [0, 0, 0,   500,   1.5, 4.5]
+         # PosXZMinMax: [100, 2500]
+         # PosYMax: 2500
+#      Compound:
+#        CountMinMax: [0, 3]
+#        Probability: 0.5
+#        Name: [CompoundTSOPolaris, CompoundTSOPolaris, CompoundTSOPolaris, CompoundTSOPolaris, CompoundTSOPolaris, CompoundTSOPolaris, Eden_BAO_BeaconPolTrade, Eden_BAO_BeaconPolTrade2]
+#        DistanceMinMax: [100, 150]
+      Properties:
+        - Key: Discovery
+          Value: False
+        - Key: PvEArea
+          Value: 500
+        - Key: Music
+          Value: NebularClouds
+        - Key: RegenAfter
+          Value: 720
+        - Key: StationInterface
+          Value: "Fuel:1.0,O2:0.9,Warp:1,Ammo:0.7,Repair:0.3,Shield:1,IfNeutral:0.2,IfHonored:-0.20"
+
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Asteroids
+# ======================================================================================================================================================================================================
+#Asteroids for compounds-----------------------------------------------------
+    - Type: AsteroidVoxel01Iron   
+      Name: [Eden_AsteroidIron1, Eden_AsteroidIron2, Eden_AsteroidIron3]
+      DisplayName: Iron Asteroid
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 0.5
+      IsCompoundSubDesc: True
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+    - Type: AsteroidVoxel01Silicon   
+      Name: [Eden_AsteroidSilicon1, Eden_AsteroidSilicon2, Eden_AsteroidSilicon3]
+      DisplayName: Silicon Asteroid
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 0.5
+      IsCompoundSubDesc: True
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+    - Type: AsteroidVoxel01Copper   
+      Name: [Eden_AsteroidCopper1, Eden_AsteroidCopper2, Eden_AsteroidCopper3]
+      DisplayName: Copper Asteroid
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 0.5
+      IsCompoundSubDesc: True
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+    - Type: BA_Alien   
+      Name: [Eden_AsteroidSathium1, Eden_AsteroidSathium2, Eden_AsteroidSathium3]
+      DisplayName: Claimed Sathium Asteroid
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 1, 2 ]    
+      Probability: 0.6
+      IsCompoundSubDesc: True
+      Position:
+         PosXZMinMax: [500, 2500]
+         PosYMax: 1500
+      # IsCompoundSubDesc: True
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+    - Type: BA_Alien   
+      Name: [Eden_AsteroidPromethium1, Eden_AsteroidPromethium2, Eden_AsteroidPromethium3]
+      DisplayName: Claimed Promethium Asteroid
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]    
+      Probability: 0.5
+      IsCompoundSubDesc: True
+      Position:
+         PosXZMinMax: [500, 1500]
+         PosYMax: 1000
+      # IsCompoundSubDesc: True
+      Properties:     
+        - Key: RegenAfter
+          Value: 180  
+
+#Smaller unguarded Pentaxid asteroids-----------------------------------------------------
+    - Type: AsteroidVoxel01Pentaxid
+      Name: [Eden_Asteroid_PentT1_1, Eden_Asteroid_PentT1_2, Eden_Asteroid_PentT1_3, Eden_Asteroid_PentT1_4]
+      DisplayName: Pentaxid Asteroid
+      Faction: None
+      Mode: Survival
+      CountMinMax: [ 3, 6 ]
+      Probability: 1
+      Properties:
+        #- Key: MapDistance
+        #  Value: 6000
+        #- Key: HudDistance
+        #  Value: 6000
+        - Key: RegenAfter
+          Value: 180  
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Definitions for Compounds
+# ======================================================================================================================================================================================================
+#Polaris Sentries ---------------------------------------------------------------------------------------------------
+    - Type: BA_Alien   
+      Name: [Eden_BAO_PolSecurity1]
+      DisplayName: Sentry I
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 2, 3 ]    
+      Probability: 0.8
+      IsCompoundSubDesc: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      InitPower: True
+      Properties:
+        - Key: HudDistance
+          Value: 2500
+        - Key: MapDistance
+          Value: 2500
+        - Key: RegenAfter
+          Value: 720
+
+    - Type: BA_Alien   
+      Name: [Eden_BAO_PolSecurity2]
+      DisplayName: Sentry II
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 2, 3 ]    
+      Probability: 0.8
+      IsCompoundSubDesc: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      InitPower: True
+      Properties:
+        - Key: HudDistance
+          Value: 2500
+        - Key: MapDistance
+          Value: 2500
+        - Key: RegenAfter
+          Value: 720
+
+    - Type: BA_Alien   
+      Name: [Eden_BAO_PolSecurity3]
+      DisplayName: Sentry III
+      Faction: Polaris
+      Mode: Survival
+      CountMinMax: [ 1, 2 ]    
+      Probability: 0.5
+      IsCompoundSubDesc: True
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      InitPower: True
+      Properties:
+        - Key: HudDistance
+          Value: 2500
+        - Key: MapDistance
+          Value: 2500
+        - Key: RegenAfter
+          Value: 720

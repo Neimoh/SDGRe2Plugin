@@ -1,0 +1,157 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v2.43.0.6231, Playfield Version: 1.9 [4016] (V1.9)
+# Last Saved: 2024-07-01 14:53:56
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Description: >
+   [c][FFFFFF]Telgis Orbit[-][/c]
+TemperatureDay: [-100, -100]
+Radiation: [1, 5]
+PlayfieldLevelOverride: [1, 2]
+UseFixed: True
+Gravity: 0
+AtmosphereEnabled: False
+Music: [Voyage, space, moonstone]
+PlayfieldType: Space
+PlanetType: Orbit
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+LandClaimZone: Device
+BaseAttackCount: 0
+Resources:
+-  Name: [AsteroidVoxel03Iron]
+   DisplayName: Iron Asteroid
+   CountMinMax: [3, 3]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 180
+-  Name: [AsteroidVoxel03Copper]
+   DisplayName: Copper Asteroid
+   CountMinMax: [3, 3]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 180
+-  Name: [AsteroidVoxel03Silicon]
+   DisplayName: Silicon Asteroid
+   CountMinMax: [3, 3]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 180
+-  Name: [AsteroidVoxel03Cobalt]
+   DisplayName: Cobalt Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+   Properties:
+   -  Key: RegenAfter
+      Value: 180
+-  Name: [AsteroidVoxel03Carbon]
+   DisplayName: Carbon Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Neodymium]
+   DisplayName: Magnesium Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Neodymium]
+   DisplayName: Neodymium Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Sathium]
+   DisplayName: Sathium Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Aluminium]
+   DisplayName: Aluminum Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+POIs:
+-  Name: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
+   FieldName: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
+   Pos: [0, 0, 0]
+   Rot: [0, 0, 0]
+   CountMinMax: [1, 1]
+   Probability: 0.2
+-  Type: BA_Admin
+   GroupName: RE2_UCHResearchShip
+   Faction: Admin
+   FactionTerritory: [All]
+   Mode: Survival
+   Pos: [-5000, 0, -5000]
+   Rot: [0, 180, 0]
+   CountMinMax: [1, 1]
+   Probability: 1
+   InitPower: True
+   Properties:
+   -  Key: Discovery
+      Value: False
+   -  Key: Music
+      Value: Mute
+   -  Key: RegenAfter
+      Value: 720
+   -  Key: StationInterface
+      Value: "Fuel:1.75, O2:1.75, Warp:1.75, Ammo:1.75, Shield:1.75, Repair:1.75, IfNeutral:0.15, IfHonored:-0.15"
+-  Name: [AsteroidRingPlanet]
+   Pos: [0, 0, 0]
+   Rot: [0, 0, 0]
+   CountMinMax: [0, 0]
+   Probability: 1
+-  Type: BA_Alien
+   SpaceDefenseOverrideDefaults: True
+   GroupName: Eden_SpaceJunkT1
+   Faction: Eden_Wreck
+   FactionTerritory: [All]
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   Position:
+      PosXZMinMax: [500, 2000]
+      PosYMax: 3000
+   CountMinMax: [12, 16]
+   Probability: 1
+   InitPower: True
+   Properties:
+   -  Key: MapDistance
+      Value: 3000
+   -  Key: HudDistance
+      Value: 3000
+   -  Key: MapMarker
+      Value: Neutral
+   -  Key: RegenAfter
+      Value: 360
+-  Type: BA_Alien
+   SpaceDefenseOverrideDefaults: True
+   GroupName: Eden_SpaceJunkT1
+   Faction: Eden_Wreck
+   FactionTerritory: [Rados, Eden_PolarisTerritory, Eden_TraderTerritory, Farr, Eden_ColonistsTerritory]
+   Mode: Survival
+   SpaceDefenseProbability: 0
+   Position:
+      PosXZMinMax: [500, 2000]
+      PosYMax: 3000
+   CountMinMax: [2, 2]
+   Probability: 1
+   InitPower: True
+   Compound:
+      CountMinMax: [5, 7]
+      Probability: 1
+      Name: [CompoundWreckT1Warlord, CompoundWreckT1Warlord, CompoundDebrisFieldWarlord, CompoundDebrisFieldWarlord, CompoundWreckT1Warlord, CompoundWreckT1Warlord, CompoundWreckT1Warlord]
+      DistanceMinMax: [35, 75]
+      Rotate: True
+   Properties:
+   -  Key: MapDistance
+      Value: 3000
+   -  Key: HudDistance
+      Value: 3000
+   -  Key: MapMarker
+      Value: Neutral
+   -  Key: RegenAfter
+      Value: 360
+

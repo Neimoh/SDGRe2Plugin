@@ -1,0 +1,711 @@
+# 
+# ====================
+# GENERAL SETUP 
+# ====================
+#
+Description: "Difficulty: [c][ffff00]Medium[-][/c]\n\nProtected by a thick atmosphere and strong magnetic field, this moon is home to lush jungle and rugged mountaintops.  You thought these could only orbit gas giants, think again!"
+PlanetType: Jungle Moon
+PlayfieldType: Moon
+AtmosphereEnabled: True
+Difficulty: 2
+LandClaimZone: Device
+SpecialEffectsLocal:
+-  Name: DandelionsFew
+   Biome: [Grassland, ColdPlains, Flowers]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesFew
+   Biome: [Grassland, Oasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Pollen
+   Biome: [Savanna, SavannaEdge, DustBowl, Flowers]
+   Time: Day
+   MaxHeight: 10
+-  Name: Mosquitos
+   Biome: [Savanna, SavannaEdge, DustBowl, Marsh, Swamp, WaterSwamp, Water, Jungle, JungleDense, RainForest]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers, RainForest]
+   Time: Day
+   MaxHeight: 15
+-  Name: Dragonflies
+   Biome: [Marsh, Swamp, WaterSwamp, Water, ShallowWater, JungleOasis, Oasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Dragonflies
+   Biome: [JungleOasis, Oasis]
+   Time: Day
+   MaxHeight: 25
+-  Name: Dragonflies
+   Biome: [JungleOasis, Oasis]
+   Time: Day
+   MaxHeight: 25
+-  Name: FireFliesOrange
+   Biome: [Forest, RainForest, Peaks, Marsh, Swamp, WaterSwamp, Oasis, JungleOasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: Moths
+   Biome: [RainForest, Savanna, SavannaEdge, Grassland, Flowers]
+   Time: Night
+   MaxHeight: 15
+-  Name: Butterflies
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers]
+   Time: Day
+   MaxHeight: 35
+-  Name: ButterfliesBlue
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers]
+   Time: Day
+   MaxHeight: 35
+-  Name: Dragonflies
+   Biome: [Jungle, JungleDense, JungleOasis]
+   Time: Day
+   MaxHeight: 30
+-  Name: FireFliesGreenFew
+   Biome: [Jungle, JungleDense, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Mosquitos
+   Biome: [Jungle, JungleDense, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: TarantulaHawksFew
+   Biome: [Jungle, JungleDense, RainForest]
+   Time: Day
+   MaxHeight: 15
+-  Name: TarantulaHawksFew
+   Biome: [RainForest]
+   Time: Day
+   MaxHeight: 15
+-  Name: Pollen
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers]
+   Time: Day
+   MaxHeight: 100
+-  Name: Moths
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers]
+   Time: Night
+   MaxHeight: 25
+-  Name: Moths
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers]
+   Time: Night
+   MaxHeight: 25
+-  Name: Moths
+   Biome: [Jungle, JungleDense, JungleOasis]
+   Time: Night
+   MaxHeight: 25
+-  Name: FireFliesOrange
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers, Oasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: FireFliesGreen
+   Biome: [Jungle, JungleDense, JungleOasis, Flowers, Oasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: FireFliesOrange
+   Biome: [Flowers, JungleOasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: FireFliesGreen
+   Biome: [Flowers, JungleOasis]
+   Time: Night
+   MaxHeight: 15
+-  Name: FireFliesOrange
+   Biome: [Flowers]
+   Time: Night
+   MaxHeight: 15
+-  Name: FireFliesGreen
+   Biome: [Flowers]
+   Time: Night
+   MaxHeight: 15
+-  Name: Butterflies
+   Biome: [Flowers]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Flowers, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Butterflies
+   Biome: [Flowers, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Flowers, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: Butterflies
+   Biome: [Flowers, JungleOasis]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Flowers]
+   Time: Day
+   MaxHeight: 15
+-  Name: Butterflies
+   Biome: [Flowers]
+   Time: Day
+   MaxHeight: 15
+-  Name: ButterfliesBlue
+   Biome: [Flowers]
+   Time: Day
+   MaxHeight: 15
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1200
+-  Name: CloudsLight
+   Type: Weather
+   InitialDelay: 8
+   Delay: 8
+   Lifetime: 600
+-  Name: CloudsMedium
+   Type: Weather
+   InitialDelay: 8
+   Delay: 8
+   Lifetime: 600
+-  Name: Clouds
+   Type: Weather
+   InitialDelay: 12
+   Delay: 12
+   Lifetime: 600
+-  Name: Fog
+   Type: Weather
+   InitialDelay: 24
+   Delay: 12
+   Lifetime: 600
+-  Name: Wind
+   Type: Weather
+   InitialDelay: 24
+   Delay: 12
+   Lifetime: 600
+-  Name: RainMedium
+   Type: Weather
+   InitialDelay: 24
+   Delay: 12
+   Lifetime: 600
+-  Name: RainHeavy
+   Type: Weather
+   InitialDelay: 48
+   Delay: 24
+   Lifetime: 600
+-  Name: Storm
+   Type: Weather
+   InitialDelay: 48
+   Delay: 24
+   Lifetime: 600
+-  Name: BirdFlocksCrows
+   Biome: [Any]
+   Time: Day
+   InitialDelay: 1
+   Delay: 4
+   PlyDist: 100
+   Struct: True
+   Lifetime: 600
+   SpawnY: 30
+AtmosphereColor: 0.47, 0.8, 0.69
+SkyColor: 0.6, 0.8, 0.6
+SkyHorizonColor: 0.7, 0.3, 1
+AtmosphereParams: [4, 0.7]
+LightZenithColor: 0.93, 1, 0.93
+LightHorizonColor: 0.85, 0.53, 1
+OrbitUsesLightColor: True
+DayLightIntensity: 1.4
+NightLightIntensity: 0.55
+NightLightColor: 0.8, 0.48, 0.3
+SunFlare: EnvironmentalEffects/SunFlareBlue
+FogCloudIntensity: 0.8
+CloudsDensity: 0.3
+CloudsSharpness: 0.9
+CloudsBrightness: 0.8
+CloudsOpacity: 0.5
+CloudsZenithColor: 0.92, 1, 0.92
+CloudsHorizonColor: 1, 0.3, 0.1
+CloudsNightZenithColor: 0.1, 0.07, 0.02
+CloudsNightHorizonColor: 0.15, 0.06, 0.18
+WindSpeed: 2
+PvP: False
+BaseAttackCount: 0
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+# 
+# ====================
+# RANDOM RESOURCES
+# ====================
+#
+RandomResources:
+-  Name: IronResource
+   Biome: [JungleMountains]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 3]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [15, 20]
+   DroneProb: 1
+   MaxDroneCount: 5
+-  Name: CopperResource
+   Biome: [Jungle, JungleOasis, Oasis]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 3]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [20, 30]
+   DroneProb: 1
+-  Name: CobaltResource
+   Biome: [JungleMountains]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 3]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [45, 55]
+   DroneProb: 0.2
+-  Name: PromethiumResource
+   Biome: [Jungle, JungleOasis, RainForest, Oasis, Flowers]
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 3]
+   SizeMinMax: [10, 20]
+   DepthMinMax: [35, 50]
+   DroneProb: 0.4
+-  Name: AluminiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [3, 3]
+   SizeMinMax: [10, 30]
+   DepthMinMax: [0, 1]
+   DroneProb: 0.1
+   MaxDroneCount: 1
+# 
+# ====================
+# ASTEROID RESOURCES
+# ====================
+#
+AsteroidResources:
+-  Name: IronResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: CopperResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: CobaltResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: PromethiumResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: AluminiumResource
+   Threshold: 0.2
+   Amount: 0.1
+# 
+# ====================
+# POIS 
+# ====================
+#
+POIs:
+   Random:
+   -  GroupName: R2AbandonedPOI
+      Faction: Eden_Abandoned
+      Biome: [Forest]
+      CountMinMax: [1, 1]
+      DroneProb: 1
+      DronesMinMax: [2, 3]
+      ReserveCount: 1
+      TroopTransport: False
+      SpawnResource: ['IronResource:1', 'PromethiumResource:0-1', 'CopperResource:1']
+      SpawnResourceRange: [250, 400]
+      Properties:
+      -  Key: Music
+         Value: DarkSoundscape
+      -  Key: RegenAfter
+         Value: 4320
+   -  GroupName: R2PolarisTradePlanet
+      Faction: Polaris
+      Biome: [Sand, Clearing]
+      CountMinMax: [0, 1]
+      IsImportant: True
+      SpawnPOIAvoidDistance: 2000
+      Properties:
+      -  Key: Discovery
+         Value: False
+      -  Key: Music
+         Value: AlteredPhase
+      -  Key: RegenAfter
+         Value: 4320
+   -  GroupName: R2PolarisAuxT1
+      Faction: Polaris
+      CountMinMax: [3, 4]
+      SpawnPOINear: [R2PolarisTradePlanet]
+      SpawnPOINearRange: [100, 250]
+      Properties:
+      -  Key: RegenAfter
+         Value: 720
+   -  GroupName: R2PolarisDefenseT1
+      Faction: Polaris
+      CountMinMax: [5, 6]
+      SpawnPOINear: [R2PolarisTradePlanet]
+      SpawnPOINearRange: [300, 400]
+      Properties:
+      -  Key: RegenAfter
+         Value: 720
+   -  GroupName: R2PolarisAuxT1
+      Faction: Polaris
+      Biome: [Sand, Clearing, Mountains]
+      CountMinMax: [0, 2]
+      IsScalingCount: True
+      Properties:
+      -  Key: RegenAfter
+         Value: 720
+   -  GroupName: CrashedShip
+      Faction: None
+      CountMinMax: [2, 3]
+      IsScalingCount: True
+      PlaceAt: UnderWater, Terrain
+      DroneProb: 0.8
+      DronesMinMax: [1, 2]
+      ReserveCount: 4
+      TroopTransport: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: RegenAfter
+         Value: 720
+   -  GroupName: Eden_HarvestTungsten
+      Faction: None
+      CountMinMax: [0, 2]
+      IsScalingCount: True
+      DronesMinMax: [1, 2]
+      ReserveCount: 3
+      TroopTransport: False
+      Properties:
+      -  Key: MapMarker
+         Value: Neutral
+      -  Key: SI
+         Value: Off
+      -  Key: RegenAfter
+         Value: 4320
+   FixedPlayerStart:
+   -  Mode: Debug
+      Pos: [-596, 104, -1063]
+      RotY: 125
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+# 
+# ====================
+# DRONEBASE SETUP 
+# ====================
+#
+DroneBaseSetup: {}
+# 
+# ====================
+# DRONEBASE SPAWNING 
+# ====================
+#
+DroneSpawning:
+   Random:
+   -  DronesMinMax: [3, 6]
+      CenterX: -5000
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -5000
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -2500
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -2500
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -7500
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -7500
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -10000
+      POINameAsPositionRef: ''
+      Radius: 3000
+   -  DronesMinMax: [3, 6]
+      CenterX: -10000
+      POINameAsPositionRef: ''
+      Radius: 3000
+# 
+# ====================
+# SPAWN ZONES (RATE) 
+# ====================
+#
+SpawnRateZones:
+-  SpawnAt: [R2PolarisTradePlanet]
+   Radius: 1000
+   RadiusRandom: 50
+   RateMultiplyerEdge: 0.7
+   AffectEnemies: True
+   Color: 0.0, 1.0, 0.0, 0.7
+# 
+# ====================
+# SPAWN ZONES 
+# ====================
+#
+SpawnZones:
+-  SpawnAt: [CrashedShip, PromethiumResource, R2AbandonedPOI]
+   BiomesExcluded: [LowMountains, Mountains]
+   Radius: 500
+   RadiusRandom: 50
+   RateMultiplyerCenter: 1
+   RateMultiplyerEdge: 0.5
+   Color: 1.0, 1.0, 1.0, 1.0
+   SpawnOnlyIfPoiIsAlien: True
+   Entities:
+   -  Names: [AlienBugs03, Spiders01]
+      Biomes: [Any]
+      Amount: 200
+      Period: Always
+      DelayMinMax: [-1, -1]
+# 
+# ====================
+# CREATURE SPAWNING 
+# ====================
+#
+CreatureSpawning:
+-  Biomes: [RainForest]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Day
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Spiders01
+      Period: Always
+      Amount: 15
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Jungle]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Day
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 4
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: LizardMules
+      Period: Day
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Spiders01
+      Period: Day
+      Amount: 12
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Spiders03
+      Period: Always
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Creepys
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [JungleOasis]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Day
+      Amount: 6
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: Spiders01
+      Period: Day
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Spiders03
+      Period: Always
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Creepys
+      Period: Always
+      Amount: 24
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: GolemsSwamp
+      Period: Night
+      Amount: 4
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+-  Biomes: [Oasis]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Day
+      Amount: 15
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: GolemsSwamp
+      Period: Night
+      Amount: 4
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+-  Biomes: [Mushrooms]
+   Entities:
+   -  Name: Spiders03
+      Period: Always
+      Amount: 4
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Creepys
+      Period: Night
+      Amount: 4
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: WoodWalkers
+      Period: Always
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+   -  Name: Hexapods
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+   -  Name: AlienBugs03
+      Period: Always
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.7, 0, 0"
+-  Biomes: [JungleMountains]
+   Entities:
+   -  Name: TalonGuardianHerd
+      Period: Day
+      Amount: 4
+      DelayMinMax: [10, 12]
+      Color: "0.2, 1.0, 0"
+   -  Name: AlienBugs01
+      Period: Day
+      Amount: 2
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Spiders01
+      Period: Day
+      Amount: 3
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Spiders03
+      Period: Always
+      Amount: 12
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: Creepys
+      Period: Night
+      Amount: 2
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [ShallowWater, WaterSwamp, SwampBeach]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 24
+      DelayMinMax: [20, 24]
+      AllowInWater: True
+-  Biomes: [Swamp, WaterSwamp, Beach, SwampBeach]
+   Entities:
+   -  Name: Slimes
+      Period: Day
+      Amount: 10
+      DelayMinMax: [10, 12]
+   -  Name: Creepys
+      Period: Night
+      Amount: 20
+      DelayMinMax: [20, 24]
+   -  Name: Hexapods
+      Period: Night
+      Amount: 10
+      DelayMinMax: [20, 24]
+   -  Name: CaveWormGreenHerd
+      Period: Day
+      Amount: 8
+      DelayMinMax: [20, 24]
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+-  Biomes: [DustBowl]
+   Entities:
+   -  Name: Spiders01
+      Period: Always
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+-  Biomes: [Tundra, ColdPlains]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+   -  Name: RaptorsNight
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+-  Biomes: [PolarSnow]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+   -  Name: SlimesWhite
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 0"
+   -  Name: CaveWormWhiteHerd
+      Period: Night
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: GolemsIce
+      Period: Day
+      Amount: 3
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Sand]
+   Entities:
+   -  Name: Otyughs
+      Period: Night
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]
