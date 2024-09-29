@@ -1,7 +1,7 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 22
 =============================================================
 
-Changelog V1.1:
+Changelog V1.11:
 General Edits:
 - Civilian vessels are now functional and spawn in neutral space and varius Factions use them in Trade Systems
 - Added pirateT1 ships to main faction territory spawns so they add to local territory ships
@@ -30,9 +30,19 @@ Warlord Faction Edits:
 - Added Macha Thanks to submission from MHal9000
 - Added Morrigan Thanks to submission from MHal9000
 
+Galaxy Edits:
+- Civilians now spawn in Kriel space 20%-60% inner system to outer
+- Traders now spawn in Kriel space 50%-80% inner system to outer
+- Civilians now spawn in Pirate space 5%-80% inner system to outer
+- Traders now spawn in Pirate space 40%
+- Civilians now spawn in Zirax space 8%-80% inner systm to outer
+- Civilians now spawn in Wastelanders space
+
 Fixes:
 - Reduced toughness of Bahamut, Overseer, Beholder, Drone and Subjugator
 - Increased Warlord Space POI spawn chances and counts
+
+___________________________________________________________________________________________________________________
 
 Changelog V1.1:
 Block Edits:
