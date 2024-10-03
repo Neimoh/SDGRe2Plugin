@@ -26,13 +26,13 @@
 { Reputation Name: "Action.Reputation"
   Order:                   "Zirax,  Talon,  Polaris,  Pirates,  Kriel, Trader,  Colonists,   Xenu,   Rados, Epsilon,  Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC,  Eden_Defender"
   AttackedMember:          " -0.2,  -0.15,     -0.2,     -0.1,   -0.2,  -0.15,       -0.1,   -0.1,    -0.2,    -0.2,   -0.2,    -0.3,    -0.1,   -0.2,  -0.15,         -0.12,  -0.12,              0" # value is multiplied with damage points || Drops to NeutralMin
-  KilledMember:            "-1000,  -1000,    -1000,    -1000,   -300,  -1000,      -1000,  -1000,   -1000,   -1000,  -1000,   -1000,   -1000,  -1000,  -1000,         -1000,  -1000,              0" # NOT multiplied with damage points || Drops to UnfriendlyMax
-  DestroyBlock:            " -300,   -300,     -300,     -300,    -30,   -300,       -300,   -300,    -300,    -300,   -300,    -300,    -300,   -300,   -300,          -300,   -300,              0"
+  KilledMember:            "-1000,  -1000,    -1000,    -1000,  -1000,  -1000,      -1000,  -1000,   -1000,   -1000,  -1000,   -1000,   -1000,  -1000,  -1000,         -1000,  -1000,              0" # NOT multiplied with damage points || Drops to UnfriendlyMax
+  DestroyBlock:            " -300,   -300,     -300,     -300,   -300,   -300,       -300,   -300,    -300,    -300,   -300,    -300,    -300,   -300,   -300,          -300,   -300,              0"
   ShieldAttacked:          "  -30,    -30,      -30,      -30,    -30,    -30,        -30,    -30,     -30,     -30,    -30,     -30,     -30,    -30,    -30,           -30,    -30,              0"
   OpenContainer:           "-6000,  -6000,    -6000,    -6000,  -6000,  -6000,      -6000,  -6000,   -6000,   -6000,  -6000,   -6000,   -6000,  -6000,  -6000,         -6000,  -6000,              0"
   AttackedPrey:            "    0,  -0.05,        0,        0,   -0.1,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0" # multiplied with damage points
   AttackedPredator:        "    0,   0.03,     0.02,        0,      0,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0" # multiplied with damage points
-  StructSpawnedInTerritory:"-500,    -500,     -500,     -500,  -1000,      0,       -100,   -500,    -500,    -500,   -500,    -500,   -1000,   -500,   -500,          -500,   -500,              0"
+  StructSpawnedInTerritory:" -500,   -500,     -500,     -500,  -1000,      0,       -100,   -500,    -500,    -500,   -500,    -500,   -1000,   -500,   -500,          -500,   -500,              0"
   StructStayInTerritory:   "  -25,    -50,        0,      -50,    -75,      0,        -25,    -25,     -25,     -25,    -25,     -25,     -25,    -25,    -25,           -30,    -30,              0" # every 5min realtime and only WITH pilot 
   OreMined:                "  -15,     -5,      -50,      -15,    -30,    -20,        -40,    -20,     -50,     -20,    -20,     -20,     -20,    -20,    -35,           -30,    -30,              0" # about every 10 ores
   PlantHarvest:            "    0,    -10,        0,        0,     -5,      0,         -5,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0"
