@@ -50,6 +50,14 @@ Resources:
    DisplayName: Aluminum Asteroid
    CountMinMax: [2, 2]
    Probability: 1
+-  Name: [AsteroidVoxel03Platin]
+   DisplayName: Platinum Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
+-  Name: [AsteroidVoxel03Gold]
+   DisplayName: Gold Asteroid
+   CountMinMax: [2, 2]
+   Probability: 1
 POIs:
     - Type: BA_Alien
       Name: [CompoundEdenAsteroidRichT4]
