@@ -83,64 +83,89 @@ AllowBlueprintHV: True
 # ====================
 #
 RandomResources:
--  Name: IronResource
-   IsScalingCount: True
-   IsImportant: False
-   CountMinMax: [4, 5]
-   SizeMinMax: [7, 8]
-   DepthMinMax: [4, 10]
-   DroneProb: 0.5
-   MaxDroneCount: 1
--  Name: CopperResource
-   IsScalingCount: True
-   IsImportant: False
-   CountMinMax: [2, 3]
-   SizeMinMax: [6, 7]
-   DepthMinMax: [4, 10]
-   DroneProb: 0.7
-   MaxDroneCount: 1
--  Name: NeodymiumResource
-   IsScalingCount: True
-   IsImportant: False
-   CountMinMax: [5, 6]
-   SizeMinMax: [7, 8]
-   DepthMinMax: [4, 10]
-   DroneProb: 1
-   MaxDroneCount: 4
--  Name: CobaltResource
-   IsScalingCount: True
-   IsImportant: False
-   CountMinMax: [1, 3]
-   SizeMinMax: [5, 7]
-   DepthMinMax: [4, 10]
-   DroneProb: 0.5
 -  Name: PromethiumResource
    IsScalingCount: True
    IsImportant: False
-   CountMinMax: [2, 3]
-   SizeMinMax: [5, 6]
-   DepthMinMax: [0, 1]
-   DroneProb: 1
-   MaxDroneCount: 4
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3
+-  Name: PentaxidResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3   
+-  Name: GoldResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3   
+-  Name: ZascosiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3   
+-  Name: ErestrumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3   
+-  Name: NeodymiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3 
+-  Name: SathiumResource
+   IsScalingCount: True
+   IsImportant: False
+   CountMinMax: [6, 6]
+   SizeMinMax: [12, 30]
+   DepthMinMax: [4, 8]
+   DroneProb: 0.2
+   MaxDroneCount: 3   
+  
+
 # 
 # ====================
 # ASTEROID RESOURCES
 # ====================
 #
 AsteroidResources:
--  Name: IronResource
+-  Name: PentaxidResource
    Threshold: 0.2
    Amount: 0.1
--  Name: CopperResource
+-  Name: GoldResource
    Threshold: 0.2
    Amount: 0.1
 -  Name: NeodymiumResource
    Threshold: 0.2
    Amount: 0.1
--  Name: CobaltResource
+-  Name: SathiumResource
    Threshold: 0.2
    Amount: 0.1
 -  Name: PromethiumResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: ZascosiumResource
+   Threshold: 0.2
+   Amount: 0.1
+-  Name: ErestrumResource
    Threshold: 0.2
    Amount: 0.1
 # 
