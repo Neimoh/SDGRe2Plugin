@@ -392,7 +392,9 @@
                 # Value: True
               - Key: AIManMaxPursuitRange
                 Value: 15000
-
+# T1 Patrol Vessels
+          - Name: [R2OPV_WarlordT1]
+            Faction: Warlord
             CountMinMax: [1, 4]
             Probability: 0.8
             CanNotBeControlledByMasterAI: False
