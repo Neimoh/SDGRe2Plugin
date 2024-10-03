@@ -1,5 +1,8 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 22
 =============================================================
+NML RE2 Scenerio Plugin was created specifically for SDGamers, No Man's Land Empyrion Server.
+Our goal was to mitigate some undesirable changes made in Reforged Eden 2 and migrate alot of lost Reforged Eden 1 content forward with updates and add in new player crafted POI's and Ships and to make the Starfields alot more alive and busy and get faction conflicts back in action.
+
 
 Changelog V1.1:
 General Edits:
