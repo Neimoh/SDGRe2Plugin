@@ -118,12 +118,6 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
 
 
 
-#************************************** under POICombatT4
-            - EdenSpace_POI_CombatT3_2, 0.5
-            - SDG_POI_CombatAzureT6, 0.1
-
-
-
 
 
 ***************************************************************************************************************** SolarSystemConfig_MainHabitableT1

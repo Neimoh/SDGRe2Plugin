@@ -5179,7 +5179,7 @@ DroneBaseSetup:
 # Patrol Vessels
           - Name: [R2OPV_PirateT1]
             Faction: Main
-            CountMinMax: [2, 6]
+            CountMinMax: [2, 4]
             Probability: 1
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
@@ -5559,7 +5559,7 @@ DroneBaseSetup:
           - Name: [R2OPV_PirateT1]
             Faction: Pirates
             CountMinMax: [1, 4]
-            Probability: 0.3
+            Probability: 0.4
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
             Mission: SpacePatrol
@@ -5584,7 +5584,7 @@ DroneBaseSetup:
           - Name: [R2OPV_PirateT2]
             Faction: Pirates
             CountMinMax: [1, 2]
-            Probability: 0.2
+            Probability: 0.35
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
             Mission: SpacePatrol
@@ -5609,7 +5609,7 @@ DroneBaseSetup:
           - Name: [R2OPV_PirateT3]
             Faction: Pirates
             CountMinMax: [1, 2]
-            Probability: 0.2
+            Probability: 0.3
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
             Mission: SpacePatrol
@@ -5634,7 +5634,7 @@ DroneBaseSetup:
           - Name: [R2OPV_PirateT4]
             Faction: Pirates
             CountMinMax: [1, 1]
-            Probability: 0.05
+            Probability: 0.18
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [20, 45]
             Mission: SpacePatrol
@@ -5802,7 +5802,7 @@ DroneBaseSetup:
           - Name: [R2OPV_WarlordT1]
             Faction: Warlord
             CountMinMax: [1, 4]
-            Probability: 0.6
+            Probability: 0.4
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [30, 55]
             Mission: SpacePatrol
@@ -5829,7 +5829,7 @@ DroneBaseSetup:
           - Name: [R2OPV_WarlordT2]
             Faction: Warlord
             CountMinMax: [1, 1]
-            Probability: 0.2
+            Probability: 0.35
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [20, 55]
             Mission: SpacePatrol
@@ -5856,7 +5856,7 @@ DroneBaseSetup:
           - Name: [R2OPV_WarlordT3]
             Faction: Warlord
             CountMinMax: [1, 1]
-            Probability: 0.2
+            Probability: 0.3
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [20, 55]
             Mission: SpacePatrol
@@ -5883,7 +5883,7 @@ DroneBaseSetup:
           - Name: [R2OPV_WarlordT4]
             Faction: Warlord
             CountMinMax: [1, 1]
-            Probability: 0.2
+            Probability: 0.18
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [20, 55]
             Mission: SpacePatrol

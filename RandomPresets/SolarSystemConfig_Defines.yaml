@@ -2088,8 +2088,7 @@ GenerationParams:
         PlayfieldLevel: [8,10]
         Playfields:
             - EdenSpace_POI_CombatT3_1, 0.5
-            - EdenSpace_POI_CombatT3_2, 0.5
-            - SDG_POI_CombatAzureT6, 0.1
+            - EdenSpace_POI_CombatT3_2, 1
 
 # Drone Swarm sites
       - Name: POICombatT3Drone

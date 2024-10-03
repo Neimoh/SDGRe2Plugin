@@ -79,7 +79,7 @@
 # Patrol Vessels
           - Name: [R2OPV_PirateT1]
             Faction: Main
-            CountMinMax: [2, 6]
+            CountMinMax: [2, 4]
             Probability: 1
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
@@ -312,7 +312,7 @@
 # Patrol Vessels
           - Name: [OPVNMLKrielRG]
             Faction: Kriel
-            CountMinMax: [4, 6]
+            CountMinMax: [2, 4]
             Probability: 1
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [60, 70]
@@ -396,7 +396,7 @@
           - Name: [R2OPV_WarlordT1]
             Faction: Warlord
             CountMinMax: [1, 4]
-            Probability: 0.8
+            Probability: 0.6
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [30, 55]
             Mission: SpacePatrol
