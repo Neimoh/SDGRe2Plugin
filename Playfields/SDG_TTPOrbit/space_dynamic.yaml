@@ -1,0 +1,108 @@
+# Playfield Characteristics
+Description: "Difficulty: [c][00ff00]Easy[-][/c]
+
+
+No Man's Land Community Trade Orbit
+
+
+[c][ffffff][i]Only reachable using the !ttp command in chat.[/i][-][/c]"
+
+Gravity: 0                         
+AtmosphereEnabled: False          
+PvPProb: 0 #Normal
+UseFixed: True
+
+# Standard Star
+Radiation: [0,0]
+TemperatureDay: [10,20]
+Music: [moonstone, space, DistantWorlds, Migration, Artefact, ColdDivide] # Orbit
+# Music: [Sanctuary, Vanguard, Helios, ColdDivide, AlteredPhase] # POI
+
+PlayfieldType: Space  
+PlanetType: Orbit
+PlayfieldLevelOverride: [1,2]
+
+### Resource Asteroid
+
+### POIs
+POIs:
+#Eye Candy ---------------------------------------------------------------------------
+    - Name: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim]
+      FieldName: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim] # used if playfield is not an orbit
+      CountMinMax: [ 10, 10 ]
+      Probability: 1.0
+      Position:
+         PosXZMinMax: [50, 100]
+         PosYMax: 50
+
+    - Name: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim]
+      FieldName: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim] # used if playfield is not an orbit
+      CountMinMax: [ 1, 1 ]
+      Probability: 1.0
+      Pos: [0, 0, 12000]
+      
+    - Name: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim]
+      FieldName: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim] # used if playfield is not an orbit
+      CountMinMax: [ 1, 1 ]
+      Probability: 1.0
+      Pos: [0, 0, -12000]
+    - Name: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim]
+      FieldName: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim] # used if playfield is not an orbit
+      CountMinMax: [ 1, 1 ]
+      Probability: 1.0
+      Pos: [12000, 0, 0]
+    - Name: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim]
+      FieldName: [Eden_NebulaL_RandomBlue, Eden_NebulaL_RandomBlue2, Eden_NebulaL_RandomBlueDim, Eden_NebulaL_RandomBrown, Eden_NebulaL_RandomBrown2, Eden_NebulaL_RandomBrownDim, Eden_NebulaL_RandomCyan, Eden_NebulaL_RandomCyan2, Eden_NebulaL_RandomCyanDim, Eden_NebulaL_RandomGreen, Eden_NebulaL_RandomGreen2, Eden_NebulaL_RandomGreenDim, Eden_NebulaL_RandomOrange, Eden_NebulaL_RandomOrange2, Eden_NebulaL_RandomOrangeDim, Eden_NebulaL_RandomPink, Eden_NebulaL_RandomPink2, Eden_NebulaL_RandomPinkDim, Eden_NebulaL_RandomPurple, Eden_NebulaL_RandomPurple2, Eden_NebulaL_RandomPurpleDim, Eden_NebulaL_RandomRed, Eden_NebulaL_RandomRed2, Eden_NebulaL_RandomRedDim, Eden_NebulaL_RandomYellow, Eden_NebulaL_RandomYellow2, Eden_NebulaL_RandomYellowDim, Eden_SectorNebulaXLDustDim, Eden_SectorNebulaXLDustDim] # used if playfield is not an orbit
+      CountMinMax: [ 1, 1 ]
+      Probability: 1.0
+      Pos: [-12000, 0, 0]
+
+
+#NML SDG TTP Trade Station ----------------------------------------------------------
+    - Type: BA_Alien
+      GroupName: NMLCommunityTrade
+#      GroupName: NMLTTPTradeBasic
+#      Name: NMLTTP Trade Station 1.1
+      Faction: Admin
+      Mode: Survival
+      CountMinMax: [ 1, 1 ]
+      Probability: 1
+      SpaceDefenseOverrideDefaults: True
+      SpaceDefenseProbability: 0
+      InitPower: True
+      Pos: [0, 0, 0]
+      Rot: [0, 180, 0]
+    #  Position:
+         # 1st, 2nd, 3rd: x,y,z of poi
+         # 4th argument: Y axis or Height in the pf relative to the plane
+         # RadialInfo: [0, 0, 0,   0,   0, 0]
+         # RadialInfo: [0, 0, 0,   500,   1.5, 4.5]
+         # PosXZMinMax: [0, 0]
+         # PosYMax: 0
+         # PosXZMinMax: [100, 2500]
+         # PosYMax: 2500
+      Properties:
+        - Key: Discovery
+          Value: False
+        - Key: PvEArea
+          Value: 500
+        - Key: Music
+          Value: NebularClouds
+        - Key: RegenAfter
+          Value: 720
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Asteroid Fields
+# ======================================================================================================================================================================================================
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Project Eden POIs
+# ======================================================================================================================================================================================================
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Asteroids
+# ======================================================================================================================================================================================================
+
+# ======================================================================================================================================================================================================
+# ================================================================================================================================================================================= Definitions for Compounds
+# ======================================================================================================================================================================================================
