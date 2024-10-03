@@ -312,8 +312,8 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
   #***** Replace the Matrix
 Order:                   "Zirax,  Talon,  Polaris,  Pirates,  Kriel, Trader,  Colonists,   Xenu,   Rados, Epsilon,  Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC,  Eden_Defender"
   AttackedMember:          " -0.2,  -0.15,     -0.2,     -0.1,   -0.2,  -0.15,       -0.1,   -0.1,    -0.2,    -0.2,   -0.2,    -0.3,    -0.1,   -0.2,  -0.15,         -0.12,  -0.12,              0" # value is multiplied with damage points || Drops to NeutralMin
-  KilledMember:            "-1000,  -1000,    -1000,    -1000,   -300,  -1000,      -1000,  -1000,   -1000,   -1000,  -1000,   -1000,   -1000,  -1000,  -1000,         -1000,  -1000,              0" # NOT multiplied with damage points || Drops to UnfriendlyMax
-  DestroyBlock:            " -300,   -300,     -300,     -300,    -30,   -300,       -300,   -300,    -300,    -300,   -300,    -300,    -300,   -300,   -300,          -300,   -300,              0"
+  KilledMember:            "-1000,  -1000,    -1000,    -1000,  -1000,  -1000,      -1000,  -1000,   -1000,   -1000,  -1000,   -1000,   -1000,  -1000,  -1000,         -1000,  -1000,              0" # NOT multiplied with damage points || Drops to UnfriendlyMax
+  DestroyBlock:            " -300,   -300,     -300,     -300,   -300,   -300,       -300,   -300,    -300,    -300,   -300,    -300,    -300,   -300,   -300,          -300,   -300,              0"
   ShieldAttacked:          "  -30,    -30,      -30,      -30,    -30,    -30,        -30,    -30,     -30,     -30,    -30,     -30,     -30,    -30,    -30,           -30,    -30,              0"
   OpenContainer:           "-6000,  -6000,    -6000,    -6000,  -6000,  -6000,      -6000,  -6000,   -6000,   -6000,  -6000,   -6000,   -6000,  -6000,  -6000,         -6000,  -6000,              0"
   AttackedPrey:            "    0,  -0.05,        0,        0,   -0.1,      0,          0,      0,       0,       0,      0,       0,       0,      0,      0,             0,      0,              0" # multiplied with damage points
