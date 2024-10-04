@@ -1,0 +1,333 @@
+---
+# Playfield Configuration
+# IMPORTANT: YAML files use spaces as indentation. Please don't use TABs - tab indentation is forbidden: http://yaml.org/faq.html
+
+
+Description: "Difficulty: [c][ff0000]Hard[-][/c]
+
+[c][ffff00]WARNING: New decoration system in testing. You may encounter unexpected issues if you enter this playfield.[-][/c]
+
+
+Devoid of any natural life, this planet is scorched during the day by its proximity to the sun and freezes at night. Resource rich meteorites coat the surface while rich deposits await deep below the surface."
+
+
+PlanetType: Barren
+PlayfieldType: Planet
+Difficulty: 2
+
+LandClaimZone: Device
+
+
+# Atmosphere and Sky
+AtmosphereEnabled: False
+
+# Light
+DayLightIntensity: 1.9
+NightLightIntensity: 0.5
+
+DayShadowStrength: 0.95
+
+# Sun
+SunFlare: EnvironmentalEffects/SunFlareWhiteMoon
+# ==============================================================
+
+### Resource Deposits
+RandomResources:
+# Size Scaling of ore amount. Poor = 66%. Normal = 100%. Rich = 143%. Gold = 66%. Penatix = 50%.
+# ======================================================================================================
+# 1=2          6=542      11=3300     16=10200    21=23200
+# 2=20         7=862      12=4300     17=12300    22=26700
+# 3=67         8=1200     13=5500     18=14600    23=30500
+# 4=160        9=1800     14=6800     19=17200    24=34700
+# 5=314        10=2500    15=8400     20=20100    25=39200
+# ======================================================================================================
+    - Name: IronResource
+      IsScalingCount: True
+      CountMinMax: [ 1, 1 ]
+      SizeMinMax: [ 9, 10 ]
+      DepthMinMax: [ 40, 50 ]
+      DroneProb: 0
+      MaxDroneCount: 5
+      #DistTypeCylinder:
+        #MaxRadius: 3
+        #YVariance: 3
+
+    - Name: MagnesiumResource
+      IsScalingCount: True
+      CountMinMax: [ 2, 3 ]
+      SizeMinMax: [ 6, 7 ]
+      DepthMinMax: [ 6, 15 ]
+      DroneProb: 0
+      MaxDroneCount: 5
+      #DistTypeCylinder:
+        #MaxRadius: 32
+        #YVariance: 3
+
+    - Name: SathiumResource
+      # IsScalingCount: True
+      CountMinMax: [ 2, 2 ]
+      SizeMinMax: [ 11, 12 ]
+      DroneProb: 0
+      MaxDroneCount: 5
+      DepthMinMax: [ 40, 50 ]
+      #DistTypeCylinder:
+        #MaxRadius: 32
+        #YVariance: 3
+
+    - Name: SathiumResource
+      IsScalingCount: True
+      CountMinMax: [ 5, 6 ]
+      SizeMinMax: [ 9, 11 ]
+      DroneProb: 0
+      MaxDroneCount: 5
+      DepthMinMax: [ 40, 50 ]
+      #DistTypeCylinder:
+        #MaxRadius: 3
+        #YVariance: 3
+
+    - Name: GoldResource
+      IsScalingCount: True
+      CountMinMax: [ 5, 6 ]
+      SizeMinMax: [ 8, 12 ]
+      DroneProb: 0
+      MaxDroneCount: 5
+      DepthMinMax: [ 20, 30 ]
+      #DistTypeCylinder:
+        #MaxRadius: 2
+        #YVariance: 2
+
+### Resource Asteroids
+AsteroidResources:
+     - Name: IronResource
+       Threshold: 0.1
+       Amount: 0.2
+     - Name: MagnesiumResource
+       Threshold: 0.1
+       Amount: 0.2
+     - Name: SathiumResource
+       Threshold: 0.1
+       Amount: 0.2
+
+### POIs
+POIs:
+    Random:
+
+       # ================================
+       # Trading Station with CivilSettlements
+        - GroupName: R2PolarisTradePlanet
+          Faction: Polaris  
+          # NoShieldReload: True
+          IsImportant: True
+          CountMinMax: [ 1, 1 ]
+          Properties:  
+            - Key: Discovery
+              Value: False
+            - Key: Music
+              Value: AlteredPhase
+            - Key: RegenAfter
+              Value: 4320
+
+        - GroupName: R2PolarisAuxT1
+          Faction: Polaris  
+          # NoShieldReload: True
+          CountMinMax: [ 2, 3 ]
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [150, 250]  
+          Properties: 
+            - Key: RegenAfter
+              Value: 720
+ 
+        - GroupName: R2PolarisDefenseT1
+          Faction: Polaris    
+          # NoShieldReload: True
+          CountMinMax: [ 5, 6 ]
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [300, 400] 
+          Properties: 
+            - Key: RegenAfter
+              Value: 720
+
+# Reforged Eden POIs from Reforged Galaxy
+
+        - GroupName: R2FactoryPolaris1
+          Faction: Polaris
+          # NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [250, 600]
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+        - GroupName: R2FactoryPolaris2
+          Faction: Polaris
+          FactionTerritory: [Eden_PolarisTerritory]
+          # NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [250, 600]
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+        - GroupName: MineT3PolarisRG 
+          Territory: False
+          Faction: Polaris
+          # NoShieldReload: True
+          CountMinMax: [ 1, 2 ]
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+        - GroupName: MineSulfurPolarisRG 
+          Territory: False
+          Faction: Polaris
+          # NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [800, 2000] 
+          Properties:
+            - Key: RegenAfter
+              Value: 720
+
+# Deco
+        - GroupName: R2PolarisDeco
+          Faction: Polaris
+          Territory: False
+          CountMinMax: [ 2, 4 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [R2PolarisTradePlanet]
+          SpawnPOINearRange: [75, 200]
+          Properties:
+            - Key: MapDistance
+              Value: 0
+            - Key: HudDistance
+              Value: 500
+            - Key: RegenAfter
+              Value: 720
+
+# Civilians
+
+        - GroupName: R2ColonistAux
+          Territory: False
+          Faction: Colonists
+          # NoShieldReload: True
+          CountMinMax: [ 3, 4 ]
+          Properties:  
+            - Key: RegenAfter
+              Value: 720
+
+        - GroupName: MineT1PolarisRG
+          Territory: False
+          Faction: Colonists
+          # NoShieldReload: True
+          CountMinMax: [ 1, 1 ]
+          SpawnPOINear: [R2ColonistAux]
+          SpawnPOINearRange: [100, 200]
+          Properties:  
+            - Key: RegenAfter
+              Value: 720
+
+# Deco
+        - GroupName: R2ColonistDeco
+          Faction: Colonists
+          Territory: False
+          CountMinMax: [ 2, 4 ]
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False
+          SpawnPOINear: [R2ColonistAux]
+          SpawnPOINearRange: [75, 200]
+          Properties:
+            - Key: MapDistance
+              Value: 0
+            - Key: HudDistance
+              Value: 500
+            - Key: RegenAfter
+              Value: 720
+
+       # ================================
+
+# Surface silver
+        - GroupName: Eden_PalladiumSurface
+          Faction: None
+          Biome: [ Rocks ]
+          CountMinMax: [ 6, 8 ]
+          IsScalingCount: True
+          DroneProb: 0
+          DronesMinMax: [ 1, 1 ]
+          ReserveCount: 0
+          TroopTransport: False 
+          Properties:
+            - Key: MapDistance
+              Value: 0
+            - Key: HudDistance
+              Value: 0
+            - Key: MapMarker
+              Value: Neutral
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 4320
+
+# Silver
+        - GroupName: Eden_HarvestPalladium
+          Faction: None
+          #FactionTerritory: [Kriel, Tesch, TheLegacy, Eden_DroneHome, Xenu]
+          # NoShieldReload: True
+          CountMinMax: [ 3, 4 ]
+          IsScalingCount: True
+          DroneProb: 0.75
+          DronesMinMax: [ 2, 4 ]
+          ReserveCount: 3
+          TroopTransport: False 
+          Properties:
+            - Key: MapMarker
+              Value: Neutral
+            - Key: SI
+              Value: Off
+            - Key: RegenAfter
+              Value: 4320
+
+
+
+
+    FixedPlayerStart:
+        - Mode: Debug
+          Pos: [ -835, 165, -1000 ]
+          RotY: 125
+          Armor: ArmorMedium
+
+        - Mode: Survival
+          Spawn: EscapePod
+          Armor: ArmorMedium
+
+# Drones
+# ------------ Aerodrones with propellers.
+# DroneSmallZiraxEMP
+# DroneAeroZiraxMinigun
+# DroneAeroZiraxCannon
+# DroneAeroZiraxRocket
+
+# ------------ Small hoverdrones
+# DroneHoverZiraxMinigun
+# DroneHoverZiraxLaser
+# DroneHoverZiraxRocket
+
+# ------------ Large gunships
+# DroneLargeZiraxMinigun
+# DroneLargeZiraxRocket
+# DroneLargeZiraxPlasma
+
+DroneBaseSetup:
+    Random:
+
+    PlanetVessels:
+# Guarding drone base
+
+DroneSpawning:
+    Random:

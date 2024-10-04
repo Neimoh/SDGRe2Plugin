@@ -147,6 +147,73 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
 
 
 #########--------- Start SDG ------------#############
+
+##-------- Trade System to be used with ttp --------##
+  - Name: NML Trade
+    Coordinates: [0, 0, -1000]
+    StarClass: G
+    Sectors:
+      - Coordinates: [0, 0, 0]
+        SectorMapType: None
+        Playfields:
+          - ['0,0,0', NML Trade, SunRandom, '']
+
+      - Coordinates: [2, 0, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Right]', SpaceWarpTargetFixed, '']
+ 
+      - Coordinates: [-2, 0, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Left]', SpaceWarpTargetFixed, '']
+
+      - Coordinates: [0, 2, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Top]', SpaceWarpTargetFixed, '']
+
+      - Coordinates: [0, -2, 0]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Bottom]', SpaceWarpTargetFixed, '']
+ 
+      - Coordinates: [0, 0, 2]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Front]', SpaceWarpTargetFixed, '']
+
+      - Coordinates: [0, 0, -2]
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'NML Trade [Sun Back]', SpaceWarpTargetFixed, '']
+  ####------------- Second Sun -----------------------####
+      - Coordinates: [10, 6, 10]
+        Color: '1,0.95,0.63'
+        SectorMapType: Sun
+        Playfields:
+          - ['0, 0, 0', NML Trade B, SunRandom,'', '', 'K', '11']
+
+  ####------------- Trade Station -----------------------####
+      - Coordinates: [0, 0, 20]
+        Color: '0.7,0.5,0'
+        SectorMapType: Station
+        Playfields:
+         - ['0,0,0', NML Community Trade, SDG_TTPOrbit,'', '', '', '']
+
+# ------------------------------------------------------------------------------------------------- Planets
+      - Coordinates: [28, 0, -77]
+        Color: '0.68,0.56,0.26'
+        SectorMapType: GasGiant
+        Playfields:
+          - ['0, 0, 0', Foresaken, GasGiant,'', '', 'JupiterYellow', '12']
+      - Coordinates: [-28, -10, -77]
+        Color: '0.22,0.54,0.69'
+        SectorMapType: GasGiant
+        Playfields:
+          - ['0, 0, 0', Wasteland, GasGiant,'', '', 'SaturnBlue', '12']
+
+##-------- Main NML Community and Event System --------##
   - Name: NML
     Coordinates: [190, 15, 20]
     StarClass: G
@@ -158,6 +225,8 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
+
       - Coordinates: [2, 0, 0]
         SectorMapType: WarpTarget
         Playfields:
@@ -165,6 +234,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
       - Coordinates: [-2, 0, 0]
         SectorMapType: WarpTarget
@@ -173,6 +243,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
       - Coordinates: [0, 2, 0]
         SectorMapType: WarpTarget
@@ -181,6 +252,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
       - Coordinates: [0, -2, 0]
         SectorMapType: WarpTarget
@@ -189,6 +261,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
       - Coordinates: [0, 0, 2]
         SectorMapType: WarpTarget
@@ -197,6 +270,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
       - Coordinates: [0, 0, -2]
         SectorMapType: WarpTarget
@@ -205,10 +279,54 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow: []
         Deny:
           - 'Bellam Sector'
+          - 'TTP'
 
+###  Silent Horizon, Exile, Deadfall, Doomspire, Outcast, Eclipse Reach, Solitude
+####------------- Mercury PVE -----------------------####
+      - Coordinates: [4, 0, 11]
+        Color: '1,0.1,0 : 0.5,0.5,0.5'
+        Playfields:
+         - ['0, 0, 0', Ashen Void, SDG_Mercury_V1,'', '', '', '']
+         - ['0,0,0', Ashen Void Sector, SDG_TradeOrbit, '']
+        Allow:
+         - 'NML [Sun Right]'
+         - 'NML [Sun Left]'
+         - 'NML [Sun Top]'
+         - 'NML [Sun Bottom]'
+         - 'NML [Sun Front]'
+         - 'NML [Sun Back]'
+         - 'NML'
+         - 'Aurora Sector'
+         - 'Ashen Void Sector'
+         - 'Deadfall Sector'
+         - 'Exile Sector'
+        Deny:
+         - 'Bellam Sector' 
 
-####------------- Telgis PVE -----------------------####
-      - Coordinates: [0, 0, 10]
+####------------- Venus PVE -----------------------####
+      - Coordinates: [-17, 0, 13]
+        Color: '1,1,0 : 0.5,0.5,0.5'
+        Playfields:
+         - ['0, 0, 0', Deadfall, Alien,'', '', '', '']
+         - ['0,0,0', Deadfall Sector, EdenSpaceG_Orbit, '']
+        Allow:
+         - 'NML [Sun Right]'
+         - 'NML [Sun Left]'
+         - 'NML [Sun Top]'
+         - 'NML [Sun Bottom]'
+         - 'NML [Sun Front]'
+         - 'NML [Sun Back]'
+         - 'NML'
+         - 'Aurora Sector'
+         - 'Ashen Void Sector'
+         - 'Deadfall Sector'
+         - 'Exile Sector'
+
+        Deny:
+         - 'Bellam Sector'
+
+####------------- Aurora PVE -----------------------####
+      - Coordinates: [-20, 0, -15]
         Color: '0.04,0.8,0.4 : 0.1,0.7,0.1 : 0.5,0.5,0.5'
         Playfields:
          - ['0, 0, 0', Aurora, SDG_Aurora_V1,'', '', '', '']
@@ -222,11 +340,41 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
          - 'NML [Sun Front]'
          - 'NML [Sun Back]'
          - 'NML'
+         - 'Aurora Sector'
+         - 'Ashen Void Sector'
+         - 'Deadfall Sector'
+         - 'Exile Sector'
+
         Deny:
          - 'Bellam Sector'
 
+####------------- Mars PVE -----------------------####
+      - Coordinates: [14,0, -43]
+        Color: '1,0.5,0 : 0.5,0.5,0.5'
+        Playfields:
+         - ['0, 0, 0', Exile, Arid_V2,'', '', '', '']
+         - ['15000,2000,0', Phobos, EdenMoonCrystalErestrum,'', '', '', '2']
+         - ['0,-2000,-11000', Deimos, EdenMoonCrystalZasc_V2,'', '', '', '2']
+         - ['0,0,0', Exile Sector, Start_OrbitEasy, '']
+        Allow:
+         - 'NML [Sun Right]'
+         - 'NML [Sun Left]'
+         - 'NML [Sun Top]'
+         - 'NML [Sun Bottom]'
+         - 'NML [Sun Front]'
+         - 'NML [Sun Back]'
+         - 'NML'
+         - 'Aurora Sector'
+         - 'Ashen Void Sector'
+         - 'Deadfall Sector'
+         - 'Exile Sector'
+
+        Deny:
+         - 'Bellam Sector'
+
+
 ####------------- Bellam PVP -----------------------####
-      - Coordinates: [0, 0, -50]
+      - Coordinates: [0, 0, 50]
         Color: '0.8,0.0,0.0 : 0.8,0.0,0.0 : 0.5,0.5,0.5'
         Playfields:
          - ['0, 0, 0', Bellam, SDG_Bellam_V1,'', '', '', '']
@@ -235,7 +383,6 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         Allow:
          - 'Roscoes Roost'
         Deny:
-         - 'Telgis Sector'
          - 'NML [Sun Right]'
          - 'NML [Sun Left]'
          - 'NML [Sun Top]'
@@ -243,6 +390,11 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
          - 'NML [Sun Front]'
          - 'NML [Sun Back]'
          - 'NML'
+         - 'Aurora Sector'
+         - 'Ashen Void Sector'
+         - 'Deadfall Sector'
+         - 'Exile Sector'
+
 
 ####------------- Trade Station -----------------------####
       - Coordinates: [25, 0, 0]
@@ -250,6 +402,28 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
         SectorMapType: Station
         Playfields:
          - ['0,0,0', Roscoes Roost, SDG_TradeOrbit,'', '', '', '']
+        Allow: []
+        Deny: []
+
+####------------- TTP Trade Station -----------------------####
+#      - Coordinates: [0, 0, -100]
+#        Color: '0.7,0.5,0'
+#        SectorMapType: Station
+#        Playfields:
+#         - ['0,0,0', TTP, SDG_TTPOrbit,'', '', '', '']
+#        Allow: []
+#        Deny:
+#         - 'Aurora Sector'
+#         - 'NML [Sun Right]'
+#         - 'NML [Sun Left]'
+#         - 'NML [Sun Top]'
+#         - 'NML [Sun Bottom]'
+#         - 'NML [Sun Front]'
+#         - 'NML [Sun Back]'
+#         - 'NML'
+#         - 'Roscoes Roost'
+#         - 'Bellam Sector'
+
 #########--------- END SDG ------------#############
 
 

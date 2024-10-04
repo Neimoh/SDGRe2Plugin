@@ -111,49 +111,49 @@ RandomResources:
 -  Name: IronResource
    IsScalingCount: True
    IsImportant: True
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [8, 20]
    DepthMinMax: [4, 8]
    MaxDroneCount: 1
 -  Name: CopperResource
    IsScalingCount: True
    IsImportant: True
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [8, 20]
    DepthMinMax: [5, 10]
 -  Name: SiliconResource
    IsScalingCount: True
    IsImportant: False
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [6, 18]
    DepthMinMax: [5, 10]
 -  Name: CobaltResource
    IsScalingCount: True
    IsImportant: False
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [6, 12]
    DepthMinMax: [4, 9]
 -  Name: PromethiumResource
    IsScalingCount: True
    IsImportant: False
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [8, 16]
    DepthMinMax: [4, 8]
 -  Name: CarbonResource
    IsScalingCount: True
    IsImportant: True
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [8, 16]
    DepthMinMax: [0, 1]
-   DroneProb: 0.1
+   #DroneProb: 0.1
 -  Name: PentaxidResource
    IsScalingCount: True
    IsImportant: False
-   CountMinMax: [6, 6]
-   SizeMinMax: [12, 30]
+   CountMinMax: [4, 6]
+   SizeMinMax: [6, 10]
    DepthMinMax: [0, 1]
-   DroneProb: 0.1
-   MaxDroneCount: 1
+   #DroneProb: 0.1
+   #MaxDroneCount: 1
 # 
 # ====================
 # ASTEROID RESOURCES
@@ -243,11 +243,11 @@ DroneBaseSetup: {}
 #
 DroneSpawning:
    Random:
-   -  DronesMinMax: [5, 10]
+   -  DronesMinMax: [3, 5]
       CenterX: -5000
       POINameAsPositionRef: ''
       Radius: 3000
-   -  DronesMinMax: [5, 10]
+   -  DronesMinMax: [3, 5]
       CenterX: -5000
       POINameAsPositionRef: ''
       Radius: 3000

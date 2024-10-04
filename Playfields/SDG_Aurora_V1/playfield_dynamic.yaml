@@ -4,8 +4,8 @@
 # --------------------------------------------------------------------------------------------------------------------------
 #
 PlanetSize:
-   SizeRange: [3, 4, 5]
-   SizeProbs: [0, 1, 0]
+   SizeRange: [4, 5]
+   SizeProbs: [1, 0]
 PlanetAxis: [-25, 25]
 PlayfieldLevelOverride: [1, 2]
 TemperatureMin: [10, 10]
@@ -2228,6 +2228,47 @@ Biomes:
    AmbientSound: ArcticLowPlains
    Texture: [4, 4, 1, 11, 11, 1, 0]
    StampProb: 0.12
+- Name: RavineDeep
+  IgnoreForcedBiome: true 
+  Texture: [5, 6, 0.5]
+    
+  SelectionCriteria: 
+     - false
+  Color: [0.3, 0.1, 0.1]
+
+  UndergroundLayers:
+             - [0, 8]
+             - [10, 3]
+             - [0, 4]
+             - [10, 3]
+             - [0, 3]
+             - [10, 3]
+             - [0, 2]
+             - [10, 2]
+             - [11, -1]
+             - [11, 1]
+
+  StampForcesBiome: false
+  StampForcesBiomeType: OverlapOwn
+  StampTries: 20
+  Stamps:
+  - ErosionIce_01, 0.3
+  - ErosionIce_02, 0.3
+  - ErosionIce_03, 0.3
+  - RiftContinent_01, 0.2
+
+  Decorations:  
+             - [RealRock1Dark, 0.001]
+             - [RealRock2Dark, 0.001]
+             - [RealRock3Dark, 0.001]
+             - [RealRock4Dark, 0.001]
+             - [RealRock8Dark, 0.001]
+             - [RealRock10Dark, 0.001]
+             # Harvestables:
+             - [RockResourceIron, 0.0003, Free]
+             - [RockResourceTitan, 0.0006, Free]
+             - [CrystalStraight, 0.0001, Free]
+  Grass:    
 -  Name: ColdPlains
    Color: [0, 0.5, 0.2]
    SelectionCriteria:

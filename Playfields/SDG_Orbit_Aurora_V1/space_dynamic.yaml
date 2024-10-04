@@ -74,12 +74,12 @@ Resources:
    CountMinMax: [2, 2]
    Probability: 1
 POIs:
--  Name: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
-   FieldName: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
-   Pos: [0, 0, 0]
-   Rot: [0, 0, 0]
-   CountMinMax: [1, 1]
-   Probability: 0.2
+#-  Name: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
+#   FieldName: [Eden_SectorNebulaNewBlueFog, Eden_SectorNebulaNewBlueFog2, Eden_SectorNebulaNewCyanFog, Eden_SectorNebulaNewCyanFog2, Eden_SectorNebulaNewDustFog, Eden_SectorNebulaNewDustFog2, Eden_SectorNebulaNewOrangeFog, Eden_SectorNebulaNewOrangeFog2, Eden_SectorNebulaNewBlueStorm]
+#   Pos: [0, 0, 0]
+#   Rot: [0, 0, 0]
+#   CountMinMax: [1, 1]
+#   Probability: 0.2
 -  Type: BA_Admin
    GroupName: RE2_UCHResearchShip
    Faction: Admin
@@ -102,7 +102,7 @@ POIs:
 -  Name: [AsteroidRingPlanet]
    Pos: [0, 0, 0]
    Rot: [0, 0, 0]
-   CountMinMax: [0, 0]
+   CountMinMax: [1, 1]
    Probability: 1
 -  Type: BA_Alien
    SpaceDefenseOverrideDefaults: True

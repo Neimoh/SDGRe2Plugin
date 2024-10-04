@@ -138,13 +138,13 @@ SolarSystems:
           - 'Bellam Sector'
           - 'TTP'
 
-###  Silent Horizon, Exile, Deadfall, Ashen Void, Doomspire, Outcast, Eclipse Reach, Solitude
+###  Silent Horizon, Exile, Deadfall, Doomspire, Outcast, Eclipse Reach, Solitude
 ####------------- Mercury PVE -----------------------####
       - Coordinates: [4, 0, 11]
         Color: '1,0.1,0 : 0.5,0.5,0.5'
         Playfields:
-         - ['0, 0, 0', Ashen Void, EdenBarrenMercury_V2,'', '', '', '']
-         - ['0,0,0', Ashen Void Sector, EdenSpaceK_Orbit, '']
+         - ['0, 0, 0', Ashen Void, SDG_Mercury_V1,'', '', '', '']
+         - ['0,0,0', Ashen Void Sector, SDG_TradeOrbit, '']
         Allow:
          - 'NML [Sun Right]'
          - 'NML [Sun Left]'
@@ -212,7 +212,7 @@ SolarSystems:
          - ['0, 0, 0', Exile, Arid_V2,'', '', '', '']
          - ['15000,2000,0', Phobos, EdenMoonCrystalErestrum,'', '', '', '2']
          - ['0,-2000,-11000', Deimos, EdenMoonCrystalZasc_V2,'', '', '', '2']
-         - ['0,0,0', Exile Sector, EdenSpaceK_Orbit, '']
+         - ['0,0,0', Exile Sector, Start_OrbitEasy, '']
         Allow:
          - 'NML [Sun Right]'
          - 'NML [Sun Left]'
