@@ -26,20 +26,12 @@ AllowBlueprintHV: True
 LandClaimZone: Device
 BaseAttackCount: 0
 Resources:
--  Name: [AsteroidVoxel03Iron]
-   DisplayName: Iron Asteroid
-   CountMinMax: [3, 3]
-   Probability: 1
--  Name: [AsteroidVoxel03Copper]
-   DisplayName: Copper Asteroid
-   CountMinMax: [3, 3]
-   Probability: 1
--  Name: [AsteroidVoxel03Cobalt]
-   DisplayName: Cobalt Asteroid
+-  Name: [AsteroidVoxel03Erestrum]
+   DisplayName: Erestrum Asteroid
    CountMinMax: [2, 2]
    Probability: 1
--  Name: [AsteroidVoxel03Carbon]
-   DisplayName: Carbon Asteroid
+-  Name: [AsteroidVoxel03Zascosium]
+   DisplayName: Zascosium Asteroid
    CountMinMax: [2, 2]
    Probability: 1
 -  Name: [AsteroidVoxel03Neodymium]
@@ -58,7 +50,13 @@ Resources:
    DisplayName: Gold Asteroid
    CountMinMax: [2, 2]
    Probability: 1
+# Not working
+#-  Name: [AsteroidVoxel03Palladium]
+#   DisplayName: Palladium Asteroid
+#   CountMinMax: [2, 2]
+#   Probability: 1
 POIs:
+
     - Type: BA_Alien
       Name: [CompoundEdenAsteroidRichT4]
       GroupName: Eden_AsteroidRichT4
