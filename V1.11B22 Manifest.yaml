@@ -9,7 +9,7 @@ Vx.xreadme.txt
     GalaxyConfig.ecf
     ItemsConfig.ecf
     Templates.ecf
-\Playfields ------------------------ 44 Folders
+\Playfields ------------------------ 45 Folders
     Alien
     Barren
     BarrenMetal
@@ -18,43 +18,44 @@ Vx.xreadme.txt
     EdenBarrenElder
     EdenBarrenMercury_V2
     EdenDesertRock_V2
-    EdenDeesrtStorm
+    EdenDesertStorm
     EdenPlasma3
     EdenPlasma4
-    EdenSpace_TradingStation
     EdenSpaceD_AsteroidT1
     EdenSpaceD_Orbit
+    EdenSpaceGasDwarf_Orbit
     EdenSpace_AsteroidCol
     EdenSpaceG_AsteroidT1
     EdenspaceG_Orbit
     EdenSpaceG_OrbitGas
     EdenSpaceG_PolTradeStation
-    EdenSpaceGasDwarf_Orbit
     EdenSpaceK_AsteroidT1
     EdenSpaceK_Orbit
+    EdenSpace_TradingStation
     EdenSwampMire
     EdenTemperateBrooding
     SDG_Aurora_Moon_V1
     SDG_Aurora_V1
     SDG_Bellam_V1
+    SDG_Mercury_V1
     SDG_Moon_Jungle_V1
     SDG_Orbit_Aurora_V1
     SDG_Orbit_Bellam_V1
     SDG_PirateBattlestation
-    SDG_POI_CombatAzureT6
     SDG_POI_CombatTianLongT6
     SDG_TradeOrbit
+    SDG_TTPOrbit
     Snow_V2
-    Start_OrbitEasy
-    Start_TradeHub
     Starter_Akua_Orbit
     Starter_Akua_V2
     Starter_Masperon
     Starter_Pandora_V2
     Starter_Tallodar_Orbit
     Starter_Tallodar_V2
+    Start_OrbitEasy
+    Start_TradeHub
     TemperateSwamp
-\Prefabs --------------------------- 97 Files
+\Prefabs --------------------------- 98 Files
     NMLBA_Abandoned Bunker
     NMLBA_Abandoned Depot
     NMLBA_Abandoned Factory
@@ -71,6 +72,7 @@ Vx.xreadme.txt
     NMLBA_AbandonedVesselYar
     NMLBA_BAO_KrielBeacon1
     NMLBA_Black Pyramid
+    NMLBA_CobaltStation
     NMLBA_ColonistFedRes
     NMLBA_KrielAerie
     NMLBA_KrielArcanum
