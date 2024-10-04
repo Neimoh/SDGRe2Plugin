@@ -1,0 +1,47 @@
+# Example file for controlling loading image and overlay text display
+# To activate remove "_example" from filename
+# ---------------------------------------------------------------------------------------
+# Note: Specify filenames without extension (.jpg will be added internally)
+# ---------------------------------------------------------------------------------------
+
+# Overlay title
+Title: <b><#00ffff>No Man's Land v1.12 RE2 Beta</color></b> <size=65%><#ffffff>(build 22)</color></size>
+
+# Overlay body (typically multi-line text)
+# If commented out, only the title will be displayed
+Body: |
+  <size=135%><#ffffff><b>September 12:</b></color></size>
+  <size=85%>•<indent=3%>Added random missions to captains of UCH research vessels outside starters. (required pda readdata console command)</indent></size>
+  <size=85%>•<indent=3%>Adjusted reputation penalties for spawning structures in faction territory.</indent></size>
+  <size=85%>•<indent=3%>Added new nest and volcanic POIs.</indent></size>
+  <size=85%>•<indent=3%>Increased gold ore drop rate from mining by 33.3%.</indent></size>
+  <size=85%>•<indent=3%>Added new Pentaxid Tank from 1.11.8.</indent></size>
+  <size=85%>•<indent=3%>Added new Rock Blocks.</indent></size>
+  <size=85%>•<indent=3%>Misc updates and fixes.</indent></size>
+  <size=85%><#ffff00>Reforged Eden 2 is currently in Beta. You may encounter issues.</size>
+  <size=85%></size>
+  <size=85%><#00ff95>No Man's Land October 4 added:</size>
+  <size=85%>•<indent=3%>Kriel, Pirate, Warlord Ships and POi's</indent></size>
+  <size=85%>•<indent=3%>Coreable Overrun POI's</indent></size>
+  <size=85%>•<indent=3%>No Shield Penetration and Crew CPU added</indent></size>
+  <size=85%>•<indent=3%>Massive orbital life improvements</indent></size>
+  <size=85%>•<indent=3%>Added NML System for PVP and Player meetings</indent></size>
+  
+# To show a certain image at the start of each loading image sequence, specify the respective file name
+# To use the default random image selection, comment out the following line
+# FirstPic: p49
+
+# To show the overlay text with certain images only, specify the respective file names
+# To show the text with every image, comment out the following line
+# ShowWith: [ p02, p03 ]
+
+# Show time for images - if not specified differently below
+# If commented out, the default is 10 seconds
+# Note: This time depends on the speed of the client computer as when loading a game a lot of work is done in parallel
+StandardShowTime: 20
+
+# To set a specific show time for certain images, specify "filename: time" lines
+# If not needed, comment out all lines of the following parameter
+# ShowTimes:
+  # p49: 45
+  # p06: 8
