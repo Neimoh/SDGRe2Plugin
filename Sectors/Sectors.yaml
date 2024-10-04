@@ -165,7 +165,7 @@ SolarSystems:
         Color: '1,1,0 : 0.5,0.5,0.5'
         Playfields:
          - ['0, 0, 0', Deadfall, Alien,'', '', '', '']
-         - ['0,0,0', Deadfall Sector, EdenSpaceG_Orbit, '']
+         - ['0,0,0', Deadfall Sector, Start_OrbitEasy, '']
         Allow:
          - 'NML [Sun Right]'
          - 'NML [Sun Left]'
