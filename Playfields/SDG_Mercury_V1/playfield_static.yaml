@@ -107,6 +107,9 @@ AsteroidResources:
      - Name: SathiumResource
        Threshold: 0.1
        Amount: 0.2
+     - Name: GoldResource
+       Threshold: 0.1
+       Amount: 0.2
 
 ### POIs
 POIs:

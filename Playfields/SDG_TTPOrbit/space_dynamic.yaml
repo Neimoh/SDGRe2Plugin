@@ -60,7 +60,8 @@ POIs:
 
 #NML SDG TTP Trade Station ----------------------------------------------------------
     - Type: BA_Alien
-      GroupName: NMLCommunityTrade
+#      GroupName: NMLCommunityTrade # Broken bp?
+      GroupName: NMLCommunityTrade2
 #      GroupName: NMLTTPTradeBasic
 #      Name: NMLTTP Trade Station 1.1
       Faction: Admin
