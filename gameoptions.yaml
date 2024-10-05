@@ -2,13 +2,13 @@
 Options:
     #### SPECIAL COOP SETTING ####
   - ValidFor: [ MP, Survival ]
-    DecayTime: 24                     # default value
+    DecayTime: 0                     # default value
     WipeTime: 0                       # default value
     ProtectTime: 48                   # default value
     ProtectDelay: 300                 # default value
     MaxStructures: 2000                # default value
     AntiGriefDistancePvE: 0
-    AntiGriefDistancePvP: 0
+    AntiGriefDistancePvP: 300
     AntiGriefOresDistance: 0             
     AntiGriefOresZone: PvE            # default value  
     EnableTrading: All                # default value
@@ -40,8 +40,8 @@ Options:
     DiffFoodConsumption: Normal       # default value
     DiffOxygenConsumption: Normal     # default value
     DiffRadiationTemperature: Normal  # default value
-    DiffAmountOfOre: Rich           # default value
-    DiffNumberOfDeposits: Plenty      # default value
+    DiffAmountOfOre: Normal           # default value
+    DiffNumberOfDeposits: Normal      # default value
     DiffAttackStrength: Medium        # default value
     DiffDronePresence: Normal         # default value
     DiffDroneBaseAttack: Normal       # default value
