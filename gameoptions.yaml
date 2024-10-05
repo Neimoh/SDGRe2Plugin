@@ -1,0 +1,53 @@
+# !! For latest info on available parameters and other details, see gameoptions_example.yaml, e.g. in Content\Scenarios\Default Random !!
+Options:
+    #### SPECIAL COOP SETTING ####
+  - ValidFor: [ MP, Survival ]
+    DecayTime: 24                     # default value
+    WipeTime: 0                       # default value
+    ProtectTime: 48                   # default value
+    ProtectDelay: 300                 # default value
+    MaxStructures: 2000                # default value
+    AntiGriefDistancePvE: 0
+    AntiGriefDistancePvP: 0
+    AntiGriefOresDistance: 0             
+    AntiGriefOresZone: PvE            # default value  
+    EnableTrading: All                # default value
+    EnableMaxBlockCount: True
+    EnableCPUPoints: True            # default value
+    EnableVolumeWeight: True         # default value
+    AutoMinerDepletion: False
+    EnableUnlockCheckInBPF: True
+    GroundedStructureSpawn: False
+    TurretUndergroundCheck: True   
+    OriginDefault: Neutral            # default value
+    OriginAccessOthers: False          # default value
+    OriginAutoAlliance: False          # default value
+    MaxSpawnedEnemies: 60             # default value
+    DespawnEscapePod: True 
+    RegeneratePOIs: True               
+    FOWTransparency: 0                # default value
+    DSLDistancePlanet: 1200           # default value
+    DSLDistanceSpace: 3000            # default value
+    ForcePvP: False
+    OriginFactionStart: False   
+    CustomPlayerTab: "Scenario Change Log;https://steamcommunity.com/sharedfiles/filedetails/changelog/3143225812"
+
+    ### In local Coop, following parameter are ignored since they are taken from Difficulty Settings window ###
+    FriendlyFireInPvP: False           # default value
+    DiffEscapePodContent: Medium      # default value
+    DiffPlayerProgression: Normal     # default value
+    DiffDegradationSpeed: Normal      # default value
+    DiffFoodConsumption: Normal       # default value
+    DiffOxygenConsumption: Normal     # default value
+    DiffRadiationTemperature: Normal  # default value
+    DiffAmountOfOre: Rich           # default value
+    DiffNumberOfDeposits: Plenty      # default value
+    DiffAttackStrength: Medium        # default value
+    DiffDronePresence: Normal         # default value
+    DiffDroneBaseAttack: Normal       # default value
+    DiffConstrCraftTime: Normal       # default value
+    DiffBpProdTime: Instant            # default value
+
+
+    
+    
