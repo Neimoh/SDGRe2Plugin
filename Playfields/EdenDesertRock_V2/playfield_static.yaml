@@ -233,6 +233,25 @@ POIs:
 # Main POIs. Important or larger POIs and POI compounds.
 # =================================================================================================
 
+# Black Pyramid POI
+        - GroupName: NML_BlackPyramid
+          Faction: Alien
+          NoShieldReload: True  
+          IsImportant: True
+          LevelMod: +6
+          Biome: [ Saltflats ]
+          CountMinMax: [ 1, 1 ]
+          DroneProb: 0
+          DronesMinMax: [ 2, 3 ]
+          ReserveCount: 0
+          TroopTransport: False
+          # SpawnPOIAvoid: [TS_PlanetRG]
+          # SpawnPOIAvoidDistance: 1000
+          SpawnResource: ["NeodymiumResource:1-2","PromethiumResource:1-2"]
+          SpawnResourceRange: [110,175]
+          Properties:
+            - Key: RegenAfter
+              Value: 720 
 # =============================================== Faction Zirax Main
 # ====================== Drone Base
 # Zirax Drone base
@@ -386,25 +405,6 @@ POIs:
             - Key: RegenAfter
               Value: 720
 
-# Black Pyramid POI
-        - GroupName: NML_BlackPyramid
-          Faction: Alien
-          NoShieldReload: True  
-          IsImportant: True
-          LevelMod: +6
-          Biome: [ Saltflats ]
-          CountMinMax: [ 1, 1 ]
-          DroneProb: 0
-          DronesMinMax: [ 2, 3 ]
-          ReserveCount: 0
-          TroopTransport: False
-          # SpawnPOIAvoid: [TS_PlanetRG]
-          # SpawnPOIAvoidDistance: 1000
-          SpawnResource: ["NeodymiumResource:1-2","PromethiumResource:1-2"]
-          SpawnResourceRange: [110,175]
-          Properties:
-            - Key: RegenAfter
-              Value: 720 
 
 # ====================== Large Rados Mining Operation. 50% chance.
 # Dummy POI
