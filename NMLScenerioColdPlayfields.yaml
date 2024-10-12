@@ -180,7 +180,7 @@
           - Name: [Eden_NMLAzureT1]
             Faction: Alien
             CountMinMax: [1, 1]
-            Probability: 0.2
+            Probability: 0.12
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [65, 65]
             Mission: SpacePatrol
@@ -212,7 +212,7 @@
           - Name: [Eden_NMLAzureT2]
             Faction: Alien
             CountMinMax: [1, 1]
-            Probability: 0.03
+            Probability: 0.06
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [30, 35]
             Mission: SpacePatrol

@@ -1139,7 +1139,7 @@ DroneBaseSetup:
           - Name: [Eden_NMLAzureT1]
             Faction: Alien
             CountMinMax: [1, 1]
-            Probability: 0.2
+            Probability: 0.12
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [65, 65]
             Mission: SpacePatrol
