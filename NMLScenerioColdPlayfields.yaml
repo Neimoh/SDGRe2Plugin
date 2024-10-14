@@ -212,7 +212,7 @@
           - Name: [Eden_NMLAzureT2]
             Faction: Alien
             CountMinMax: [1, 1]
-            Probability: 0.06
+            Probability: 0.03
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [30, 35]
             Mission: SpacePatrol
