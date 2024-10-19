@@ -9,7 +9,7 @@ Vx.xreadme.txt
     GalaxyConfig.ecf
     ItemsConfig.ecf
     Templates.ecf
-\Playfields ------------------------ 45 Folders
+\Playfields ------------------------ 44 Folders
     Alien
     Barren
     BarrenMetal
@@ -42,7 +42,6 @@ Vx.xreadme.txt
     SDG_Orbit_Aurora_V1
     SDG_Orbit_Bellam_V1
     SDG_PirateBattlestation
-    SDG_POI_CombatTianLongT6
     SDG_TradeOrbit
     SDG_TTPOrbit
     Snow_V2
@@ -55,7 +54,9 @@ Vx.xreadme.txt
     Start_OrbitEasy
     Start_TradeHub
     TemperateSwamp
-\Prefabs --------------------------- 98 Files
+\Prefabs --------------------------- 100 Files
+    NML Cobalt Station V6.decals
+    NML Cobalt Station V6
     NMLBA_Abandoned Bunker
     NMLBA_Abandoned Depot
     NMLBA_Abandoned Factory

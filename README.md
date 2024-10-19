@@ -1,10 +1,23 @@
-NML Scenario add-in for RE2Beta compiled on RE2 Build 22
+NML Scenario add-in for RE2Beta compiled on RE2 Build 23
 =============================================================
 NML RE2 Scenerio Plugin was created specifically for SDGamers, No Man's Land Empyrion Server.
 Our goal was to mitigate some undesirable changes made in Reforged Eden 2 and migrate alot of lost Reforged Eden 1 content forward with updates and add in new player crafted POI's and Ships and to make the Starfields alot more alive and busy and get faction conflicts back in action.
 
 
-Changelog V1.1:
+Changelog V1.15:
+- Update Scenerio for RE2 Build 23
+
+Changelog V1.14:
+- !ttp Trade station update
+
+Changelog V1.13:
+- Balancing edits
+
+Changelog V1.12:
+- NML System edits
+- Various ship Balancing
+
+Changelog V1.11:
 General Edits:
 - Civilian vessels are now functional and spawn in neutral space and varius Factions use them in Trade Systems
 - Added pirateT1 ships to main faction territory spawns so they add to local territory ships

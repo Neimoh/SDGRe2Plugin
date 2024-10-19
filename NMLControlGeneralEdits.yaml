@@ -11,6 +11,7 @@
 ***************************************************************************************************************** BlocksConfig
 #************************************  Alien Crew
 { +Block Id: 328, Name: NPCAlienTemplate
+# under Place:Free
   IndexName: Crew
   SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
   MaxCount: 30, type: int, display: true
@@ -19,6 +20,7 @@
 #************************************  Human Crew
 
 { +Block Id: 329, Name: NPCHumanTemplate
+# under Place:Free
   IndexName: Crew
   SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
   MaxCount: 30, type: int, display: true
@@ -65,10 +67,15 @@
 
 #************************************  Shield penetration searches
 ShieldDamagePenFac
-ShieldDamagePenFac: (\d).(\d)(\d)(\d)
+ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
 
 
 ***************************************************************************************************************** Galaxy
+  { Child Territory_1
+    Faction: Zirax
+    Other_9: Civilian, param1: "0.08, 0.8"
+
+  { Child Territory_3
     Faction: Kriel
     Other_2: Eden_KrielTerritory, param1: "1, 1"
     Other_3: Civilian, param1: "0.2, 0.6"
@@ -79,16 +86,13 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
     Other_6: Civilian, param1: "0.05, 0.8"
     Other_7: Trader, param1: "0.4, 0.4"
 
-  { Child Territory_7
-    Faction: Zirax
-    Other_9: Civilian, param1: "0.08, 0.8"
 
   { Child Territory_11 # Outlaw Space
     Faction: Wastelanders
     Other_6: Civilian, param1: "1, 1"
 
   { Child Territory_None  # area outside all faction territories
-    Other_5: Trader, param1: "0.7"
+    Other_5: Trader, param1: "0.5"
     Other_11: Civilian, param1: "1"
 
 
@@ -455,7 +459,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)
   # Unfriendly: true
   ClaimTerritory: true
   Reputation: true
-  ForceAttack: "Eden_Defender,Zirax,Polaris,Colonists,Warlord,Alien,TheLegacy,Eden_Drone,Eden_DroneHome,Wastelanders,Pirates"
+  ForceAttack: "Eden_Defender,Zirax,Polaris,Colonists,Warlord,Alien,TheLegacy,Eden_Drone,Eden_DroneHome,Wastelanders"
 
 { Faction Id: 18, Name: "Trader"
   ForceAttack: "Warlord,Alien,TheLegacy,Eden_Drone,Eden_DroneHome,Pirates,Talon"
@@ -631,5 +635,6 @@ Order:                   "Zirax,  Talon,  Polaris,  Pirates,  Kriel, Trader,  Co
   DestroyBlock:            "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
   OpenContainer:           "    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
   StructSpawnedInTerritory:"    0,     0,     0,         0,      0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,              0,       0,                0"
+}
 
 

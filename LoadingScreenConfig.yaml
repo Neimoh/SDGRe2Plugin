@@ -5,18 +5,17 @@
 # ---------------------------------------------------------------------------------------
 
 # Overlay title
-Title: <b><#00ffff>No Man's Land v1.12 RE2 Beta</color></b> <size=65%><#ffffff>(build 22)</color></size>
+Title: <b><#00ffff>No Man's Land v1.15 RE2 Beta</color></b> <size=65%><#ffffff>(build 23)</color></size>
 
 # Overlay body (typically multi-line text)
 # If commented out, only the title will be displayed
 Body: |
-  <size=135%><#ffffff><b>September 12:</b></color></size>
-  <size=85%>•<indent=3%>Added random missions to captains of UCH research vessels outside starters. (required pda readdata console command)</indent></size>
-  <size=85%>•<indent=3%>Adjusted reputation penalties for spawning structures in faction territory.</indent></size>
-  <size=85%>•<indent=3%>Added new nest and volcanic POIs.</indent></size>
-  <size=85%>•<indent=3%>Increased gold ore drop rate from mining by 33.3%.</indent></size>
-  <size=85%>•<indent=3%>Added new Pentaxid Tank from 1.11.8.</indent></size>
-  <size=85%>•<indent=3%>Added new Rock Blocks.</indent></size>
+  <size=135%><#ffffff><b>October 18:</b></color></size>
+  <size=85%>•<indent=3%>Ongoing work in progress updates to Legacy space. (new saves only)</indent></size>
+  <size=85%>•<indent=3%>Various PDA updates. (required pda readdata console command)</indent></size>
+  <size=85%>•<indent=3%>Updated handheld weapon models and effects.</indent></size>
+  <size=85%>•<indent=3%>Tech tree unlock updates. If you don't find an unlock you're looking for check in another tech tree.</indent></size>
+  <size=85%>•<indent=3%>Added Heavy Bomb Launcher for SV.</indent></size>
   <size=85%>•<indent=3%>Misc updates and fixes.</indent></size>
   <size=85%><#ffff00>Reforged Eden 2 is currently in Beta. You may encounter issues.</size>
   <size=85%></size>
@@ -26,6 +25,7 @@ Body: |
   <size=85%>•<indent=3%>No Shield Penetration and Crew CPU added</indent></size>
   <size=85%>•<indent=3%>Massive orbital life improvements</indent></size>
   <size=85%>•<indent=3%>Added NML System for PVP and Player meetings</indent></size>
+  <size=85%>•<indent=3%>Added Server Chat !ttp Teleport Trade System for Player meetings</indent></size>
   
 # To show a certain image at the start of each loading image sequence, specify the respective file name
 # To use the default random image selection, comment out the following line
