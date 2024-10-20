@@ -75,33 +75,6 @@
 16 ***************************************************************************************************************** EdenSpaceK_Orbit
 #******************************************** Playfields\EdenspaceK_Orbit\spacedynamic    
 
-# ------------------------------------------------------------------------------------------------- Faction Main
-# Patrol Vessels
-          - Name: [R2OPV_PirateT1]
-            Faction: Main
-            CountMinMax: [2, 4]
-            Probability: 1
-            CanNotBeControlledByMasterAI: False
-            FixedMaxSpeed: [40, 60]
-            Mission: SpacePatrol
-            MissionDescription:
-              DelayBetweenRespawnMinMax: [3600, 3600]
-              DelayBeforeSelfDestructionMinMax: [3600, 3600]
-              IsRespawnAfterDestruction: False
-              RadiusMinMax: [1000, 10000]
-              Position:
-                PosXZMinMax: [1000, 5000]
-                PosYMax: 3500
-            StockDescription:
-              Name: [SpaceDroneLaser, SpaceDronePlasma]
-              AmountMinMax: [2, 4]
-              ExtraMinMax: [0,0]
-              Type: FighterDrone
-            Properties:
-              # - Key: SelfDestructionWithNoCore
-                # Value: True
-              - Key: AIManMaxPursuitRange
-                Value: 5000
 
 # ================================================================================================================================================================================= Kriel
     - Type: BA_Alien
@@ -173,13 +146,40 @@
 
 
 #************************ under SpaceVessels
+# ------------------------------------------------------------------------------------------------- Faction Main
+# Patrol Vessels
+          - Name: [R2OPV_PirateT1]
+            Faction: Main
+            CountMinMax: [2, 4]
+            Probability: 1
+            CanNotBeControlledByMasterAI: False
+            FixedMaxSpeed: [40, 60]
+            Mission: SpacePatrol
+            MissionDescription:
+              DelayBetweenRespawnMinMax: [3600, 3600]
+              DelayBeforeSelfDestructionMinMax: [3600, 3600]
+              IsRespawnAfterDestruction: False
+              RadiusMinMax: [1000, 10000]
+              Position:
+                PosXZMinMax: [1000, 5000]
+                PosYMax: 3500
+            StockDescription:
+              Name: [SpaceDroneLaser, SpaceDronePlasma]
+              AmountMinMax: [2, 4]
+              ExtraMinMax: [0,0]
+              Type: FighterDrone
+            Properties:
+              # - Key: SelfDestructionWithNoCore
+                # Value: True
+              - Key: AIManMaxPursuitRange
+                Value: 5000
 
 # ------------------------------------------------------------------------------------------------- Faction Trader
 #************************ Above - Name: [R2OPV_PirateT1]
 # Patrol Vessels
           - Name: [NML_OPVTraderTSO]
             Faction: Trader
-            CountMinMax: [1, 4]
+            CountMinMax: [0, 2]
             Probability: 0.4
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [10, 30]
@@ -208,7 +208,7 @@
 #- Name: [OPVPiratesRG]
           - Name: [R2OPV_PirateT1]
             Faction: Pirates
-            CountMinMax: [1, 4]
+            CountMinMax: [0, 2]
             Probability: 0.6
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [40, 60]
@@ -369,7 +369,7 @@
           - Name: [OPVNMLWarlordRG]
             Faction: Warlord
             CountMinMax: [1, 1]
-            Probability: 0.25
+            Probability: 0.1
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [20, 50]
             Mission: SpacePatrol
@@ -395,7 +395,7 @@
 # T1 Patrol Vessels
           - Name: [R2OPV_WarlordT1]
             Faction: Warlord
-            CountMinMax: [1, 4]
+            CountMinMax: [0, 3]
             Probability: 0.6
             CanNotBeControlledByMasterAI: False
             FixedMaxSpeed: [30, 55]
@@ -535,6 +535,7 @@
 # ------------------------------------------------------------------------------------------------- Faction Civilian
 # Civilian Cargo Shuttles
           - Name: [Eden_OPVTraderTSO]
+            CountMinMax: [3, 6]
               #- Key: MapDistance
               #  Value: 0
               #- Key: HudDistance
