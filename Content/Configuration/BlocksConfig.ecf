@@ -3530,6 +3530,21 @@
   Radiation: 15, display: RadiationLevel
   Temperature: 35, display: true
 }
+{ +Block Name: QuantumPentaxidTankCVBA, Ref: PentaxidTank
+  Info: A large Quantum Based Pentaxid tank allowing for a greater max storage. [c][ff8000]This is an extremely rare and expensive device. Save your ship repair template without it. Limit 1 and does not stack with similar devices.[-][/c] \n[c][A9A9A9][i]Requires No Mans Land Plugin.[/i][-][/c], display: true
+  CustomIcon: PentaxidTank                       #Icon required
+  ShowBlockName: false
+  VolumeCapacity: 6400, type: float, display: true, formatter: Liter
+  HitPoints: 10000, type: int, display: true
+  RepairToTemplate: false, display: true
+  BlastParticleIndex: 10
+  UnlockCost: 1000, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: PentaxidTank
+  TechTreeNames: "Base,Capital Vessel"
+  Radiation: 100, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
+  Temperature: 2000, display: true
+}
 
 { Block Id: 337, Name: DecoTemplate
   Material: Device
@@ -21351,6 +21366,16 @@
   
   Radiation: 5, display: RadiationLevel
   Temperature: 35, display: true
+}
+{ +Block Name: QuantumPentaxidTankSV, Ref: PentaxidTankSV
+  Info: A large Quantum Based Pentaxid tank allowing for a greater max storage. [c][ff8000]This is an extremely rare and expensive device. Save your ship repair template without it. Limit 1 and does not stack with similar devices.[-][/c] \n[c][A9A9A9][i]Requires No Mans Land Plugin.[/i][-][/c], display: true
+  CustomIcon: PentaxidTankSV                       #Icon required
+  ShowBlockName: false
+  VolumeCapacity: 800, type: float, display: true, formatter: Liter
+  UnlockCost: 500, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: PentaxidTankSV
+  TechTreeNames: "Small Vessel,Hover Vessel"
 }
 
 { Block Id: 1438, Name: RockGrey01Large

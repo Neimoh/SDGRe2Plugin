@@ -48,6 +48,35 @@
   Temperature: 450, display: true
 }
 
+#************************************  Place under { +Block Id: 336, Name: PentaxidTank
+{ +Block Name: QuantumPentaxidTankCVBA, Ref: PentaxidTank
+  Info: A large Quantum Based Pentaxid tank allowing for a greater max storage. [c][ff8000]This is an extremely rare and expensive device. Save your ship repair template without it. Limit 1 and does not stack with similar devices.[-][/c] \n[c][A9A9A9][i]Requires No Mans Land Plugin.[/i][-][/c], display: true
+  CustomIcon: PentaxidTank                       #Icon required
+  ShowBlockName: false
+  VolumeCapacity: 6400, type: float, display: true, formatter: Liter
+  HitPoints: 10000, type: int, display: true
+  RepairToTemplate: false, display: true
+  BlastParticleIndex: 10
+  UnlockCost: 1000, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: PentaxidTank
+  TechTreeNames: "Base,Capital Vessel"
+  Radiation: 100, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
+  Temperature: 2000, display: true
+}
+
+#************************************  Place under { +Block Id: 1437, Name: PentaxidTankSV
+{ +Block Name: QuantumPentaxidTankSV, Ref: PentaxidTankSV
+  Info: A large Quantum Based Pentaxid tank allowing for a greater max storage. [c][ff8000]This is an extremely rare and expensive device. Save your ship repair template without it. Limit 1 and does not stack with similar devices.[-][/c] \n[c][A9A9A9][i]Requires No Mans Land Plugin.[/i][-][/c], display: true
+  CustomIcon: PentaxidTankSV                       #Icon required
+  ShowBlockName: false
+  VolumeCapacity: 800, type: float, display: true, formatter: Liter
+  UnlockCost: 500, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: PentaxidTankSV
+  TechTreeNames: "Small Vessel,Hover Vessel"
+}
+
 ***************************************************************************************************************** Templates
 #************************************  Place under { +Template Name: Furnace
 { +Template Name: FurnaceCV
@@ -63,11 +92,47 @@
   }
 }
 
+#************************************  replace platinounce with
+{ +Template Name: RailgunSlugCVT3
+    Eden_TungstenIngot: 18
+
+#************************************  under PentaxidTank
+{ +Template Name: QuantumPentaxidTankCVBA
+  CraftTime: 15
+  Target: "SmallC"
+  { Child Inputs
+    Eden_MagmacitePlate: 100
+    QuantumProcessor: 8
+    GlassPlate: 2000
+    AluminiumPowder: 500
+    SteelPlateArmored: 8000
+    LargeOptronicMatrix: 5
+    Eden_Electromagnet: 4
+  }
+}
+
+#************************************  under PentaxidTankSV
+{ +Template Name: QuantumPentaxidTankSV
+  CraftTime: 5
+  Target: "SmallC"
+  { Child Inputs
+    Eden_MagmacitePlate: 10
+    QuantumProcessor: 4
+    GlassPlate: 200
+    AluminiumPowder: 250
+    SteelPlateArmored: 4000
+    SmallOptronicMatrix: 5
+    Eden_Electromagnet: 2
+  }
+}
+
 ***************************************************************************************************************** ItemsConfig
 
 #************************************  Shield penetration searches
 ShieldDamagePenFac
 ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
+
+
 
 
 ***************************************************************************************************************** Galaxy

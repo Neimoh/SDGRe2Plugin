@@ -3,16 +3,26 @@ NML Scenario add-in for RE2Beta compiled on RE2 Build 23
 Changelog V1.15:
 - Update Scenerio for RE2 Build 23
 
+Block Edits:
+- Added Quantum Based CV and SV Pentaxid tanks with higher volumes
+
+General Edits:
+- Changed Heavy Railgun Penetrator rounds from Platinum ingrediant to Tungsten because it makes more sense
+
+___________________________________________________________________________________________________________________
 Changelog V1.14:
 - !ttp Trade station update
 
+___________________________________________________________________________________________________________________
 Changelog V1.13:
 - Balancing edits
 
+___________________________________________________________________________________________________________________
 Changelog V1.12:
 - NML System edits
 - Various ship Balancing
 
+___________________________________________________________________________________________________________________
 Changelog V1.11:
 General Edits:
 - Civilian vessels are now functional and spawn in neutral space and varius Factions use them in Trade Systems

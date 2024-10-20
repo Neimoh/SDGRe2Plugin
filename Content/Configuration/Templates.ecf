@@ -3564,6 +3564,20 @@
     FluxCoil: 6
   }
 }
+{ +Template Name: QuantumPentaxidTankCVBA
+  CraftTime: 15
+  Target: "SmallC"
+  { Child Inputs
+    Eden_MagmacitePlate: 100
+    QuantumProcessor: 8
+    GlassPlate: 2000
+    AluminiumPowder: 500
+    SteelPlateArmored: 8000
+    LargeOptronicMatrix: 5
+    Eden_Electromagnet: 4
+  }
+}
+
 { +Template Name: PentaxidTankSV
   CraftTime: 5
   Target: "SmallC,LargeC,AdvC"
@@ -3573,6 +3587,19 @@
     EnergyMatrix: 4
     CobaltAlloy: 48
 	PlasticMaterial: 24
+  }
+}
+{ +Template Name: QuantumPentaxidTankSV
+  CraftTime: 5
+  Target: "SmallC"
+  { Child Inputs
+    Eden_MagmacitePlate: 10
+    QuantumProcessor: 4
+    GlassPlate: 200
+    AluminiumPowder: 250
+    SteelPlateArmored: 4000
+    SmallOptronicMatrix: 5
+    Eden_Electromagnet: 2
   }
 }
 { +Template Name: ShieldBoosterSmallT1Blocks
@@ -7263,7 +7290,7 @@
   CraftTime: 5
   Target: "SmallC,AdvC"
   { Child Inputs
-    PlatinOunce: 36
+    Eden_TungstenIngot: 18
     SathiumIngot: 18
     NeodymiumIngot: 18
   }
