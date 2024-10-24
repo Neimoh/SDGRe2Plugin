@@ -5,9 +5,21 @@ Changelog V1.15:
 
 Block Edits:
 - Added Quantum Based CV and SV Pentaxid tanks with higher volumes
+- Increased Planet and Space Drone bay inventory volume to 96k
 
 General Edits:
 - Changed Heavy Railgun Penetrator rounds from Platinum ingrediant to Tungsten because it makes more sense
+- Reduced spawn rates of Pirate, Warlord, Trader and Colonist ships in Habitable and Hot systems by 10%
+- Increased Planet and Orbital Drone stack sizes from 12  to 48
+
+POI Edits:
+- Removed Swarm Capacitor Matrix roof cap and edited loot containers to give proper loot, added 6 rf7 boxes and 2 adv cpu
+- Added in old RE1.8 Swarm Capacitor Matrix and updated for RE2 added 2 adv cpu
+- Added in old RE1.8 Capacitor Matrix and removed 2 RF7 boxes added 2 improved cpu
+- Added all 3 Capacitor Matrixes to same spawngroup call for variety
+
+Bug Fixes:
+- Replaced Overrun Assembly Yard v1 with corrected version that has final room switches and working timers
 
 ___________________________________________________________________________________________________________________
 Changelog V1.14:

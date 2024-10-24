@@ -48,6 +48,19 @@
   Temperature: 450, display: true
 }
 
+{ +Block Id: 1048, Name: AIDroneBay
+  VolumeCapacity: 96000, type: float, display: true, formatter: Liter
+  ADBMaxSpawner: 4
+  ADBMaxActiveDrone: 5
+  ADBMaxReserve: 48
+
+{ Block Name: DroneBaySpace, Ref: AIDroneBay
+  VolumeCapacity: 96000, type: float, display: true, formatter: Liter
+  ADBMaxSpawner: 4
+  ADBMaxActiveDrone: 5
+  ADBMaxReserve: 48
+
+
 #************************************  Place under { +Block Id: 336, Name: PentaxidTank
 { +Block Name: QuantumPentaxidTankCVBA, Ref: PentaxidTank
   Info: A large Quantum Based Pentaxid tank allowing for a greater max storage. [c][ff8000]This is an extremely rare and expensive device. Save your ship repair template without it. Limit 1 and does not stack with similar devices.[-][/c] \n[c][A9A9A9][i]Requires No Mans Land Plugin.[/i][-][/c], display: true
@@ -126,11 +139,17 @@
   }
 }
 
-***************************************************************************************************************** ItemsConfig
+***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 
 #************************************  Shield penetration searches
 ShieldDamagePenFac
 ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
+
+{ +Item Id: 885, Name: DroneLargePlayer01Unit
+  StackSize: 48
+
+{ +Item Id: 887, Name: DroneLargePlayer02Unit
+  StackSize: 48
 
 
 

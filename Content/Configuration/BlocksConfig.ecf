@@ -16190,7 +16190,7 @@
   HitPoints: 24000, type: int, display: true 
   Mass: 40000, type: float, display: true, formatter: Kilogram  #recalculate
   Volume: 8000, type: float, display: true, formatter: Liter
-  VolumeCapacity: 16000, type: float, display: true, formatter: Liter
+  VolumeCapacity: 96000, type: float, display: true, formatter: Liter
   CPUIn: 20000, type: int, display: true
   
   EnergyIn: 250, type: int, display: true, formatter: Watt  
@@ -16210,9 +16210,9 @@
   IsLockable: true
   
   ADBDroneType: DroneLargePlayer01
-  ADBMaxSpawner: 2
-  ADBMaxActiveDrone: 3
-  ADBMaxReserve: 12
+  ADBMaxSpawner: 4
+  ADBMaxActiveDrone: 5
+  ADBMaxReserve: 48
   ADBActionRadius: 600
   ADBDockingSpeedFac: 0.4
   ADBDroneAmmoType: DroneLargePlayer01Unit 
@@ -43294,7 +43294,7 @@
   HitPoints: 32000, type: int, display: true 
   Mass: 60000, type: float, display: true, formatter: Kilogram  #recalculate
   Volume: 8000, type: float, display: true, formatter: Liter
-  VolumeCapacity: 24000, type: float, display: true, formatter: Liter
+  VolumeCapacity: 96000, type: float, display: true, formatter: Liter
   CPUIn: 35000, type: int, display: true
   
   EnergyIn: 350, type: int, display: true, formatter: Watt
@@ -43309,9 +43309,9 @@
   Damage: 500, display: true
   
   ADBDroneType: DroneLargePlayer02
-  ADBMaxSpawner: 2
-  ADBMaxActiveDrone: 3
-  ADBMaxReserve: 12
+  ADBMaxSpawner: 4
+  ADBMaxActiveDrone: 5
+  ADBMaxReserve: 48
   ADBActionRadius: 1500
   ADBDockingSpeedFac: 0.8
   ADBDroneAmmoType: DroneLargePlayer02Unit 
