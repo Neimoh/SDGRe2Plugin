@@ -290,6 +290,7 @@
 { +Template Name: SteelPlate
   OutputCount: 10
   CraftTime: 1
+  DeconOverride: Continue
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     IronIngot: 5
@@ -352,6 +353,7 @@
 { +Template Name: Electronics
   OutputCount: 8
   CraftTime: 1
+  DeconOverride: Continue
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     CopperIngot: 2
@@ -395,6 +397,7 @@
 
 { +Template Name: Computer
   CraftTime: 2
+  DeconOverride: Continue
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     SteelPlate: 1
@@ -405,6 +408,7 @@
 
 { +Template Name: Motor
   CraftTime: 2
+  DeconOverride: Continue
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     SteelPlate: 1
@@ -429,6 +433,7 @@
 { +Template Name: CobaltAlloy
   OutputCount: 5
   CraftTime: 2
+  DeconOverride: Continue
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     CobaltIngot: 3
@@ -439,6 +444,7 @@
 { +Template Name: ZascosiumAlloy
   OutputCount: 5
   CraftTime: 3
+  DeconOverride: Continue
   Target: "SmallC,LargeC,AdvC"
   { Child Inputs
     ErestrumIngot: 5

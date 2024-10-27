@@ -1,7 +1,13 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 23
 =============================================================
 HotFix V1.15.3:
+- Made deconstructors break down Steel Plates, Electronics, Computers and Motors into Basic ingots
+
+HotFix V1.15.2:
 - Fixed Human crew definition not allowing placement
+
+HotFix V1.15.1:
+- Shared data loading screen fix
 
 Changelog V1.15:
 - Update Scenerio for RE2 Build 23
