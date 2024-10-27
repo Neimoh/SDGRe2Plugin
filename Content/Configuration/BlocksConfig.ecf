@@ -55083,7 +55083,7 @@
   SizeInBlocks: "3,2,5", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 1, type: float, display: true, formatter: Liter
-  Mass: 82200, type: float, display: true, formatter: Kilogram
+  Mass: 48000, type: float, display: true, formatter: Kilogram
   IsDuplicateable: false
   MaxCount: 1, type: int, display: true
   ForceMaxCount: true
@@ -55093,7 +55093,7 @@
   Category: Devices
   Info: bkiWarpDrive, display: true
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 40000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1150, type: int, display: true
 
   BlastParticleIndex: 4

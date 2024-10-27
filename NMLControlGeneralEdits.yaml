@@ -60,6 +60,9 @@
   ADBMaxActiveDrone: 5
   ADBMaxReserve: 48
 
+{ +Block Name: Eden_WarpDriveDebug
+  Mass: 48000, type: float, display: true, formatter: Kilogram
+  CPUIn: 20000, type: int, display: true
 
 #************************************  Place under { +Block Id: 336, Name: PentaxidTank
 { +Block Name: QuantumPentaxidTankCVBA, Ref: PentaxidTank
