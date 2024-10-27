@@ -3319,6 +3319,7 @@
   BlockColor: "110,110,110"
   Place: Free
   IndexName: Crew
+  AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
   IsAccessible: false, type: bool

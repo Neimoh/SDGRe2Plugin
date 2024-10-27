@@ -1,5 +1,8 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 23
 =============================================================
+HotFix V1.15.3:
+- Fixed Human crew definition not allowing placement
+
 Changelog V1.15:
 - Update Scenerio for RE2 Build 23
 
