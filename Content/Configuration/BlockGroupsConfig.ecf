@@ -98,6 +98,15 @@
    Blocks: "Eden_RailgunCVSpinal"
  }
 
+ { BlockGroup Name: PentaxidTanksLarge
+   MaxCount: 1
+   Blocks: "PentaxidTank,QuantumPentaxidTankCVBA"
+ }
+ { BlockGroup Name: PentaxidTanksSmall
+   MaxCount: 1
+   Blocks: "PentaxidTankSV,QuantumPentaxidTankSV"
+ }
+
  # { BlockGroup Name: Eden_MaxAuxiliaryCores
    # MaxCount: 10
    # Blocks: "Eden_AuxillaryDummy,Eden_AuxillaryCPUBA,Eden_AuxillaryPowerBA,Eden_AuxillaryShieldBA"
