@@ -244,10 +244,11 @@
 # ------------------------------------------------------------------------------------------------- Faction Civilian
 # Civilian Cargo Shuttles
           - Name: [Eden_OPVTraderTSO]
+            CountMinMax: [2, 6]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 

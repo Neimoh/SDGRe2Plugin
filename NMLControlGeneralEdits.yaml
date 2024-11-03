@@ -7,6 +7,15 @@
    Blocks: "ZiraxCommander, SecurityGuardZirax, CommandingOfficerAlien, SecurityGuardAlien, ControlStationNPC, ReceptionTableNPC, ScifiTableV2NPC, ScifiSofaNPC, ScifiTableNPC, ConsoleSmallNPC, SofaNPC, StandingNPC, StandingNPC2, ScifiLargeSofaNPC, ScifiTableNPC2, ScifiTableNPC3, DancingAlien1, DancingAlien2, GamblingTableTwoPerson, GamblingTableMultiplePeople, ConsoleSmallHuman, StandingHuman, StandingHuman2, ControlStationHuman, ControlStationHuman2, ReceptionTableHuman, ScifiTableHuman, ScifiLargeSofaHuman, TacticalOfficer, CommandingOfficer, CommandingOfficer2, CommandingOfficerMale, SecurityGuard, SecurityGuard2, OperatorPilot, EngineerMainStation, DancingHuman1, DancingHuman2, DancingHuman3"
  }
 
+#************************************  under BlockGroup Name: Eden_ExpWeaponsLarge
+ { BlockGroup Name: PentaxidTanksLarge
+   MaxCount: 1
+   Blocks: "PentaxidTank,QuantumPentaxidTankCVBA"
+ }
+ { BlockGroup Name: PentaxidTanksSmall
+   MaxCount: 1
+   Blocks: "PentaxidTankSV,QuantumPentaxidTankSV"
+ }
 
 ***************************************************************************************************************** BlocksConfig
 #************************************  Alien Crew
@@ -142,6 +151,25 @@
   }
 }
 
+{ +Template Name: SteelPlate
+  DeconOverride: Continue
+
+{ +Template Name: Electronics
+  DeconOverride: Continue
+
+{ +Template Name: Computer
+  DeconOverride: Continue
+
+{ +Template Name: Motor
+  DeconOverride: Continue
+
+{ +Template Name: CobaltAlloy
+  DeconOverride: Continue
+
+{ +Template Name: ZascosiumAlloy
+  DeconOverride: Continue
+
+
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 
 #************************************  Shield penetration searches
@@ -155,6 +183,13 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
   StackSize: 48
 
 
+
+***************************************************************************************************************** \Extras\Localization
+#************************************  Place under bkiModularWings
+QuantumPentaxidTankCVBA,Quantum Pentaxid Tank (Large),Pentaxidtank,Réservoir de pentaxid,Serbatoio di Pentaxid,Tanque de Pentaxid,,Tanque do Pentaxid,Zbiornik pentaxitu,Пентаксидный бак,ペンタキシドタンク,翘曲能量罐,磞燃料罐,,,Δεξαμενή Πενταξειδίου,,Bể Pentaxid
+QuantumPentaxidTankSV,Quantum Pentaxid Tank (Small),Pentaxidtank,Réservoir de pentaxid,Serbatoio di Pentaxid,Tanque de Pentaxid,,Tanque do Pentaxid,Zbiornik pentaxitu,Пентаксидный бак,ペンタキシドタンク,翘曲能量罐,磞燃料罐,,,Δεξαμενή Πενταξειδίου,,Bể Pentaxid
+bkiQuantumPentaxidTank,"Quantum based tank has higher capacity for Pentaxid crystals, used for exotic energy applications, like warp jump and shields.",,,,,,,,,,,,,,,,
+FurnaceCV,Furnace,Schmelzofen,Fourneau,Fornace,Horno,Forno,Fornalha,Piec hutniczy,Печь,溶鉱炉,熔炉,熔爐,용광로,,,Smelt oven,Lò nung
 
 
 ***************************************************************************************************************** Galaxy

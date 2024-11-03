@@ -717,8 +717,8 @@
             CountMinMax: [3, 8]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 14 ***************************************************************************************************************** EdenspaceG_AsteroidT1
@@ -1335,8 +1335,8 @@
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 14 ***************************************************************************************************************** EdenspaceGasDwarf_Orbit
           - Name: [OPVNMLKrielRG]

@@ -538,8 +538,8 @@
             CountMinMax: [3, 6]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 
