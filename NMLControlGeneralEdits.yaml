@@ -102,6 +102,93 @@
   TechTreeNames: "Small Vessel,Hover Vessel"
 }
 
+
+# Hydroponics Bay (Grain)
+{ +Block Name: Eden_HydroponicsGrain
+  CropYield: 54, display: true
+# Hydroponics Bay (Grain) Ready for Harvest
+{ +Block Name: Eden_HydroponicsGrainGrown
+    Count: 54
+
+# Hydroponics Bay (Fruit)
+{ +Block Name: Eden_HydroponicsFruit, Ref: Eden_HydroponicsGrain
+  CropYield: 44, display: true
+# Hydroponics Bay (Fruit) Ready for Harvest
+{ +Block Name: Eden_HydroponicsFruitGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 44
+
+# Hydroponics Bay (Vegetables)
+{ +Block Name: Eden_HydroponicsVegetables, Ref: Eden_HydroponicsGrain
+  CropYield: 44, display: true
+# Hydroponics Bay (Fruit) Ready for Harvest
+{ +Block Name: Eden_HydroponicsVegetablesGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 44
+
+# Hydroponics Bay (Natural Stimulant)
+{ +Block Name: Eden_HydroponicsNaturalStimulant, Ref: Eden_HydroponicsGrain
+  CropYield: 33, display: true
+# Hydroponics Bay (Natural Stimulant) Ready for Harvest
+{ +Block Name: Eden_HydroponicsNaturalStimulantGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 33
+
+# Hydroponics Bay (Herbal Leaves)
+{ +Block Name: Eden_HydroponicsHerbalLeaves, Ref: Eden_HydroponicsGrain
+  CropYield: 22, display: true
+# Hydroponics Bay (Herbal Leaves) Ready for Harvest
+{ +Block Name: Eden_HydroponicsHerbalLeavesGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 22
+
+# Hydroponics Bay (Plant Protein)
+{ +Block Name: Eden_HydroponicsPlantProtein, Ref: Eden_HydroponicsGrain
+  CropYield: 44, display: true
+# Hydroponics Bay (Plant Protein) Ready for Harvest
+{ +Block Name: Eden_HydroponicsPlantProteinGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 44
+
+# Hydroponics Bay (Natural Sweetener)
+{ +Block Name: Eden_HydroponicsNaturalSweetener, Ref: Eden_HydroponicsGrain
+  CropYield: 22, display: true
+# Hydroponics Bay (Natural Sweetener) Ready for Harvest
+{ +Block Name: Eden_HydroponicsNaturalSweetenerGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 22
+
+# Hydroponics Bay (Plant Fiber)
+{ +Block Name: Eden_HydroponicsFiber, Ref: Eden_HydroponicsGrain
+  CropYield: 130, display: true
+# Hydroponics Bay (Plant Fiber) Ready for Harvest
+{ +Block Name: Eden_HydroponicsFiberGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 130
+
+# Hydroponics Bay (Mushrooms)
+{ +Block Name: Eden_HydroponicsMushroomBrown, Ref: Eden_HydroponicsGrain
+  CropYield: 22, display: true
+# Hydroponics Bay (Mushrooms) Ready for Harvest
+{ +Block Name: Eden_HydroponicsMushroomBrownGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 22
+
+# Hydroponics Bay (Spice)
+{ +Block Name: Eden_HydroponicsSpice, Ref: Eden_HydroponicsGrain
+  CropYield: 33, display: true
+# Hydroponics Bay (Spice) Ready for Harvest
+{ +Block Name: Eden_HydroponicsSpiceGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 33
+
+# Hydroponics Bay (Berries)
+{ +Block Name: Eden_HydroponicsBerries, Ref: Eden_HydroponicsGrain
+  CropYield: 22, display: true
+# Hydroponics Bay (Berries) Ready for Harvest
+{ +Block Name: Eden_HydroponicsBerriesGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 22
+
+# Hydroponics Bay (Pentaxid)
+{ +Block Name: Eden_HydroponicsPentaxid, Ref: Eden_HydroponicsGrain
+  CropYield: 22, display: true
+# Hydroponics Bay (Pentaxid) Ready for Harvest
+{ +Block Name: Eden_HydroponicsPentaxidGrown, Ref: Eden_HydroponicsGrainGrown
+    Count: 22
+
+
+
 ***************************************************************************************************************** Templates
 #************************************  Place under { +Template Name: Furnace
 { +Template Name: FurnaceCV
@@ -120,6 +207,10 @@
 #************************************  replace platinounce with
 { +Template Name: RailgunSlugCVT3
     Eden_TungstenIngot: 18
+
+# Used by SV T3 Torpedo Launcher #5655
+{ +Template Name: TorpedoSV
+    Eden_TungstenIngot: 4
 
 #************************************  under PentaxidTank
 { +Template Name: QuantumPentaxidTankCVBA
@@ -168,6 +259,12 @@
 
 { +Template Name: ZascosiumAlloy
   DeconOverride: Continue
+
+{ +Template Name: AluminiumCoil
+  DeconOverride: Continue
+
+{ +Template Name: WaterJug
+  Target: "FoodP,SurvC,SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
 
 
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig

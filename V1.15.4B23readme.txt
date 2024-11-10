@@ -1,5 +1,17 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 23
 =============================================================
+Changelog V1.16: (unreleased)
+General Edits:
+- Increased all Hydroponics bay yields by 20%
+- Changed SV Torpedo recipie to use 4 Tungsten vs 4 Platinum
+- Enabled Aluminum Foil to be melted back into Aluminum Powder
+- Allowed Furnace to melt Ice into Water containers
+
+POI Edits:
+- Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
+- Replaced RE2 Swarm Capacitor Matrix with a more viable and enticing version worth fighting
+
+___________________________________________________________________________________________________________________
 HotFix V1.15.4:
 - Updated Localization for custom block names
 - Fixed block groups for quantum pentaxid tanks

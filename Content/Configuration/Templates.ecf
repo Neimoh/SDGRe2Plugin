@@ -370,6 +370,7 @@
 }
 
 { +Template Name: AluminiumCoil
+  DeconOverride: Continue
   OutputCount: 2
   CraftTime: 2
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
@@ -688,7 +689,7 @@
   BaseItem: true
   OutputCount: 1
   CraftTime: 5
-  Target: "FoodP,SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
+  Target: "FoodP,SurvC,SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
   { Child Inputs
     IceBlocks: 4
   }
@@ -7101,7 +7102,7 @@
   CraftTime: 8
   Target: "SmallC"
   { Child Inputs
-	PlatinOunce: 4
+    Eden_TungstenIngot: 4
     SteelPlateArmored: 6
     Computer: 1
     AluminiumPowder: 12

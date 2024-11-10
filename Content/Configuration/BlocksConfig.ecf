@@ -48518,7 +48518,7 @@
   Voxelize: false
   ShowBlockName: true
   CropType: Grain, display: true
-  CropYield: 45, display: true
+  CropYield: 54, display: true
   GrowthTimeInfo: 45, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 1, type: float, display: true, formatter: Liter
@@ -48544,7 +48544,7 @@
   IndexName: Plant
   { Child DropOnHarvest
     Item: Grain
-    Count: 45
+    Count: 54
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsGrain
@@ -48580,7 +48580,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: Fruit, display: true
-  CropYield: 36, display: true
+  CropYield: 44, display: true
   GrowthTimeInfo: 64, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsFruit
   TemplateRoot: Eden_HydroponicsFruit
@@ -48596,7 +48596,7 @@
   CustomIcon: Eden_HydroponicsFruit
   { Child DropOnHarvest
     Item: Fruit
-    Count: 36
+    Count: 44
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsFruit
@@ -48616,7 +48616,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: Vegetables, display: true
-  CropYield: 36, display: true
+  CropYield: 44, display: true
   GrowthTimeInfo: 75, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsVegetables
   TemplateRoot: Eden_HydroponicsVegetables
@@ -48632,7 +48632,7 @@
   CustomIcon: Eden_HydroponicsVegetables
   { Child DropOnHarvest
     Item: Vegetables
-    Count: 36
+    Count: 44
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsVegetables
@@ -48652,7 +48652,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: NaturalStimulant, display: true
-  CropYield: 27, display: true
+  CropYield: 33, display: true
   GrowthTimeInfo: 41, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsNaturalStimulant
   TemplateRoot: Eden_HydroponicsNaturalStimulant
@@ -48669,7 +48669,7 @@
   CustomIcon: Eden_HydroponicsNaturalStimulant
   { Child DropOnHarvest
     Item: NaturalStimulant
-    Count: 27
+    Count: 33
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsNaturalStimulant
@@ -48689,7 +48689,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: HerbalLeaves, display: true
-  CropYield: 18, display: true
+  CropYield: 22, display: true
   GrowthTimeInfo: 45, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsHerbalLeaves
   TemplateRoot: Eden_HydroponicsHerbalLeaves
@@ -48706,7 +48706,7 @@
   CustomIcon: Eden_HydroponicsHerbalLeaves
   { Child DropOnHarvest
     Item: HerbalLeaves
-    Count: 18
+    Count: 22
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsHerbalLeaves
@@ -48726,7 +48726,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: PlantProtein, display: true
-  CropYield: 36, display: true
+  CropYield: 44, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsPlantProtein
   TemplateRoot: Eden_HydroponicsPlantProtein
@@ -48743,7 +48743,7 @@
   CustomIcon: Eden_HydroponicsPlantProtein
   { Child DropOnHarvest
     Item: PlantProtein
-    Count: 36
+    Count: 44
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsPlantProtein
@@ -48763,7 +48763,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: NaturalSweetener, display: true
-  CropYield: 18, display: true
+  CropYield: 22, display: true
   GrowthTimeInfo: 62, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsNaturalSweetener
   TemplateRoot: Eden_HydroponicsNaturalSweetener
@@ -48780,7 +48780,7 @@
   CustomIcon: Eden_HydroponicsNaturalSweetener
   { Child DropOnHarvest
     Item: NaturalSweetener
-    Count: 18
+    Count: 22
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsNaturalSweetener
@@ -48801,7 +48801,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: Fiber, display: true
-  CropYield: 108, display: true
+  CropYield: 130, display: true
   GrowthTimeInfo: 43, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsFiber
   TemplateRoot: Eden_HydroponicsFiber
@@ -48818,7 +48818,7 @@
   CustomIcon: Eden_HydroponicsFiber
   { Child DropOnHarvest
     Item: Fiber
-    Count: 108
+    Count: 130
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsFiber
@@ -48838,7 +48838,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: MushroomBrown, display: true
-  CropYield: 18, display: true
+  CropYield: 22, display: true
   GrowthTimeInfo: 32, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsMushroomBrown
   TemplateRoot: Eden_HydroponicsMushroomBrown
@@ -48855,7 +48855,7 @@
   CustomIcon: Eden_HydroponicsMushroomBrown
   { Child DropOnHarvest
     Item: MushroomBrown
-    Count: 18
+    Count: 22
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsMushroomBrown
@@ -48875,7 +48875,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: Spice, display: true
-  CropYield: 27, display: true
+  CropYield: 33, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsSpice
   TemplateRoot: Eden_HydroponicsSpice
@@ -48892,7 +48892,7 @@
   CustomIcon: Eden_HydroponicsSpice
   { Child DropOnHarvest
     Item: Spice
-    Count: 27
+    Count: 33
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsSpice
@@ -48912,7 +48912,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: Berries, display: true
-  CropYield: 18, display: true
+  CropYield: 22, display: true
   GrowthTimeInfo: 40, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsBerries
   TemplateRoot: Eden_HydroponicsBerries
@@ -48929,7 +48929,7 @@
   CustomIcon: Eden_HydroponicsBerries
   { Child DropOnHarvest
     Item: Berries
-    Count: 18
+    Count: 22
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsBerries
@@ -48951,7 +48951,7 @@
     OnDeath: Eden_HydroponicsEmpty
   }
   CropType: PentaxidOre, display: true
-  CropYield: 18, display: true
+  CropYield: 22, display: true
   GrowthTimeInfo: 105, type: int, display: true, formatter: Minutes
   PickupTarget: Eden_HydroponicsPentaxid
   TemplateRoot: Eden_HydroponicsPentaxid
@@ -48969,7 +48969,7 @@
   CustomIcon: Eden_HydroponicsPentaxid
   { Child DropOnHarvest
     Item: PentaxidOre
-    Count: 18
+    Count: 22
   }
   { Child CropsGrown
     OnHarvest: Eden_HydroponicsPentaxid
