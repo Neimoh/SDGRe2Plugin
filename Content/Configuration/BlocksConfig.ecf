@@ -49882,7 +49882,7 @@
   EnergyIn: 375, type: int, display: true, formatter: Watt
   # CPUIn: -330000, type: int, display: true
   CPUIn: 0, type: int, display: false
-  CPUOut: 64000, type: int, display: true
+  CPUOut: 88000, type: int, display: true
   HitPoints: 5000, type: int, display: true
   Info: Eden_CPUExtenderAuxCVinfo, display: true
   IsOxygenTight: true, display: true

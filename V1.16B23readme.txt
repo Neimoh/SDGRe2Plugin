@@ -6,6 +6,7 @@ General Edits:
 - Changed SV Torpedo recipie to use 4 Tungsten vs 4 Platinum
 - Enabled Aluminum Foil to be melted back into Aluminum Powder
 - Allowed Furnace to melt Ice into Water containers
+- Increased Auxillary Core CPU Output from 64k to 88k
 
 POI Edits:
 - Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group

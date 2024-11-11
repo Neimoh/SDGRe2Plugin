@@ -188,6 +188,11 @@
     Count: 22
 
 
+# Large Auxiliary CPU Core
+# { +Block Name: Eden_AuxillaryCPUBA
+{ +Block Name: Eden_CPUExtenderAuxCV
+  CPUOut: 88000, type: int, display: true
+
 
 ***************************************************************************************************************** Templates
 #************************************  Place under { +Template Name: Furnace
