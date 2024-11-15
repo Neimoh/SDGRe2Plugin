@@ -25,7 +25,7 @@
   SizeInBlocksLocked: "Base,MS,SS,GV,Terrain"    
   MaxCount: 30, type: int, display: true
   CPUIn: -2500, type: int, display: true
-
+  
 #************************************  Human Crew
 
 { +Block Id: 329, Name: NPCHumanTemplate
@@ -431,11 +431,40 @@
     LargeOptronicBridge: 24
     LargeOptronicMatrix: 12
 
+
+#************************************  under { +Template Name: FusionCell
+{ +Template Name: BoostedFusionCell
+  OutputCount: 25
+  CraftTime: 5
+  DeconOverride: Stop
+  Target: "SmallC,AdvC"
+  { Child Inputs
+    FusionCell: 25
+    ToxicWaste: 625
+  }
+}
+
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 
 #************************************  Shield penetration searches
 ShieldDamagePenFac
 ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
+
+#************************************  place under { +Item Id: 325, Name: FusionCell, Ref: ComponentsTemplate
+{ +Item Id: 3500, Name: BoostedFusionCell, Ref: ComponentsTemplate
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  CustomIcon: ZiraxMSPlasmaCharge
+  Volume: 10.0, type: float, display: true, formatter: Liter
+  FuelValue: 750, type: int, display: true, formatter: WattHour
+  MarketPrice: 1250, display: true
+  ShowUser: Yes
+  Info: itmBoostedFusionCell, display: true
+
+  UnlockCost: 25, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: FusionCell
+  TechTreeNames: Misc
+}
 
 { +Item Id: 885, Name: DroneLargePlayer01Unit
   StackSize: 48
@@ -451,6 +480,8 @@ QuantumPentaxidTankCVBA,Quantum Pentaxid Tank (Large),Pentaxidtank,Réservoir de
 QuantumPentaxidTankSV,Quantum Pentaxid Tank (Small),Pentaxidtank,Réservoir de pentaxid,Serbatoio di Pentaxid,Tanque de Pentaxid,,Tanque do Pentaxid,Zbiornik pentaxitu,Пентаксидный бак,ペンタキシドタンク,翘曲能量罐,磞燃料罐,,,Δεξαμενή Πενταξειδίου,,Bể Pentaxid
 bkiQuantumPentaxidTank,"Quantum based tank has higher capacity for Pentaxid crystals, used for exotic energy applications, like warp jump and shields.",,,,,,,,,,,,,,,,
 FurnaceCV,Furnace,Schmelzofen,Fourneau,Fornace,Horno,Forno,Fornalha,Piec hutniczy,Печь,溶鉱炉,熔炉,熔爐,용광로,,,Smelt oven,Lò nung
+BoostedFusionCell,Boosted Promethium Hydrocell,Fusionszelle,Pile à combustible,Cella a Fusione,Célula de fusión,Célula de fusão,Célula de Fusão,,Энергоячейка,フュージョンセル,融合电池,融合電池,융합 세포,,,Fusiecel,Pin Dung Hợp
+itmBoostedFusionCell,An advanced and unstable promethium fuel cell enhanced with toxic waste.,,,,,,,,,,,,,,,,
 
 
 ***************************************************************************************************************** Galaxy
@@ -470,7 +501,7 @@ FurnaceCV,Furnace,Schmelzofen,Fourneau,Fornace,Horno,Forno,Fornalha,Piec hutnicz
     Other_7: Trader, param1: "0.4, 0.4"
 
 
-  { Child Territory_11 # Outlaw Space
+  { Child Territory_10 # Outlaw Space
     Faction: Wastelanders
     Other_6: Civilian, param1: "1, 1"
 

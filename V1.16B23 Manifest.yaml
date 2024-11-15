@@ -1,5 +1,11 @@
 SDG Plugin V1.12 B22 Manifest:
 Folder Structure:
+gameoptions.yaml
+NMLControlColdPlayfields.yaml
+NMLControlGeneralEdits.yaml
+NMLControlHabitablePlayfields.yaml
+NMLControlHotPlayfields.yaml
+NMLControlPlanetEdits.yaml
 Vx.xreadme.txt
 \Content\configuration ------------- 7 Files
     BlockGroupsConfig.ecf

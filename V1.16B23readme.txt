@@ -10,6 +10,7 @@ General Edits:
 - Increased SV/HV Auxillary Core CPU Output from 1675 to 2500
 - Reprogrammed BA Teleporters so NPC stations get the high tier Quantum with 75ly range and Player still starts with entry 25ly
   (This may cause existing Quantum teleporterst to revert to basic version but it didn't in testing.)
+- Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle upgrades existing Hydrocells
 
 POI Edits:
 - Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
