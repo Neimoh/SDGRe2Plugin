@@ -193,6 +193,158 @@
 { +Block Name: Eden_CPUExtenderAuxCV
   CPUOut: 88000, type: int, display: true
 
+# Small Auxiliary CPU
+# { +Block Name: Eden_AuxillaryCPUSV
+{ +Block Name: Eden_CPUExtenderAuxSV
+  CPUOut: 2500, type: int, display: true
+
+
+#************************************  Find TeleporterBA and set all 3 of these in it's spot to retain heireracy 
+#************************************  remove entries for teleporterbat2 and teleporterbat3 from further down
+{ Block Name: TeleporterBAT3
+  #Info: bkiTeleporterBAT3, display: true
+  Info: bkiTeleporterBA, display: true
+  Class: Teleporter
+  MarketPrice: 172408, display: true
+  Group: cpgTransportation  
+  Category: Devices
+  IndexName: Teleporter
+  Material: Device
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/Misc/TeleporterPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  BlockColor: "110,110,110"
+  IsActivateable: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: Base, display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  StackSize: 1000
+  Mass: 11200, type: float, display: true, formatter: Kilogram
+  #EnergyIn: 30000, type: int, display: true, formatter: Watt
+  #CPUIn: 30000, type: int, display: true
+  EnergyIn: 10400, type: int, display: true, formatter: Watt
+  CPUIn: 10000, type: int, display: true
+  Volume: 480, type: float, display: true, formatter: Liter
+  HitPoints: 1750, type: int, display: true
+  BlastParticleName: @rg_projectiles/RG_BlastWarpS
+  BlastParticleIndex: 0
+  BlastRadius: 7
+  BlastDamage: 4000
+  #RangeLY: 75, display: true
+  RangeLY: 25, display: true
+  CustomIcon: TeleporterBA
+  #RepairToTemplate: false, display: true
+  
+  #UnlockCost: 40, display: true
+  #UnlockLevel: 25, display: true
+  #TechTreeParent: TeleporterBAT2
+  UnlockCost: 20, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: PentaxidTank
+  TechTreeNames: Base
+}
+{ Block Name: TeleporterBAT2
+  Info: bkiTeleporterBAT2, display: true
+  Class: Teleporter
+  MarketPrice: 65670, display: true
+  Group: cpgTransportation  
+  Category: Devices
+  IndexName: Teleporter
+  Material: Device
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/Misc/TeleporterPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  BlockColor: "110,110,110"
+  IsActivateable: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: Base, display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  StackSize: 1000
+  Mass: 6800, type: float, display: true, formatter: Kilogram
+  EnergyIn: 20000, type: int, display: true, formatter: Watt
+  CPUIn: 15000, type: int, display: true
+  Volume: 480, type: float, display: true, formatter: Liter
+  HitPoints: 1750, type: int, display: true
+  BlastParticleName: @rg_projectiles/RG_BlastWarpS
+  BlastParticleIndex: 0
+  BlastRadius: 7
+  BlastDamage: 3000
+  RangeLY: 50, display: true
+  CustomIcon: TeleporterBA
+  RepairToTemplate: false, display: true
+  
+  UnlockCost: 30, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: TeleporterBAT3
+  TechTreeNames: Base
+}
+{ +Block Id: 1377, Name: TeleporterBA
+  #Info: bkiTeleporterBA, display: true
+  Info: bkiTeleporterBAT3, display: true
+  Class: Teleporter
+  MarketPrice: 31492, display: true
+  Group: cpgTransportation  
+  Category: Devices
+  IndexName: Teleporter
+  Material: Device
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/Misc/TeleporterPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  BlockColor: "110,110,110"
+  IsActivateable: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: Base, display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  StackSize: 1000
+  Mass: 3200, type: float, display: true, formatter: Kilogram
+  #EnergyIn: 10400, type: int, display: true, formatter: Watt
+  #CPUIn: 10000, type: int, display: true
+  EnergyIn: 30000, type: int, display: true, formatter: Watt
+  CPUIn: 30000, type: int, display: true
+  Volume: 480, type: float, display: true, formatter: Liter
+  HitPoints: 1750, type: int, display: true
+  BlastParticleIndex: 10
+  BlastRadius: 5
+  BlastDamage: 3000
+  #RangeLY: 25, display: true
+  RangeLY: 75, display: true
+  RepairToTemplate: false, display: true
+
+  #UnlockCost: 20, display: true
+  #UnlockLevel: 15, display: true
+  #TechTreeParent: PentaxidTank
+  UnlockCost: 40, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: TeleporterBAT2
+  TechTreeNames: Base
+}
+
+
+
 
 ***************************************************************************************************************** Templates
 #************************************  Place under { +Template Name: Furnace
@@ -271,6 +423,13 @@
 { +Template Name: WaterJug
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
 
+{ +Template Name: Eden_CPUExtenderAuxCV
+    Eden_DroneSalvageProcessor: 250
+    Eden_ComputerT2: 8
+    FluxCoil: 48
+    PowerCoil: 24
+    LargeOptronicBridge: 24
+    LargeOptronicMatrix: 12
 
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 

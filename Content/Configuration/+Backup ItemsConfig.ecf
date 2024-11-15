@@ -5791,6 +5791,20 @@
   TechTreeParent: EnergyCellLarge
   TechTreeNames: Misc
 }
+{ +Item Id: 3500, Name: BoostedFusionCell, Ref: ComponentsTemplate
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  CustomIcon: ZiraxMSPlasmaCharge
+  Volume: 10.0, type: float, display: true, formatter: Liter
+  FuelValue: 750, type: int, display: true, formatter: WattHour
+  MarketPrice: 1250, display: true
+  ShowUser: Yes
+  Info: itmBoostedFusionCell, display: true
+
+  UnlockCost: 25, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: FusionCell
+  TechTreeNames: Misc
+}
 # Fusion Reactor Fuel
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 15, type: int, display: true, formatter: WattHour

@@ -680,6 +680,16 @@
     HydrogenBottle: 10
   }
 }
+{ +Template Name: BoostedFusionCell
+  OutputCount: 25
+  CraftTime: 5
+  DeconOverride: Stop
+  Target: "SmallC,AdvC"
+  { Child Inputs
+    FusionCell: 25
+    ToxicWaste: 625
+  }
+}
 
  # ============================
  #  Basic biological materials 
@@ -3310,7 +3320,7 @@
   }
 }
 
-{ +Template Name: TeleporterBA
+{ +Template Name: TeleporterBAT3
   CraftTime: 15 
   Target: "SmallC,AdvC"
   { Child Inputs
@@ -3335,7 +3345,7 @@
     CommunicationEquipment: 8
   }
 }
-{ +Template Name: TeleporterBAT3
+{ +Template Name: TeleporterBA
   CraftTime: 15 
   Target: "SmallC"
   { Child Inputs
@@ -10797,7 +10807,7 @@
   Target: "SmallC"
   { Child Inputs
     Eden_DroneSalvageProcessor: 250
-    Eden_ComputerT2: 12
+    Eden_ComputerT2: 8
     FluxCoil: 48
     PowerCoil: 24
     LargeOptronicBridge: 24

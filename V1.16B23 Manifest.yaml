@@ -9,6 +9,10 @@ Vx.xreadme.txt
     GalaxyConfig.ecf
     ItemsConfig.ecf
     Templates.ecf
+\eah\Inventory Templates ----------- 1 File
+    Survival.xml
+\Extras ---------------------------- 1 File
+    Localization.csv
 \Playfields ------------------------ 44 Folders
     Alien
     Barren
@@ -54,7 +58,7 @@ Vx.xreadme.txt
     Start_OrbitEasy
     Start_TradeHub
     TemperateSwamp
-\Prefabs --------------------------- 103 Files
+\Prefabs --------------------------- 105 Files
     NMLBA_Eden_BAO_RogueT1_1
     Eden_BAO_RogueT2_2
     NMLBA_Eden_BAO_RogueT1_2
@@ -147,7 +151,7 @@ Vx.xreadme.txt
     NMLCV_WorkBoat
     NMLCV2_WarlordTianlong
     NMLCV_Assault_Frigate
-    NMLCV_Battlecarrier_P
+    NMLCV-BattleCarrier-P
     NMLCV_Corvus_Corvette
     NMLCV_DreadMaw_Frigate
     NMLCV_Gunbad_Corvette
@@ -159,6 +163,7 @@ Vx.xreadme.txt
     NMLCV_ValRuun Corsair-1
     NMLCV_ValRuun Corsair-2
     NMLCV_ValRuun Corsair-3
+    RE2_BAO_RogueNursery
 \RandomPresets --------------------- 4 Files
     SolarSystemConfig_Defines
     SolarSystemConfig_MainHabitableT1
@@ -166,3 +171,22 @@ Vx.xreadme.txt
     SolarSystemConfig_MainHotT1
 \Sectors --------------------------- 1 file
     Sectors
+\SharedData\Bundles\ItemIcons ------ 1 File
+    ZiraxMSPlasmaCharge.png
+\SharedData\Content\Extras\LoadingScreenshots ------ 11 Files
+    LoadingScreenConfig.yaml
+    nmlp0
+    nmlp01
+    nmlp02
+    nmlp03
+    nmlp04
+    nmlp05
+    nmlp06
+    nmlp07
+    nmlp08
+    nmlp09
+    nmlp10
+    nmlp11
+    nmlp12
+    nmlp13
+

@@ -20563,8 +20563,102 @@
   HitPoints: 400, type: int, display: true
   IsOxygenTight: false, display: true
 }
-{ +Block Id: 1377, Name: TeleporterBA
+{ Block Name: TeleporterBAT3
+  #Info: bkiTeleporterBAT3, display: true
   Info: bkiTeleporterBA, display: true
+  Class: Teleporter
+  MarketPrice: 172408, display: true
+  Group: cpgTransportation  
+  Category: Devices
+  IndexName: Teleporter
+  Material: Device
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/Misc/TeleporterPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  BlockColor: "110,110,110"
+  IsActivateable: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: Base, display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  StackSize: 1000
+  Mass: 11200, type: float, display: true, formatter: Kilogram
+  #EnergyIn: 30000, type: int, display: true, formatter: Watt
+  #CPUIn: 30000, type: int, display: true
+  EnergyIn: 10400, type: int, display: true, formatter: Watt
+  CPUIn: 10000, type: int, display: true
+  Volume: 480, type: float, display: true, formatter: Liter
+  HitPoints: 1750, type: int, display: true
+  BlastParticleName: @rg_projectiles/RG_BlastWarpS
+  BlastParticleIndex: 0
+  BlastRadius: 7
+  BlastDamage: 4000
+  #RangeLY: 75, display: true
+  RangeLY: 25, display: true
+  CustomIcon: TeleporterBA
+  #RepairToTemplate: false, display: true
+  
+  #UnlockCost: 40, display: true
+  #UnlockLevel: 25, display: true
+  #TechTreeParent: TeleporterBAT2
+  UnlockCost: 20, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: PentaxidTank
+  TechTreeNames: Base
+}
+{ Block Name: TeleporterBAT2
+  Info: bkiTeleporterBAT2, display: true
+  Class: Teleporter
+  MarketPrice: 65670, display: true
+  Group: cpgTransportation  
+  Category: Devices
+  IndexName: Teleporter
+  Material: Device
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/Misc/TeleporterPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab
+  Place: Free
+  BlockColor: "110,110,110"
+  IsActivateable: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  AllowPlacingAt: Base, display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  StackSize: 1000
+  Mass: 6800, type: float, display: true, formatter: Kilogram
+  EnergyIn: 20000, type: int, display: true, formatter: Watt
+  CPUIn: 15000, type: int, display: true
+  Volume: 480, type: float, display: true, formatter: Liter
+  HitPoints: 1750, type: int, display: true
+  BlastParticleName: @rg_projectiles/RG_BlastWarpS
+  BlastParticleIndex: 0
+  BlastRadius: 7
+  BlastDamage: 3000
+  RangeLY: 50, display: true
+  CustomIcon: TeleporterBA
+  RepairToTemplate: false, display: true
+  
+  UnlockCost: 30, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: TeleporterBAT3
+  TechTreeNames: Base
+}
+{ +Block Id: 1377, Name: TeleporterBA
+  #Info: bkiTeleporterBA, display: true
+  Info: bkiTeleporterBAT3, display: true
   Class: Teleporter
   MarketPrice: 31492, display: true
   Group: cpgTransportation  
@@ -20589,18 +20683,25 @@
   SizeInBlocksLocked: "Base,MS"
   StackSize: 1000
   Mass: 3200, type: float, display: true, formatter: Kilogram
-  EnergyIn: 10400, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  #EnergyIn: 10400, type: int, display: true, formatter: Watt
+  #CPUIn: 10000, type: int, display: true
+  EnergyIn: 30000, type: int, display: true, formatter: Watt
+  CPUIn: 30000, type: int, display: true
   Volume: 480, type: float, display: true, formatter: Liter
   HitPoints: 1750, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 5
   BlastDamage: 3000
-  RangeLY: 25, display: true
-  
-  UnlockCost: 20, display: true
-  UnlockLevel: 15, display: true
-  TechTreeParent: PentaxidTank
+  #RangeLY: 25, display: true
+  RangeLY: 75, display: true
+  RepairToTemplate: false, display: true
+
+  #UnlockCost: 20, display: true
+  #UnlockLevel: 15, display: true
+  #TechTreeParent: PentaxidTank
+  UnlockCost: 40, display: true
+  UnlockLevel: 25, display: true
+  TechTreeParent: TeleporterBAT2
   TechTreeNames: Base
 }
 # obsolete - do not remove
@@ -42899,92 +43000,6 @@
   TechTreeParent: TeleporterCV
   TechTreeNames: Capital Vessel
 }
-{ Block Name: TeleporterBAT2
-  Info: bkiTeleporterBAT2, display: true
-  Class: Teleporter
-  MarketPrice: 65670, display: true
-  Group: cpgTransportation  
-  Category: Devices
-  IndexName: Teleporter
-  Material: Device
-  Shape: ModelEntity
-  ShowBlockName: true
-  Model: @models/Blocks/Misc/TeleporterPrefab
-  Mesh-Damage-1: Mesh/D0
-  Mesh-Damage-2: Mesh/D1
-  Mesh-Damage-3: Mesh/D2
-  Mesh-Damage-4: Mesh/D3
-  DropMeshfile: Entities/Misc/DropContainerNewPrefab
-  Place: Free
-  BlockColor: "110,110,110"
-  IsActivateable: true
-  IsLockable: true
-  IsOxygenTight: false, display: true
-  AllowPlacingAt: Base, display: true
-  SizeInBlocks: "1,1,1", display: true
-  SizeInBlocksLocked: "Base,MS"
-  StackSize: 1000
-  Mass: 6800, type: float, display: true, formatter: Kilogram
-  EnergyIn: 20000, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
-  Volume: 480, type: float, display: true, formatter: Liter
-  HitPoints: 1750, type: int, display: true
-  BlastParticleName: @rg_projectiles/RG_BlastWarpS
-  BlastParticleIndex: 0
-  BlastRadius: 7
-  BlastDamage: 3000
-  RangeLY: 50, display: true
-  CustomIcon: TeleporterBA
-  RepairToTemplate: false, display: true
-  
-  UnlockCost: 30, display: true
-  UnlockLevel: 20, display: true
-  TechTreeParent: TeleporterBA
-  TechTreeNames: Base
-}
-{ Block Name: TeleporterBAT3
-  Info: bkiTeleporterBAT3, display: true
-  Class: Teleporter
-  MarketPrice: 172408, display: true
-  Group: cpgTransportation  
-  Category: Devices
-  IndexName: Teleporter
-  Material: Device
-  Shape: ModelEntity
-  ShowBlockName: true
-  Model: @models/Blocks/Misc/TeleporterPrefab
-  Mesh-Damage-1: Mesh/D0
-  Mesh-Damage-2: Mesh/D1
-  Mesh-Damage-3: Mesh/D2
-  Mesh-Damage-4: Mesh/D3
-  DropMeshfile: Entities/Misc/DropContainerNewPrefab
-  Place: Free
-  BlockColor: "110,110,110"
-  IsActivateable: true
-  IsLockable: true
-  IsOxygenTight: false, display: true
-  AllowPlacingAt: Base, display: true
-  SizeInBlocks: "1,1,1", display: true
-  SizeInBlocksLocked: "Base,MS"
-  StackSize: 1000
-  Mass: 11200, type: float, display: true, formatter: Kilogram
-  EnergyIn: 30000, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
-  Volume: 480, type: float, display: true, formatter: Liter
-  HitPoints: 1750, type: int, display: true
-  BlastParticleName: @rg_projectiles/RG_BlastWarpS
-  BlastParticleIndex: 0
-  BlastRadius: 7
-  BlastDamage: 4000
-  RangeLY: 75, display: true
-  CustomIcon: TeleporterBA
-  RepairToTemplate: false, display: true
-  
-  UnlockCost: 40, display: true
-  UnlockLevel: 25, display: true
-  TechTreeParent: TeleporterBAT2
-  TechTreeNames: Base
-}
 # ===================================================================
 # HV/SV Food Processor
 { Block Name: FoodProcessorSmall
@@ -49812,7 +49827,7 @@
   Volume: 125, type: float, display: true, formatter: Liter
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 0, type: int, display: false
-  CPUOut: 1625, type: int, display: true
+  CPUOut: 2500, type: int, display: true
   HitPoints: 2500, type: int, display: true
   Info: Eden_CPUExtenderAuxSVinfo, display: true
   IsOxygenTight: true, display: true
