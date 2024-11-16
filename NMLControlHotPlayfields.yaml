@@ -144,6 +144,11 @@
               - Key: AIManMaxPursuitRange
                 Value: 10000
 
+# ------------------------------------------------------------------------------------------------- Faction Warlord
+          - Name: [SpaceDroneLaser, SpaceDronePlasma]
+            Faction: Warlord
+            CanNotBeControlledByMasterAI: False
+            Count: [3, 6]
 
 #************************ under SpaceVessels
 # ------------------------------------------------------------------------------------------------- Faction Main

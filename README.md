@@ -1,10 +1,44 @@
-NML Scenario add-in for RE2Beta compiled on RE2 Build 23
+NML Scenario add-in for RE2Beta compiled on RE2 Build 24
 =============================================================
 NML RE2 Scenerio Plugin was created specifically for SDGamers, No Man's Land Empyrion Server.
 Our goal was to mitigate some undesirable changes made in Reforged Eden 2 and migrate alot of lost Reforged Eden 1 content forward with updates and add in new player crafted POI's and Ships and to make the Starfields alot more alive and busy and get faction conflicts back in action.
 
 
-Changelog V1.15:
+Changelog V1.16:
+General Edits:
+- Increased all Hydroponics bay yields by 20%
+- Changed SV Torpedo recipie to use 4 Tungsten vs 4 Platinum
+- Enabled Aluminum Foil to be melted back into Aluminum Powder
+- Allowed Furnace to melt Ice into Water containers
+- Increased CV/BA Auxillary Core CPU Output from 64k to 88k
+- Increased SV/HV Auxillary Core CPU Output from 1675 to 2500
+- Reprogrammed BA Teleporters so NPC stations get the high tier Quantum with 75ly range and Player still starts with entry 25ly
+  (This may cause existing Quantum teleporterst to revert to basic version but it didn't in testing.)
+- Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle upgrades existing Hydrocells
+
+POI Edits:
+- Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
+- Replaced RE2 Swarm Capacitor Matrix with a more viable and enticing version worth fighting
+- Altered cpu room in Abandonded Assembly yard
+- Replaced RE2 Hive Nursery to set all boxes to give drone procs, dropped can core locations by 3 blocks closer to bottom and updated name to 'Mature Hive Nursery'
+- Updated and added RE1.8 Hive Nursery to same group call as RE2 version. You will have random chance for either version to spawn noted by name diferences. This version has less shields
+
+___________________________________________________________________________________________________________________
+HotFix V1.15.4:
+- Updated Localization for custom block names
+- Fixed block groups for quantum pentaxid tanks
+
+HotFix V1.15.3:
+- Made deconstructors break down Steel Plates, Electronics, Computers and Motors into Basic ingots
+- Halved Quantum Pentaxid tank upgrade point costs
+
+HotFix V1.15.2:
+- Fixed Human crew definition not allowing placement
+
+HotFix V1.15.1:
+- Shared data loading screen fix
+
+- Changelog V1.15:
 - Update Scenerio for RE2 Build 23
 
 Changelog V1.14:

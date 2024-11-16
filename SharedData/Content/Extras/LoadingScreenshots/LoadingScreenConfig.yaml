@@ -5,27 +5,29 @@
 # ---------------------------------------------------------------------------------------
 
 # Overlay title
-Title: <b><#00ffff>No Man's Land v1.16 RE2 Beta</color></b> <size=65%><#ffffff>(build 23)</color></size>
+Title: <b><#00ffff>No Man's Land v1.16 RE2 Beta</color></b> <size=65%><#ffffff>(build 24)</color></size>
 
 # Overlay body (typically multi-line text)
 # If commented out, only the title will be displayed
 Body: |
   <size=135%><#ffffff><b>October 18:</b></color></size>
-  <size=85%>•<indent=3%>Ongoing work in progress updates to Legacy space. (new saves only)</indent></size>
-  <size=85%>•<indent=3%>Various PDA updates. (required pda readdata console command)</indent></size>
-  <size=85%>•<indent=3%>Updated handheld weapon models and effects.</indent></size>
-  <size=85%>•<indent=3%>Tech tree unlock updates. If you don't find an unlock you're looking for check in another tech tree.</indent></size>
-  <size=85%>•<indent=3%>Added Heavy Bomb Launcher for SV.</indent></size>
+  <size=85%>Some of these updates require the <#ffffff>pda readdata</color> console command to apply. May reset mission progress if used.</size>
+  <size=85%>•<indent=3%>Added more content for the Legacy (devices, planets, stars, PDA triggers, etc) as part of ongoing updates for the Legacy. Not all will apply to existing save games. See change notes for details.</indent></size>
+  <size=85%>•<indent=3%>Added option to turn off many tutorial messages in the Project Eden Settings Menu (F1 - Tutorials - Project Eden Admin).</indent></size>
+  <size=85%>•<indent=3%>Added more Empyriopedia tutorial messages.</indent></size>
+  <size=85%>•<indent=3%>Added table of contents to the Empyriopedia with web links to Empyrion Buddy.</indent></size>
   <size=85%>•<indent=3%>Misc updates and fixes.</indent></size>
+  
   <size=85%><#ffff00>Reforged Eden 2 is currently in Beta. You may encounter issues.</size>
   <size=85%></size>
-  <size=85%><#00ff95>No Man's Land October 21 Includes:</size>
-  <size=85%>•<indent=3%>Kriel, Pirate, Warlord, Alien and Drone Ships and POI updates</indent></size>
-  <size=85%>•<indent=3%>Coreable Overrun POI's</indent></size>
-  <size=85%>•<indent=3%>No Shield Penetration and Crew CPU added</indent></size>
-  <size=85%>•<indent=3%>Massive orbital life improvements</indent></size>
-  <size=85%>•<indent=3%>Added NML System for PVP and Player meetings</indent></size>
-  <size=85%>•<indent=3%>Added Server Chat !ttp Teleport Trade System for Player meetings</indent></size>
+  <size=85%><#00ff00>Check the Empyriopedia (F1) if you have questions about scenario mechanics.</size>
+  <size=85%><#00ff95>No Man's Land November 15 Includes:</size>
+  <size=85%>•<indent=3%>Modifed existing and Migrated RE1 Drone Capacitor Matrixes.</indent></size>
+  <size=85%>•<indent=3%>Modified existing and Migrated RE1 Hive Nursery's.</indent></size>
+  <size=85%>•<indent=3%>Increased hv/sv/cv/ba Aux core CPU outputs.</indent></size>
+  <size=85%>•<indent=3%>Corrected Teleporter Tiers so NPC Stations have 75ly by default.</indent></size>
+  <size=85%>•<indent=3%>Increased all Hydroponic Bay yields by 20%</indent></size>
+  <size=85%>•<indent=3%>Stay tuned for new end game Faction coming soon!</indent></size>
   
 # To show a certain image at the start of each loading image sequence, specify the respective file name
 # To use the default random image selection, comment out the following line

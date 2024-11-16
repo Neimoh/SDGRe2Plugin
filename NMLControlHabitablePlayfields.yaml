@@ -3,11 +3,29 @@
 
 
  ***************************************************************************************************************** Starter_Tallodar_Orbit
+      
       GroupName: R2ZiraxSpaceT1
       Probability: 0
 
       Name: [RE2_BA_PatrolRouteAkua]
       Probability: 0
+
+#****************** Under FreeDrones      
+# ------------------------------------------------------------------------------------------------- Faction Main
+# Asteroid Patrols
+          #- Name: [SpaceDroneLaser, SpaceDronePlasma]
+          #  Faction: Zirax
+          #  CanNotBeControlledByMasterAI: False
+            # POINameAsPositionRef: [BAO_GhystDefence1,BAO_GhystDefence2]
+          #  Count: [4, 4]
+          #  Radius: [1000, 5000]
+          #  Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              # - Key: AIManPatrolFactions
+                # Value: "Main"
+          #    - Key: AIManMaxPursuitRange
+          #      Value: 3000
 
           - Name: [R2OPV_ZiraxCarrier01]
             Probability: 0
@@ -20,8 +38,10 @@
             Probability: 1
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
+              - Key: AIManMaxPursuitRange
+                Value: 1000
 
 ***************************************************************************************************************** Starter_Akua_Orbit
       GroupName: R2ZiraxSpaceT1
@@ -29,6 +49,22 @@
 
       Name: [RE2_BA_PatrolRouteAkua]
       Probability: 0
+
+#****************** Under FreeDrones      
+# Asteroid Patrols
+          #- Name: [SpaceDroneLaser, SpaceDronePlasma]
+          #  Faction: Warlord
+          #  CanNotBeControlledByMasterAI: False
+            # POINameAsPositionRef: [BAO_GhystDefence1,BAO_GhystDefence2]
+          #  Count: [0, 0]
+          #  Radius: [1000, 5000]
+          #  Properties:
+              # - Key: AIManPatrolGroups
+                # Value: "TSO_AkuaOrbit, RBAO_PolarisGasRefinery, RBAO_PolarisAlloySynthesis"
+              # - Key: AIManPatrolFactions
+                # Value: "Main"
+          #    - Key: AIManMaxPursuitRange
+          #      Value: 3000
 
           - Name: [R2OPV_ZiraxCarrier01]
             Probability: 0
@@ -39,8 +75,10 @@
             Faction: Polaris
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
+              - Key: AIManMaxPursuitRange
+                Value: 1000
 
 ***************************************************************************************************************** Start_Orbit_Easy
 #******************************************** Playfields\Start_Orbit_Easy\spacedynamic    
@@ -106,8 +144,8 @@
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 
@@ -117,8 +155,8 @@
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 ***************************************************************************************************************** EdenSpaceG_PolTradeStation
@@ -127,8 +165,8 @@
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 ***************************************************************************************************************** EdenSpace_TradingStation
@@ -200,55 +238,55 @@
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 # Advertising drones
           - Name: [Eden_OPVTraderTSOSign]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 # Rare cargo shuttles
           - Name: [Eden_OPVTraderTSO2]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 # Freighters on fixed paths
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 
 # Cargo shuttles in Pirates territory
           - Name: [Eden_OPVTraderTSO]
               #- Key: MapDistance
               #  Value: 0
-              #- Key: HudDistance
-              #  Value: 3000
+              - Key: HudDistance
+                Value: 5000
 
 ***************************************************************************************************************** EdenSpaceG_Orbit
 
@@ -725,6 +763,11 @@
 #******************************************** Playfields\EdenspaceG_AsteroidT1\spacedynamic    
 
 #************ Under FreeDrones
+# ------------------------------------------------------------------------------------------------- Faction Main
+# Warlord
+          - Name: [SpaceDroneLaser, SpaceDronePlasma]
+            Count: [0, 3]
+
 # ------------------------------------------------------------------------------------------------- Faction Kriel
 # Asteroid Patrols
           - Name: [SpaceDroneKrielLaser]

@@ -11,6 +11,10 @@ General Edits:
 - Reprogrammed BA Teleporters so NPC stations get the high tier Quantum with 75ly range and Player still starts with entry 25ly
   (This may cause existing Quantum teleporterst to revert to basic version but it didn't in testing.)
 - Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle upgrades existing Hydrocells
+- Added Bloody Zirax, Milkshake, and Promethium BLue to Survival pack
+- Added Zirax Territory back into Necrotic Expanse Region
+- Deconstructers will now return Autominer cores
+- Allowed Ice chunks into furnace to return water containers
 
 POI Edits:
 - Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
@@ -18,6 +22,18 @@ POI Edits:
 - Altered cpu room in Abandonded Assembly yard
 - Replaced RE2 Hive Nursery to set all boxes to give drone procs, dropped can core locations by 3 blocks closer to bottom and updated name to 'Mature Hive Nursery'
 - Updated and added RE1.8 Hive Nursery to same group call as RE2 version. You will have random chance for either version to spawn noted by name diferences. This version has less shields
+
+Kriel Edits:
+- Special crew re-added to Beholder and Overseer
+
+Legacy Edits:
+- Replaced Planetary Infectors with modified Consumers
+
+Warlord Edits:
+- Modified drone spawn pad locations to try to fix lag from drones stuck in structure
+
+Pirate Edits:
+- Reduced drone spawn pads spread them out on Black Heart. Replaced Gauss vulcan turrets with colonist dual missle launchers.
 
 ___________________________________________________________________________________________________________________
 HotFix V1.15.4:

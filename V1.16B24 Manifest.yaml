@@ -7,7 +7,8 @@ NMLControlHabitablePlayfields.yaml
 NMLControlHotPlayfields.yaml
 NMLControlPlanetEdits.yaml
 Vx.xreadme.txt
-\Content\configuration ------------- 7 Files
+\Content\configuration ------------- 8 Files
+    +Backup ItemsConfig
     BlockGroupsConfig.ecf
     BlocksConfig.ecf
     DefReputation.ecf
@@ -19,7 +20,7 @@ Vx.xreadme.txt
     Survival.xml
 \Extras ---------------------------- 1 File
     Localization.csv
-\Playfields ------------------------ 44 Folders
+\Playfields ------------------------ 45 Folders
     Alien
     Barren
     BarrenMetal
@@ -28,6 +29,7 @@ Vx.xreadme.txt
     EdenBarrenElder
     EdenBarrenMercury_V2
     EdenDesertRock_V2
+    EdenLegacyInfected_V2
     EdenDesertStorm
     EdenPlasma3
     EdenPlasma4
@@ -65,9 +67,7 @@ Vx.xreadme.txt
     Start_TradeHub
     TemperateSwamp
 \Prefabs --------------------------- 105 Files
-    NMLBA_Eden_BAO_RogueT1_1
     Eden_BAO_RogueT2_2
-    NMLBA_Eden_BAO_RogueT1_2
     NML Cobalt Station V6.decals
     NML Cobalt Station V6
     NMLBA_Abandoned Bunker
@@ -86,8 +86,9 @@ Vx.xreadme.txt
     NMLBA_AbandonedVesselYar
     NMLBA_BAO_KrielBeacon1
     NMLBA_Black Pyramid
-    NMLBA_CobaltStation
     NMLBA_ColonistFedRes
+    NMLBA_Eden_BAO_RogueT1_1
+    NMLBA_Eden_BAO_RogueT1_2
     NMLBA_KrielAerie
     NMLBA_KrielArcanum
     NMLBA_KrielBeholder
@@ -103,7 +104,6 @@ Vx.xreadme.txt
     NMLBA_KrielTelaRepono
     NMLBA_KrielTurrimAlveo
     NMLBA_KrielVectum
-    NMLBA_KrielDefenseT1
     NMLBA_PirateFarm
     NMLBA_PirateOutpost1
     NMLBA_PiratesBar
@@ -133,6 +133,7 @@ Vx.xreadme.txt
     NMLCV_Depreciator
     NMLCV_HorizonsEdge
     NMLCV_Mobius
+    NMLCV_OPVLegacyMinerP
     NMLCV_Poseidon
     NMLVC_RogueHealerT2
     NMLCV_Subjugator
@@ -169,6 +170,7 @@ Vx.xreadme.txt
     NMLCV_ValRuun Corsair-1
     NMLCV_ValRuun Corsair-2
     NMLCV_ValRuun Corsair-3
+    NMLTTP Trade Station 1.2
     RE2_BAO_RogueNursery
 \RandomPresets --------------------- 4 Files
     SolarSystemConfig_Defines
@@ -177,7 +179,7 @@ Vx.xreadme.txt
     SolarSystemConfig_MainHotT1
 \Sectors --------------------------- 1 file
     Sectors
-\SharedData\Bundles\ItemIcons ------ 1 File
+\SharedData\Content\Bundles\ItemIcons ------ 1 File
     ZiraxMSPlasmaCharge.png
 \SharedData\Content\Extras\LoadingScreenshots ------ 11 Files
     LoadingScreenConfig.yaml

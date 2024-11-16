@@ -444,6 +444,13 @@
   }
 }
 
+#{ +Template Name: TeleporterBA
+{ +Template Name: TeleporterBAT3
+
+#{ +Template Name: TeleporterBAT3
+{ +Template Name: TeleporterBA
+
+
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 
 #************************************  Shield penetration searches
@@ -483,6 +490,11 @@ FurnaceCV,Furnace,Schmelzofen,Fourneau,Fornace,Horno,Forno,Fornalha,Piec hutnicz
 BoostedFusionCell,Boosted Promethium Hydrocell,Fusionszelle,Pile à combustible,Cella a Fusione,Célula de fusión,Célula de fusão,Célula de Fusão,,Энергоячейка,フュージョンセル,融合电池,融合電池,융합 세포,,,Fusiecel,Pin Dung Hợp
 itmBoostedFusionCell,An advanced and unstable promethium fuel cell enhanced with toxic waste.,,,,,,,,,,,,,,,,
 
+#TeleporterBA,Station Teleporter
+TeleporterBAT3,Station Teleporter
+
+#TeleporterBAT3,[c][F300FF]Quantum Teleporter
+TeleporterBA,[c][F300FF]Quantum Teleporter
 
 ***************************************************************************************************************** Galaxy
   { Child Territory_1
@@ -509,6 +521,19 @@ itmBoostedFusionCell,An advanced and unstable promethium fuel cell enhanced with
     Other_5: Trader, param1: "0.5"
     Other_11: Civilian, param1: "1"
 
+  { Child Territory_13
+    Faction: Zirax
+    Center: "190, 20, -750"
+    Radius: 100  # in LY
+    Other_1: Xenu, param1: "1, 1"
+    Other_2: Rados, param1: "1, 1"
+    Other_3: Epsilon, param1: "1, 1"
+    Other_4: Ghyst, param1: "1, 1"
+    Other_5: Serdu, param1: "1, 1"
+    Other_6: Abyssal, param1: "1, 1"
+    Other_7: Alien, param1: "1, 1"         # Abandoned BP Groups, should always be available in any Territory
+    Other_8: Eden_ZiraxTerritory, param1: "1, 1"
+  }
 
 
 ***************************************************************************************************************** SolarSystemConfigDefines
