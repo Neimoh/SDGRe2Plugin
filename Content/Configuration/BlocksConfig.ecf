@@ -3539,7 +3539,7 @@
   HitPoints: 10000, type: int, display: true
   RepairToTemplate: false, display: true
   BlastParticleIndex: 10
-  UnlockCost: 1000, display: true
+  UnlockCost: 500, display: true
   UnlockLevel: 25, display: true
   TechTreeParent: PentaxidTank
   TechTreeNames: "Base,Capital Vessel"
@@ -21477,7 +21477,7 @@
   CustomIcon: PentaxidTankSV                       #Icon required
   ShowBlockName: false
   VolumeCapacity: 800, type: float, display: true, formatter: Liter
-  UnlockCost: 500, display: true
+  UnlockCost: 250, display: true
   UnlockLevel: 25, display: true
   TechTreeParent: PentaxidTankSV
   TechTreeNames: "Small Vessel,Hover Vessel"

@@ -10,16 +10,12 @@ Title: <b><#00ffff>No Man's Land v1.16 RE2 Beta</color></b> <size=65%><#ffffff>(
 # Overlay body (typically multi-line text)
 # If commented out, only the title will be displayed
 Body: |
-  <size=135%><#ffffff><b>October 18:</b></color></size>
+  <size=135%><#ffffff><b>November 15:</b></color></size>
   <size=85%>Some of these updates require the <#ffffff>pda readdata</color> console command to apply. May reset mission progress if used.</size>
   <size=85%>•<indent=3%>Added more content for the Legacy (devices, planets, stars, PDA triggers, etc) as part of ongoing updates for the Legacy. Not all will apply to existing save games. See change notes for details.</indent></size>
   <size=85%>•<indent=3%>Added option to turn off many tutorial messages in the Project Eden Settings Menu (F1 - Tutorials - Project Eden Admin).</indent></size>
   <size=85%>•<indent=3%>Added more Empyriopedia tutorial messages.</indent></size>
   <size=85%>•<indent=3%>Added table of contents to the Empyriopedia with web links to Empyrion Buddy.</indent></size>
-  <size=85%>•<indent=3%>Misc updates and fixes.</indent></size>
-  
-  <size=85%><#ffff00>Reforged Eden 2 is currently in Beta. You may encounter issues.</size>
-  <size=85%></size>
   <size=85%><#00ff00>Check the Empyriopedia (F1) if you have questions about scenario mechanics.</size>
   <size=85%><#00ff95>No Man's Land November 15 Includes:</size>
   <size=85%>•<indent=3%>Modifed existing and Migrated RE1 Drone Capacitor Matrixes.</indent></size>

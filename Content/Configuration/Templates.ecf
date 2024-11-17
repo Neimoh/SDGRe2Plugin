@@ -687,6 +687,16 @@
     HydrogenBottle: 10
   }
 }
+{ +Template Name: BulkFusionCell
+  OutputCount: 100
+  CraftTime: 200
+  DeconOverride: Stop
+  Target: "SmallC,AdvC"
+  { Child Inputs
+    PromethiumPellets: 2500
+    HydrogenBottle: 1000
+  }
+}
 { +Template Name: BoostedFusionCell
   OutputCount: 25
   CraftTime: 5
@@ -694,7 +704,7 @@
   Target: "SmallC,AdvC"
   { Child Inputs
     FusionCell: 25
-    ToxicWaste: 625
+    ToxicWaste: 500
   }
 }
 

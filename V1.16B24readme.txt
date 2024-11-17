@@ -1,6 +1,9 @@
-NML Scenario add-in for RE2Beta compiled on RE2 Build 23
+NML Scenario add-in for RE2Beta compiled on RE2 Build 24
 =============================================================
-Changelog V1.16: (unreleased)
+Hotfix V1.61:
+- Fixed cost of Quantum Pentaxid Tanks CV down from 1k to 500 and SV down from 500 to 250
+
+Changelog V1.16:
 General Edits:
 - Increased all Hydroponics bay yields by 20%
 - Changed SV Torpedo recipie to use 4 Tungsten vs 4 Platinum

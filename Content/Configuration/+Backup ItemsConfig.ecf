@@ -5806,6 +5806,20 @@
   TechTreeParent: FusionCell
   TechTreeNames: Misc
 }
+{ +Item Id: 3501, Name: BulkFusionCell, Ref: ComponentsTemplate
+  CustomIcon: FusionCell
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  Volume: 10.0, type: float, display: true, formatter: Liter
+  FuelValue: 500, type: int, display: true, formatter: WattHour
+  MarketPrice: 1250, display: true
+  ShowUser: Yes
+  Info: itmFusionCell, display: true
+
+  UnlockCost: 0, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: FusionCell
+  TechTreeNames: Misc
+}
 # Fusion Reactor Fuel
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 15, type: int, display: true, formatter: WattHour
