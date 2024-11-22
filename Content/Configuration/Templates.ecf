@@ -699,11 +699,13 @@
 }
 { +Template Name: BoostedFusionCell
   OutputCount: 25
-  CraftTime: 5
+  CraftTime: 50
   DeconOverride: Stop
   Target: "SmallC,AdvC"
   { Child Inputs
-    FusionCell: 25
+    PromethiumPellets: 625
+    HydrogenBottle: 250
+    #FusionCell: 25
     ToxicWaste: 500
   }
 }

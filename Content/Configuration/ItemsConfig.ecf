@@ -21275,6 +21275,7 @@
   MarketPrice: 200, display: true
   Info: itmToxicWaste, display: true
   ShowUser: Yes
+  StackSize: 8000
   Mass: 170, type: float, display: true, formatter: Kilogram
   Volume: 20, type: float, display: true, formatter: Liter
 }

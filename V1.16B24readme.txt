@@ -1,20 +1,18 @@
 NML Scenario add-in for RE2Beta compiled on RE2 Build 24
 =============================================================
-Hotfix V1.61:
-- Fixed cost of Quantum Pentaxid Tanks CV down from 1k to 500 and SV down from 500 to 250
-
 Changelog V1.16:
 General Edits:
 - Increased all Hydroponics bay yields by 20%
-- Changed SV Torpedo recipie to use 4 Tungsten vs 4 Platinum
+- Changed SV Torpedo recipe to use 4 Tungsten vs 4 Platinum
 - Enabled Aluminum Foil to be melted back into Aluminum Powder
 - Allowed Furnace to melt Ice into Water containers
 - Increased CV/BA Auxillary Core CPU Output from 64k to 88k
 - Increased SV/HV Auxillary Core CPU Output from 1675 to 2500
 - Reprogrammed BA Teleporters so NPC stations get the high tier Quantum with 75ly range and Player still starts with entry 25ly
   (This may cause existing Quantum teleporterst to revert to basic version but it didn't in testing.)
-- Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle upgrades existing Hydrocells
-- Added Bloody Zirax, Milkshake, and Promethium BLue to Survival pack
+- Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle
+- Added x100 Bulk Hydrocell item
+- Added Bloody Zirax, Milkshake, and Promethium Blue to Survival pack
 - Added Zirax Territory back into Necrotic Expanse Region
 - Deconstructers will now return Autominer cores
 - Allowed Ice chunks into furnace to return water containers
@@ -22,9 +20,9 @@ General Edits:
 POI Edits:
 - Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
 - Replaced RE2 Swarm Capacitor Matrix with a more viable and enticing version worth fighting
-- Altered cpu room in Abandonded Assembly yard
+- Altered cpu room in Abandoned Assembly yard
 - Replaced RE2 Hive Nursery to set all boxes to give drone procs, dropped can core locations by 3 blocks closer to bottom and updated name to 'Mature Hive Nursery'
-- Updated and added RE1.8 Hive Nursery to same group call as RE2 version. You will have random chance for either version to spawn noted by name diferences. This version has less shields
+- Updated and added RE1.8 Hive Nursery to same group call as RE2 version. You will have random chance for either version to spawn noted by name differences. This version has less shields
 
 Kriel Edits:
 - Special crew re-added to Beholder and Overseer
@@ -36,7 +34,7 @@ Warlord Edits:
 - Modified drone spawn pad locations to try to fix lag from drones stuck in structure
 
 Pirate Edits:
-- Reduced drone spawn pads spread them out on Black Heart. Replaced Gauss vulcan turrets with colonist dual missle launchers.
+- Reduced drone spawn pads spread them out on Black Heart. Replaced Gauss vulcan turrets with colonist dual missile launchers.
 
 ___________________________________________________________________________________________________________________
 HotFix V1.15.4:

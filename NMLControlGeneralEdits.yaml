@@ -343,6 +343,38 @@
   TechTreeNames: Base
 }
 
+{ +Block Id: 259, Name: FuelTankMSSmall
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 260, Name: FuelTankMSLarge, Ref: FuelTankMSSmall
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 419, Name: FuelTankSV
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ Block Id: 425, Name: FuelTankPOI
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 470, Name: FuelTankSVSmall
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 554, Name: OxygenGenerator
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 588, Name: WaterGenerator
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 964, Name: OxygenGeneratorSmall
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Id: 1108, Name: AutoMiningDeviceT1
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ Block Name: CrewEngineer03
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
+
+{ +Block Name: Eden_FuelTankInvisible
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BulkFusionCell, BoostedFusionCell"
 
 
 
@@ -433,14 +465,26 @@
 
 
 #************************************  under { +Template Name: FusionCell
-{ +Template Name: BoostedFusionCell
-  OutputCount: 25
-  CraftTime: 5
+{ +Template Name: BulkFusionCell
+  OutputCount: 100
+  CraftTime: 200
   DeconOverride: Stop
   Target: "SmallC,AdvC"
   { Child Inputs
-    FusionCell: 25
-    ToxicWaste: 625
+    PromethiumPellets: 2500
+    HydrogenBottle: 1000
+  }
+}
+{ +Template Name: BoostedFusionCell
+  OutputCount: 25
+  CraftTime: 50
+  DeconOverride: Stop
+  Target: "SmallC,AdvC"
+  { Child Inputs
+    PromethiumPellets: 625
+    HydrogenBottle: 250
+    #FusionCell: 25
+    ToxicWaste: 500
   }
 }
 
@@ -468,6 +512,20 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
   Info: itmBoostedFusionCell, display: true
 
   UnlockCost: 25, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: FusionCell
+  TechTreeNames: Misc
+}
+{ +Item Id: 3501, Name: BulkFusionCell, Ref: ComponentsTemplate
+  CustomIcon: FusionCell
+  Mass: 50, type: float, display: true, formatter: Kilogram
+  Volume: 10.0, type: float, display: true, formatter: Liter
+  FuelValue: 500, type: int, display: true, formatter: WattHour
+  MarketPrice: 1250, display: true
+  ShowUser: Yes
+  Info: itmFusionCell, display: true
+
+  UnlockCost: 0, display: true
   UnlockLevel: 20, display: true
   TechTreeParent: FusionCell
   TechTreeNames: Misc

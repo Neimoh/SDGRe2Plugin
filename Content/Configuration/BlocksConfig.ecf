@@ -1805,7 +1805,7 @@
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 100, type: int, display: true
   HitPoints: 650, type: int, display: true
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 4000, type: int, display: true
   BlastParticleName: @rg_projectiles/RG_BlastPlasmaBlueL3
   BlastParticleIndex: 0
@@ -1822,7 +1822,7 @@
   Model: @models/Blocks/Mothership/FuelTankMSLargePrefab
   MarketPrice: 1410, display: true
   HitPoints: 1125, type: int, display: true
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 8000, type: int, display: true 
   AllowPlacingAt: "Base,MS", display: true   
   SizeInBlocks: "1,2,1", display: true
@@ -4972,7 +4972,7 @@
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 25, type: int, display: true
   Category: Devices
-  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 1000, type: int, display: true
   BlastParticleName: @rg_projectiles/RG_BlastPlasmaBlueL2
   BlastParticleIndex: 0
@@ -5179,7 +5179,7 @@
   Category: Devices
   Mass: 40000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
-  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 150, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 5
@@ -6240,7 +6240,7 @@
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 25, type: int, display: true
   Category: Devices
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 500, type: int, display: true
   BlastParticleName: @rg_projectiles/RG_BlastPlasmaBlueL2
   BlastParticleIndex: 0
@@ -7823,7 +7823,7 @@
   BlastRadius: 2
   BlastDamage: 250
   HitPoints: 400, type: int, display: true
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
 
   UnlockCost: 7, display: true
   UnlockLevel: 10, display: true
@@ -8699,7 +8699,7 @@
   IsColorable: false
   # SizeInBlocks: "1,2,1", display: true   # removed to avoid problem with "cutting out water"
   # ModelOffset: "0,0.5,0"
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   
   BlastParticleIndex: 4
   BlastRadius: 7
@@ -15140,7 +15140,7 @@
   BlastRadius: 2
   BlastDamage: 50
   HitPoints: 400, type: int, display: true
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   
   UnlockCost: 0, display: true
   UnlockLevel: 1, display: true
@@ -16970,7 +16970,7 @@
   IsColorable: false
   SizeInBlocks: "3,6,3", display: false
   BlockColor: "110,110,110"
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   
   BlastParticleIndex: 8
   BlastRadius: 9
@@ -42023,7 +42023,7 @@
   RepairToTemplate: false, display: true
   Class: FuelTank
   IndexName: FuelTank
-  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2"
+  FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BioFuelT2, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 8000, type: int, display: true
 }
 # Male Pilot
@@ -48604,7 +48604,7 @@
   IsColorable: false
   SizeInBlocks: "9,12,9", display: true
   BlockColor: "110,110,110"
-  # FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel"
+  # FuelAccept: "EnergyCell, EnergyCellLarge, FusionCell, BioFuel, BulkFusionCell, BoostedFusionCell"
   FuelAccept: "Eden_IndustrialFuel"
   
   BlastParticleIndex: 4
@@ -54383,7 +54383,7 @@
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 300, type: int, display: true
   HitPoints: 5000, type: int, display: true
-  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel"
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BulkFusionCell, BoostedFusionCell"
   FuelCapacity: 1200, type: int, display: true
   TurretTargetIgnore: true
   RepFac: 30 # RepFacFuelTank
