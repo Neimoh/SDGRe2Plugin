@@ -255,7 +255,7 @@ Ships:
 - Added T1 Val'Ruun Corsair
 - Added T2 Val'Ruun Corsair
 - Added T3 Val'Ruun Corsair
-- Added T4 Black Heart
+- Added T4 Black Heart, Thanks to theScriptHD for submission and Sildaran for updating it.
 
 Warlord Edits:
 POIs:

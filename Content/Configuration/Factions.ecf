@@ -65,7 +65,7 @@
   Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
   # AttackNPC: true
   Discovery: true
-  ForceAttack: "Warlord,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Pirates,Wastelanders,Talon"
+  ForceAttack: "Warlord,Polaris,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Pirates,Wastelanders,Talon"
 }
 
 { Faction Id: 3, Name: "Predator"
@@ -109,7 +109,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
-  ForceAttack: "Warlord,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Pirates,Eden_Resource,Prey"
+  ForceAttack: "Warlord,Zirax,Alien,TheLegacy,Kriel,Eden_Drone,Eden_DroneHome,Pirates,Eden_Resource,Prey"
 }
 
 { Faction Id: 8, Name: "Alien"             #Use for Dungeons and abandoned POI

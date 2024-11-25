@@ -972,6 +972,16 @@ TeleporterBA,[c][F300FF]Quantum Teleporter
   OmitMapLegend: true
 }
 
+ ***************************************************************************************************************** TraderNPCConfig
+{ Trader Name: Bertrams
+  Item12: "MultiTool, mf=1.0-1.25, 5-10, mf=0.5-0.75, 35-60"
+
+{ Trader Name: ServantCorp Outfitters
+  Item1: "MultiTool, mf=1.0-1.25, 10-25, 10, 30"
+
+{ Trader Name: ServantCorp Outfitters II
+  Item1: "MultiTool, mf=1.0-1.25, 1-15, 30, 60"
+
  ***************************************************************************************************************** DefReputation
 
   Pirates: 9000
