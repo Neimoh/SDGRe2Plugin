@@ -1,0 +1,318 @@
+NML Scenario add-in for RE2Beta compiled on RE2 Build 24
+=============================================================
+Changelog V1.161:
+- Added CV Planetary fixed light cannon limit of 2
+- Fixed user submitted loading screenshots to actually work
+- Added 2 separate icons for Bulk fusion cells and Boosted fusion cells
+
+- Fixed duplicated Assembly yard
+- Fixed Drone capacitor matrixes since lot containers vanished
+
+Changelog V1.16:
+General Edits:
+- Increased all Hydroponics bay yields by 20%
+- Changed SV Torpedo recipe to use 4 Tungsten vs 4 Platinum
+- Enabled Aluminum Foil to be melted back into Aluminum Powder
+- Allowed Furnace to melt Ice into Water containers
+- Increased CV/BA Auxillary Core CPU Output from 64k to 88k
+- Increased SV/HV Auxillary Core CPU Output from 1675 to 2500
+- Reprogrammed BA Teleporters so NPC stations get the high tier Quantum with 75ly range and Player still starts with entry 25ly
+  (This may cause existing Quantum teleporterst to revert to basic version but it didn't in testing.)
+- Added Boosted Promethium Hydro Cell that uses toxic waste for +250 fuel storage over Hydro cell. 25 per build cycle
+- Added x100 Bulk Hydrocell item
+- Added Bloody Zirax, Milkshake, and Promethium Blue to Survival pack
+- Added Zirax Territory back into Necrotic Expanse Region
+- Deconstructers will now return Autominer cores
+- Allowed Ice chunks into furnace to return water containers
+
+POI Edits:
+- Migrated and updated RE1.8 Capacitor Matrixes and added to current Swarm Matrix group
+- Replaced RE2 Swarm Capacitor Matrix with a more viable and enticing version worth fighting
+- Altered cpu room in Abandoned Assembly yard
+- Replaced RE2 Hive Nursery to set all boxes to give drone procs, dropped can core locations by 3 blocks closer to bottom and updated name to 'Mature Hive Nursery'
+- Updated and added RE1.8 Hive Nursery to same group call as RE2 version. You will have random chance for either version to spawn noted by name differences. This version has less shields
+
+Kriel Edits:
+- Special crew re-added to Beholder and Overseer
+
+Legacy Edits:
+- Replaced Planetary Infectors with modified Consumers
+
+Warlord Edits:
+- Modified drone spawn pad locations to try to fix lag from drones stuck in structure
+
+Pirate Edits:
+- Reduced drone spawn pads spread them out on Black Heart. Replaced Gauss vulcan turrets with colonist dual missile launchers.
+
+___________________________________________________________________________________________________________________
+HotFix V1.15.4:
+- Updated Localization for custom block names
+- Fixed block groups for quantum pentaxid tanks
+
+HotFix V1.15.3:
+- Made deconstructors break down Steel Plates, Electronics, Computers and Motors into Basic ingots
+- Halved Quantum Pentaxid tank upgrade point costs
+
+HotFix V1.15.2:
+- Fixed Human crew definition not allowing placement
+
+HotFix V1.15.1:
+- Shared data loading screen fix
+
+Changelog V1.15:
+- Update Scenerio for RE2 Build 23
+
+Block Edits:
+- Added Quantum Based CV and SV Pentaxid tanks with higher volumes
+- Increased Planet and Space Drone bay inventory volume to 96k
+
+General Edits:
+- Changed Heavy Railgun Penetrator rounds from Platinum ingrediant to Tungsten because it makes more sense
+- Reduced spawn rates of Pirate, Warlord, Trader and Colonist ships in Habitable and Hot systems by 10%
+- Increased Planet and Orbital Drone stack sizes from 12  to 48
+
+POI Edits:
+- Removed Swarm Capacitor Matrix roof cap and edited loot containers to give proper loot, added 6 rf7 boxes and 2 adv cpu
+- Added in old RE1.8 Swarm Capacitor Matrix and updated for RE2 added 2 adv cpu
+- Added in old RE1.8 Capacitor Matrix and removed 2 RF7 boxes added 2 improved cpu
+- Added all 3 Capacitor Matrixes to same spawngroup call for variety
+
+Bug Fixes:
+- Replaced Overrun Assembly Yard v1 with corrected version that has final room switches and working timers
+
+___________________________________________________________________________________________________________________
+Changelog V1.14:
+- !ttp Trade station update
+
+___________________________________________________________________________________________________________________
+Changelog V1.13:
+- Balancing edits
+
+___________________________________________________________________________________________________________________
+Changelog V1.12:
+- NML System edits
+- Various ship Balancing
+
+___________________________________________________________________________________________________________________
+Changelog V1.11:
+General Edits:
+- Civilian vessels are now functional and spawn in neutral space and varius Factions use them in Trade Systems
+- Added pirateT1 ships to main faction territory spawns so they add to local territory ships
+- Akua, Tallodar, Masperon, Pandora, Uai, Nigues escape pods are now steerable on player start
+
+Trader Edits:
+- Added Poseidon Freighter Thanks to submission from MHal9000
+
+Colonist Edits:
+- Added Federated Resources Trade Station Thanks to submission from MHal9000
+
+Kriel Faction Edits:
+- Separated Bahamut and Overseer into their own spawn group for less frequent spawns
+- Improved loot and added quantum loot to Bahamut and Overseer
+- Added at least 1 of each "Special Crew" to All Kriel Ships
+
+Warlord Faction Edits:
+- Added Cerebus
+- Added Hoplite
+- Added Kasasagi
+- Added Magpie
+- Added Outrunner
+- Added Rutile
+- Added Warlock Thanks to submission from MHal9000
+- Added Perun Thanks to submission from MHal9000
+- Added Macha Thanks to submission from MHal9000
+- Added Morrigan Thanks to submission from MHal9000
+
+Galaxy Edits:
+- Civilians now spawn in Kriel space 20%-60% inner system to outer
+- Traders now spawn in Kriel space 50%-80% inner system to outer
+- Civilians now spawn in Pirate space 5%-80% inner system to outer
+- Traders now spawn in Pirate space 40%
+- Civilians now spawn in Zirax space 8%-80% inner systm to outer
+- Civilians now spawn in Wastelanders space
+
+Fixes:
+- Reduced toughness of Bahamut, Overseer, Beholder, Drone and Subjugator
+- Increased Warlord Space POI spawn chances and counts
+
+___________________________________________________________________________________________________________________
+
+Changelog V1.1:
+Block Edits:
+- Added CV Furnace, currently researchable and buildable in Adv. Const. Hopefully later added as a mission trader unlock and buyable only.
+
+Galaxy Edits:
+- Allowed Civilian craft to spawn in Neutral space
+
+Faction Edits:
+- Zirax and Talon are now enemies
+- Traders and Talon are now enemies
+- Added Kriel back to faction standings
+- Killing Talon +5 to Trader
+- Killing Trader +5 to Talon
+- Killing Kriel -1 to Pirates
+
+Kriel Edits:
+POI's
+- Added Aerie
+- Added Brooder
+- Added Arcanum
+- Added Centrum
+- Added Imperium
+- Added Pavor
+- Added Vectrum
+- Added Turrim Alveo
+- Added Beholder
+- Added Centrum -Drone Base
+- Added Tela Repono -Drone Base
+- Added Caenum Platearum
+- Added Nexus
+- Added Nexus Arcanum
+- Added Pylon
+- Added Fidus
+- Added Insula
+Ships:
+- Added Accipiter
+- Added Beholder
+- Added Bahumut
+- Added Drone
+- Added Overseer
+- Added Scutellum
+- Added Shade
+- Added Subjugator
+- Kriel ships will only spawn in their Territory however you can find their POI's in lighter numbers on Swamp, Mire, Alien, Fungal and Temperate Brooding planets.
+
+Alien Edits:
+- Allowed Azure Temptress into Kriel Cold stars at %10 spawn rate
+
+Pirate Edits:
+Ships:
+- Added Black Market Freighter to T3 spawns Thanks to Neimoh for submission
+- Replaced Black Heart with new version, Shields are now enabled on spawn
+- Added Quin Merac-1 variant
+- Added Quin Merac-2 variant
+
+Trader Edits:
+Ships:
+- Added Bounty
+- Added Currency
+- Added Depreciator
+- Added Mogul
+- Added Titan
+
+Colonist Edits:
+- Added Colonist Workboat Thanks to Neimoh for submission
+
+Warlord Edits:
+- Reduced spawn rates of Tianlong
+
+
+
+___________________________________________________________________________________________________________________
+
+Changlog V1.0:
+NML Scenerio Changelog: V1.0
+General edits
+- All Shield penetration removed from Items and blocks config files
+- Added Group limit to Standard Crew <Zirax, ALien, Human> of 30 and added -2500 cpu for each
+- Removed Zirax presence from Akua and Tallodar orbits
+
+Faction Edits:
+- Pirates and Colonists now enemies
+
+Abandoned POIs:
+- Added Overrun Bunker
+- Added Overrun Depot
+- Added Overrun Factory
+- Added Vanilla Overrun Mine
+- Added RE1.8 Overrun Mine
+- Added Overrun Missile Base
+- Added Overrun Outpost to Starters only
+- Added Overrun Reactor
+- Added Vanilla Overrun Assembly Yard 
+- Added RE1.8 Overrun Assembly Yard
+- Added Overrun Theta Labs to Starters only
+- Added Overrun Vessel Yard to Starters only
+- Added RE1.7 Black Pyramid back to Rocky Deserts
+
+Alien ships:
+- Added Azure Vyrishni Rare 1.5% spawn in cold sectors
+- Added Azure Temptress Rare 10% spawn in cold sectors
+
+Colonist Edits:
+- Added Calypso and Mobius ships Thanks to Neimoh for submission
+
+Pirate Edits:
+POIs:
+- Added Pirate Battlestation to habitable and hot sectors
+- Added Bar
+- Added Waystation
+- Added Solar Plant
+- Added Hideout Maria
+- Added Unassuming Wreck
+- Added Hideout Maria
+- Added Promethium Deposit
+Ships:
+- Added Assault Frigate
+- Added Corvus Corvette
+- Added DreadMaw Frigate
+- Added Gunbad Corvette
+- Added Privateer Corvette
+- Added Quin Merac
+- Added Rum Runner
+- Added T1 Val'Ruun Corsair
+- Added T2 Val'Ruun Corsair
+- Added T3 Val'Ruun Corsair
+- Added T4 Black Heart, Thanks to theScriptHD for submission and Sildaran for updating it.
+
+Warlord Edits:
+POIs:
+- Added Derpacs Station
+- Added NSI 20 Erebus Station
+- Added Farpoint Station
+- Added [GAL] Schneewitchen
+- Added GIA Solaris C02
+- Added Space Station High Retreat
+- Added HSS-Endurance
+- Added Luark Station
+- Added Orbital Station
+- Added N-D Station
+- Added Outpost O.M.E.G.A.
+- Added Sagittarius Spaceport
+- Added Depleted Pentaxid Mine
+- Added Promethium Storage
+- Added Promethium Storage
+- Added Promethium Storage
+Ships:
+- Added Tianlong Battleship
+- Added Tianlong Battleship Drone escort variant
+- Added Atlas
+- Added Makar
+- Added Raider
+- Added Valient
+- Added Nemesis
+
+
+
+Installation
+---------------
+
+1. Shutdown your game server. 
+2. Unzip the NMLScenario_X.zip file.
+3. Locate your RE2Beta scenario directory.  Typically D:\empyrion\Content\Scenarios\RE2Beta
+4. Copy contents of Playfields directory into D:\empyrion\Content\Scenarios\RE2Beta\Playfields
+5. Copy contents of Sectors directory into D:\empyrion\Content\Scenarios\RE2Beta\Sectors
+6. Unclear if D:\empyrion\Cache\RE2Beta needs to be deleted.  Let's assume no for now.
+6. Restart your game server
+7. If this is a fresh install of the NML Scenario then clients likely don't need to delete their cache.  If its an up date to the NML Scenario then cache clearing may be necessary.
+
+
+Manual local installation: Building a fresh RE2 custom scenerio
+1. Navigate to Steam folder where Empyrion is installed and find the workshop folder for RE2
+	xxx\Steamlibrary\steamapps\workshop\content\383120\3143225812
+2. Copy that entire folder into your Empyrion scenerios folder.
+	xxx\Steamlibrary\steamapps\common\Empyrion - Galactic Survival\Content\Scenerios\
+3. Rename the 3143225812 to something like RE2Custom or an easy identifier
+4. Either extract SDGPlugin.zip into it's own folder and copy all folder contents into your new RE2 scenerio or paste it directly into your new RE2 scenerio and extracthere.
+5. If done right you should be prompted to overwrite files and folders, please do so.
+6. Start a new game, choose scenerio and select your RE2 custom scenerio

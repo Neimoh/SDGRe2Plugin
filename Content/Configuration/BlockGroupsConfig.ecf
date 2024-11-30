@@ -44,7 +44,7 @@
 
  { BlockGroup Name: LightWeaponsLarge
    MaxCount: 32
-   Blocks: "WeaponCVPlasmaT1, WeaponCVRailgunT1, WeaponMS01, WeaponMS02, TurretMSMinigunRetract, TurretMSMinigun, TurretMSCannon, TurretMSCannonRetract, TurretMSRocket, TurretMSRocketRetract, TurretMSPlasma, TurretMSPlasmaRetract, TurretMSPulseLaser, TurretMSPulseLaserRetract, TurretMSFlak, TurretMSFlakRetract, TurretBaseMinigunRetract, TurretBaseMinigun, TurretBaseCannon, TurretBaseCannonRetract, TurretBaseRocket, TurretBaseRocketRetract, TurretBasePlasma, TurretBasePlasmaRetract, TurretBasePulseLaser, TurretBasePulseLaserRetract, TurretBaseFlak, TurretBaseFlakRetract, Eden_TurretBolterCV, Eden_TurretMissileLight, Eden_TurretBeamBlocksT1, Eden_TurretLaserBeamCV, Eden_TurretLaserBeamCVT2, Eden_TurretLaserBeamCVT3, Eden_CVTorpedoRapid"
+   Blocks: "WeaponCVPlasmaT1, WeaponCVRailgunT1, WeaponMS01, WeaponMS01Planet, WeaponMS02, TurretMSMinigunRetract, TurretMSMinigun, TurretMSCannon, TurretMSCannonRetract, TurretMSRocket, TurretMSRocketRetract, TurretMSPlasma, TurretMSPlasmaRetract, TurretMSPulseLaser, TurretMSPulseLaserRetract, TurretMSFlak, TurretMSFlakRetract, TurretBaseMinigunRetract, TurretBaseMinigun, TurretBaseCannon, TurretBaseCannonRetract, TurretBaseRocket, TurretBaseRocketRetract, TurretBasePlasma, TurretBasePlasmaRetract, TurretBasePulseLaser, TurretBasePulseLaserRetract, TurretBaseFlak, TurretBaseFlakRetract, Eden_TurretBolterCV, Eden_TurretMissileLight, Eden_TurretBeamBlocksT1, Eden_TurretLaserBeamCV, Eden_TurretLaserBeamCVT2, Eden_TurretLaserBeamCVT3, Eden_CVTorpedoRapid"
  }
 
  { BlockGroup Name: MediumWeaponsLarge

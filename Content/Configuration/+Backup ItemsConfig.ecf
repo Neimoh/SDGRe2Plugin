@@ -5794,7 +5794,7 @@
 }
 { +Item Id: 3500, Name: BoostedFusionCell, Ref: ComponentsTemplate
   Mass: 50, type: float, display: true, formatter: Kilogram
-  CustomIcon: ZiraxMSPlasmaCharge
+  CustomIcon: FusionCellBoosted1
   Volume: 10.0, type: float, display: true, formatter: Liter
   FuelValue: 750, type: int, display: true, formatter: WattHour
   MarketPrice: 1250, display: true
@@ -5807,7 +5807,7 @@
   TechTreeNames: Misc
 }
 { +Item Id: 3501, Name: BulkFusionCell, Ref: ComponentsTemplate
-  CustomIcon: FusionCell
+  CustomIcon: FusionCellx100
   Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 10.0, type: float, display: true, formatter: Liter
   FuelValue: 500, type: int, display: true, formatter: WattHour

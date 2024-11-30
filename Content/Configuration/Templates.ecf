@@ -5926,6 +5926,20 @@
     FluxCoil: 8
   }
 }
+{ +Template Name: WeaponMS01Planet
+  CraftTime: 10
+  Target: "SmallC,LargeC,AdvC"
+  { Child Inputs
+	SteelPlateArmored: 64
+    MechanicalComponents: 48
+    Electronics: 20
+    Motor: 8
+	Computer: 8
+    CobaltAlloy: 48
+	EnergyMatrix: 6
+    FluxCoil: 8
+  }
+}
 # T1 CV Laser Cannon - Uses LaserChargeCVT1
 { +Template Name: WeaponMS02
   CraftTime: 10

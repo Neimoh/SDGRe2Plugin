@@ -38,13 +38,13 @@ Options:
 
     #### SPECIAL COOP SETTING ####
   - ValidFor: [ MP, Survival ]
-    DecayTime: 24                     # default value
+    DecayTime: 0                     # default value
     WipeTime: 0                       # default value
     ProtectTime: 48                   # default value
     ProtectDelay: 300                 # default value
     MaxStructures: 2000                # default value
     AntiGriefDistancePvE: 0
-    AntiGriefDistancePvP: 0
+    AntiGriefDistancePvP: 300
     AntiGriefOresDistance: 0             
     AntiGriefOresZone: PvE            # default value  
     EnableTrading: All                # default value
@@ -56,20 +56,20 @@ Options:
     GroundedStructureSpawn: False
     TurretUndergroundCheck: True   
     OriginDefault: Neutral            # default value
-    OriginAccessOthers: True          # default value
-    OriginAutoAlliance: True          # default value
+    OriginAccessOthers: False          # default value
+    OriginAutoAlliance: False          # default value
     MaxSpawnedEnemies: 60             # default value
     DespawnEscapePod: True 
-    RegeneratePOIs: False               
+    RegeneratePOIs: True               
     FOWTransparency: 0                # default value
     DSLDistancePlanet: 1200           # default value
     DSLDistanceSpace: 3000            # default value
     ForcePvP: False
-    OriginFactionStart: True   
+    OriginFactionStart: False   
     CustomPlayerTab: "Scenario Change Log;https://steamcommunity.com/sharedfiles/filedetails/changelog/3143225812"
 
     ### In local Coop, following parameter are ignored since they are taken from Difficulty Settings window ###
-    FriendlyFireInPvP: True           # default value
+    FriendlyFireInPvP: False           # default value
     DiffEscapePodContent: Medium      # default value
     DiffPlayerProgression: Normal     # default value
     DiffDegradationSpeed: Normal      # default value

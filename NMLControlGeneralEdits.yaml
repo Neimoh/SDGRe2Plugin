@@ -377,6 +377,60 @@
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, BulkFusionCell, BoostedFusionCell"
 
 
+#************************************  WeaponMS01.png must be renamed in shareddata\Content\Bundles\ItemIcons
+{ +Block Id: 646, Name: WeaponMS01
+  CustomIcon: WeaponMS01_Icon
+
+#************************************  Place under Block Id: 646, Name: WeaponMS01
+# CV Cannon T1 Planet
+{ Block Name: WeaponMS01Planet
+  Class: Weapon
+  MarketPrice: 13588, display: true
+  IndexName: WeaponShip
+  Group: cpgWeapon
+  Material: WeaponLarge
+  Shape: ModelEntity
+  ShowBlockName: true
+  CustomIcon: WeaponMS01
+  WeaponItem: CannonCVT1WeaponP
+  Model: @models/Blocks/WeaponsShip/WeaponMSArtilleryRetractPrefab
+  # Model: @models/Blocks/WeaponsShip/WeaponMSArtilleryPrefab
+  # Model: @reforgedcontent/LightCannonCVT1
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab  
+  IsTextureable: true
+  IsGPUInstance: false
+  Texture: 50 
+  SoundOpen: UseActions/WeaponOpenClose
+  SoundClose: UseActions/WeaponOpenClose
+  IsActivateable: true
+  #IsRetractable: true, display: true  
+  Place: WeaponDir
+  AllowPlacingAt: MS, display: true
+  SizeInBlocks: "1,8,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  Volume: 1600, type: float, display: true, formatter: Liter
+  Mass: 15000, type: float, display: true, formatter: Kilogram
+  Info: bkiWeaponCVCannonT1, display: true
+  Category: Weapons/Items
+  BlockColor: "110,110,110"
+  StackSize: 500
+  MaxCount: 2, type: int, display: true
+  ForceMaxCount: true
+  BlastParticleName: @reforgedcontent/TurretExplosionLargeRG
+  BlastParticleIndex: 0
+  #BlastParticleIndex: 1
+  BlastRadius: 5
+  BlastDamage: 5000
+  EnergyIn: 200, type: int, display: true, formatter: Watt
+  CPUIn: 10000, type: int, display: true
+  HitPoints: 20000, type: int, display: true
+  ShieldDamagePenFac: 0, display: true
+
+  UnlockCost: 10, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: ContainerAmmoControllerLarge
+  TechTreeNames: "Capital Vessel"
+}
 
 ***************************************************************************************************************** Templates
 #************************************  Place under { +Template Name: Furnace
@@ -404,7 +458,7 @@
 #************************************  under PentaxidTank
 { +Template Name: QuantumPentaxidTankCVBA
   CraftTime: 15
-  Target: "SmallC"
+  Target: "AdvC"
   { Child Inputs
     Eden_MagmacitePlate: 100
     QuantumProcessor: 8
@@ -419,7 +473,7 @@
 #************************************  under PentaxidTankSV
 { +Template Name: QuantumPentaxidTankSV
   CraftTime: 5
-  Target: "SmallC"
+  Target: "AdvC"
   { Child Inputs
     Eden_MagmacitePlate: 10
     QuantumProcessor: 4
@@ -453,7 +507,7 @@
   DeconOverride: Continue
 
 { +Template Name: WaterJug
-  Target: "FoodP,SurvC,SmallC,HoverC,BaseC,LargeC,AdvC,Furn"
+  Target: "FoodP,SurvC,HoverC,BaseC,LargeC,AdvC,Furn"
 
 { +Template Name: Eden_CPUExtenderAuxCV
     Eden_DroneSalvageProcessor: 250
@@ -469,7 +523,7 @@
   OutputCount: 100
   CraftTime: 200
   DeconOverride: Stop
-  Target: "SmallC,AdvC"
+  Target: "AdvC"
   { Child Inputs
     PromethiumPellets: 2500
     HydrogenBottle: 1000
@@ -479,7 +533,7 @@
   OutputCount: 25
   CraftTime: 50
   DeconOverride: Stop
-  Target: "SmallC,AdvC"
+  Target: "AdvC"
   { Child Inputs
     PromethiumPellets: 625
     HydrogenBottle: 250
@@ -494,6 +548,21 @@
 #{ +Template Name: TeleporterBAT3
 { +Template Name: TeleporterBA
 
+#************************************  under Template Name: WeaponMS01
+{ +Template Name: WeaponMS01Planet
+  CraftTime: 10
+  Target: "LargeC,AdvC"
+  { Child Inputs
+	SteelPlateArmored: 64
+    MechanicalComponents: 48
+    Electronics: 20
+    Motor: 8
+	Computer: 8
+    CobaltAlloy: 48
+	EnergyMatrix: 6
+    FluxCoil: 8
+  }
+}
 
 ***************************************************************************************************************** ItemsConfig AND +Backup ItemsConfig
 
@@ -504,7 +573,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
 #************************************  place under { +Item Id: 325, Name: FusionCell, Ref: ComponentsTemplate
 { +Item Id: 3500, Name: BoostedFusionCell, Ref: ComponentsTemplate
   Mass: 50, type: float, display: true, formatter: Kilogram
-  CustomIcon: ZiraxMSPlasmaCharge
+  CustomIcon: FusionCellBoosted1
   Volume: 10.0, type: float, display: true, formatter: Liter
   FuelValue: 750, type: int, display: true, formatter: WattHour
   MarketPrice: 1250, display: true
@@ -517,7 +586,7 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
   TechTreeNames: Misc
 }
 { +Item Id: 3501, Name: BulkFusionCell, Ref: ComponentsTemplate
-  CustomIcon: FusionCell
+  CustomIcon: FusionCellx100
   Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 10.0, type: float, display: true, formatter: Liter
   FuelValue: 500, type: int, display: true, formatter: WattHour
@@ -536,6 +605,44 @@ ShieldDamagePenFac: (\d).(\d)(\d)(\d)(\d)
 
 { +Item Id: 887, Name: DroneLargePlayer02Unit
   StackSize: 48
+
+# 100mm Naval Gun Planetary
+{ Item Id: 3457, Name: CannonCVT1WeaponP
+  Meshfile: @models/Blocks/WeaponsShip/WeaponMSArtilleryPrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CustomIcon: WeaponMS01
+  ShowUser: NoButCSV
+  Canhold: false
+  HoldType: 0
+  StackSize: 500
+  Material: Device
+  Mass: 8485, type: float, display: false, formatter: Kilogram
+  Category: Weapons/Items
+  Crosshair: @RG_crosshairs/ShipArtillery
+  { Child 0
+    Class: LauncherSS
+    AllowAt: Planet
+    ROF: 1.2, type: float, display: true, formatter: ROF
+    Range: 550, display: false
+    RangeSpace: 850, display: false
+    AmmoCapacity: 20, display: true
+    AmmoType: CannonShellCVT1, display: true
+    Automatic: true    
+    NoiseStrength: 500, display: false   
+    AutoReload: true
+    CheckObstructed: true
+    ReloadDelay: 5, display: true
+	SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
+    # SfxBegin: Weapons/Player/Misc/Single/M16GAU5AinHeavySingle
+    # SfxBegin: Weapons/MS/Turret/Cannon_2
+    # SfxBegin: Weapons/LauncherWeapons/weapon_missile_006
+    # SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
+    SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
+    PfxMuzzle: rocketlauncherMSMuzzleFire
+
+	Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['CVCannonT1Reload']/1000)"
+  }
+}
 
 
 
